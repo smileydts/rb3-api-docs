@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: DGCIP/CINDE POC
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: https://www2.1010data.com
+paths:
+  //beta-latest/api/!login:
+    post:
+      summary: Login
+      description: Login
+      operationId: login
+      parameters:
+        - name: uid
+          in: query
+          schema:
+            type: string
+            example: 1010uid
+        - name: pw
+          in: query
+          schema:
+            type: string
+            example: 1010pw
+      responses:
+        '200':
+          description: ''
+tags:
+  - name: First Page
+  - name: Second Page
+  - name: Third Page
+  - name: Fourth Page
