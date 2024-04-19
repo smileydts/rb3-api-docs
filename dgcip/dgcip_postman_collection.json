@@ -1,10 +1,11 @@
 {
 	"info": {
-		"_postman_id": "bf58abc6-cbf5-49b3-b59b-eadaa33a70b4",
+		"_postman_id": "14dbd132-2d0e-4c5f-8104-21dc7ec68eac",
 		"name": "DGCIP POC",
 		"description": "API for accessing Dollar General analytics",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "14107468"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26207322",
+		"_collection_link": "https://warped-station-738089.postman.co/workspace/Team-Workspace~08d282b6-b510-4c18-8a9b-8a5ed0f4b131/collection/26207322-14dbd132-2d0e-4c5f-8104-21dc7ec68eac?action=share&source=collection_link&creator=26207322"
 	},
 	"item": [
 		{
@@ -47,7 +48,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=dmy_uid&pw=my_pw",
+									"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -137,28 +138,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {},\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"own_item\",\n                    \"ops\": \"=\",\n                    \"values\": [\n                        \"1\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-latest",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 					},
 					"response": [
 						{
@@ -175,21 +162,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-latest",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -240,28 +213,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"col\": \"own_item\",\r\n            \"ops\": \"=\",\r\n            \"values\": [\r\n                \"1\"\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-latest",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 					},
 					"response": [
 						{
@@ -278,21 +237,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-latest",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -355,28 +300,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"01911901\",\n                        \"12040801\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"01911901\",\n                        \"12040801\"\n                    ]\n                },\n                {\n                    \"col\": \"own_item\",\n                    \"ops\": \"=\",\n                    \"values\": [\n                        \"1\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-latest",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 					},
 					"response": [
 						{
@@ -393,21 +324,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-latest",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -481,21 +398,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-20.05",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"metrics:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed"
 					},
 					"response": [
 						{
@@ -512,21 +415,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-20.05",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"metrics:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -582,21 +471,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-latest",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -647,28 +522,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"class\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1142\"\r\n                    ],\r\n                    \"path\": \"\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"class\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1142\"\r\n                    ],\r\n                    \"path\": \"\"\r\n                },\r\n                {\r\n                    \"col\": \"own_item\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1\"\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-20.05",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"dimension:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed"
 					},
 					"response": [
 						{
@@ -685,21 +546,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-20.05",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"dimension:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
@@ -757,21 +604,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-20.05",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"config:json.keyed"
-							]
-						}
+						"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed"
 					},
 					"response": [
 						{
@@ -788,21 +621,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-20.05",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"config:json.keyed"
-									]
-								}
+								"url": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed"
 							},
 							"status": "OK",
 							"code": 200,
