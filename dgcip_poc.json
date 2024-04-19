@@ -8,13 +8,7 @@
   },
   "servers": [
     {
-      "url": "https://www2.corp.1010data.com"
-    },
-    {
       "url": "https://www2.1010data.com"
-    },
-    {
-      "url": "https://dolgen.1010data.com"
     }
   ],
   "paths": {
@@ -32,7 +26,7 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "example": "dgcip_x1010data_43"
+              "example": "my_uid"
             }
           },
           {
@@ -40,7 +34,7 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "example": "dustin1010data"
+              "example": "my_pw"
             }
           }
         ],
