@@ -1,0 +1,872 @@
+{
+	"info": {
+		"_postman_id": "bf58abc6-cbf5-49b3-b59b-eadaa33a70b4",
+		"name": "DGCIP POC",
+		"description": "API for accessing Dollar General analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14107468"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"!login"
+							],
+							"query": [
+								{
+									"key": "uid",
+									"value": "my_uid"
+								},
+								{
+									"key": "pw",
+									"value": "my_pw"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=dmy_uid&pw=my_pw",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"!login"
+									],
+									"query": [
+										{
+											"key": "uid",
+											"value": "my_uid"
+										},
+										{
+											"key": "pw",
+											"value": "my_pw"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 Apr 2024 15:36:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "session=dgcip_x1010data_43|1442703025|_______afcea337e76ca4622d9f031cac2812741b513474abaddd99f6c610b50c9e66406421fbb35601f4f5386d55639c4d37eef1fc9d003d1338356bd305860c9f6acf; Path=/; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "nj_session=dgcip_x1010data_43|1442703025|_______afcea337e76ca4622d9f031cac2812741b513474abaddd99f6c610b50c9e66406421fbb35601f4f5386d55639c4d37eef1fc9d003d1338356bd305860c9f6acf; Path=/; HttpOnly; Domain=.1010data.com; Secure"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"uid\": \"dgcip_x1010data_43\",\n    \"sid\": \"1442703025\",\n    \"epw\": \"_______afcea337e76ca4622d9f031cac2812741b513474abaddd99f6c610b50c9e66406421fbb35601f4f5386d55639c4d37eef1fc9d003d1338356bd305860c9f6acf\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Widgets",
+			"item": [
+				{
+					"name": "KPIs",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {},\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"scr:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {},\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"scr:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 Apr 2024 18:38:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"sales_sales\":9699969254.9336891,\"sales_units\":2972404253,\"sales_sales_psw\":37120.117464242838,\"sales_units_psw\":11374.880901447688}]"
+						}
+					]
+				},
+				{
+					"name": "Line Chart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"scr:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"scr:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 Apr 2024 18:40:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "509"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"fyear_calendar\":2023,\"fweek_calendar\":1,\"sales_sales_c1\":0,\"sales_sales_c2\":697747591.39866304,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":1,\"sales_sales_c1\":735966252.60887957,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":2,\"sales_sales_c1\":0,\"sales_sales_c2\":737919386.78943551,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":2,\"sales_sales_c1\":785020824.46526265,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":3,\"sales_sales_c1\":0,\"sales_sales_c2\":697474325.79135764,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":3,\"sales_sales_c1\":728926704.50862873,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":4,\"sales_sales_c1\":0,\"sales_sales_c2\":731698044.40204644,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":4,\"sales_sales_c1\":768058187.6356678,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":5,\"sales_sales_c1\":0,\"sales_sales_c2\":723083392.5246048,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":5,\"sales_sales_c1\":778840309.68081403,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":6,\"sales_sales_c1\":0,\"sales_sales_c2\":697651149.50263822,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":6,\"sales_sales_c1\":753733873.71520078,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":7,\"sales_sales_c1\":0,\"sales_sales_c2\":692014857.15666497,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":7,\"sales_sales_c1\":749690703.0615679,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":8,\"sales_sales_c1\":0,\"sales_sales_c2\":705181882.56689537,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":8,\"sales_sales_c1\":775299099.26551402,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":9,\"sales_sales_c1\":0,\"sales_sales_c2\":774814933.56516051,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":9,\"sales_sales_c1\":806105333.26909471,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":10,\"sales_sales_c1\":0,\"sales_sales_c2\":743568320.18641007,\"sales_sales_pct\":-1},{\"fyear_calendar\":2024,\"fweek_calendar\":10,\"sales_sales_c1\":748150723.1547296,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2023,\"fweek_calendar\":50,\"sales_sales_c1\":681613126.49981105,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2022,\"fweek_calendar\":51,\"sales_sales_c1\":0,\"sales_sales_c2\":661513487.02680314,\"sales_sales_pct\":-1},{\"fyear_calendar\":2023,\"fweek_calendar\":51,\"sales_sales_c1\":676221520.81390882,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2022,\"fweek_calendar\":52,\"sales_sales_c1\":0,\"sales_sales_c2\":655755952.35966146,\"sales_sales_pct\":-1},{\"fyear_calendar\":2023,\"fweek_calendar\":52,\"sales_sales_c1\":712342596.25460792,\"sales_sales_c2\":0,\"sales_sales_pct\":null},{\"fyear_calendar\":2022,\"fweek_calendar\":53,\"sales_sales_c1\":0,\"sales_sales_c2\":676475114.82496274,\"sales_sales_pct\":-1}]"
+						}
+					]
+				},
+				{
+					"name": "Sales Trends",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"01911901\",\n                        \"12040801\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"scr:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"01911901\",\n                        \"12040801\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"scr:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 Apr 2024 18:53:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"sku_product\":\"12040801\",\"itemdesc_product\":\"FRAP MOCHA 13.7B\",\"sales_sales_c1\":4517599.5500000436,\"sales_sales_c2\":4810126.6300000232,\"sales_sales_pct\":-0.060814839712437709,\"sales_baskets_c1\":956681,\"sales_baskets_c2\":1085905,\"sales_baskets_pct\":-0.11900120176258512,\"sales_sales_psw_c1\":17.458309856433612,\"sales_sales_psw_c2\":19.497799481964091,\"sales_sales_psw_pct\":-0.10460101548469883,\"sales_sales_pt_c1\":4.7221587446599687,\"sales_sales_pt_c2\":4.4296016962810034,\"sales_sales_pt_pct\":0.066045903997325475}]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Metadata",
+			"item": [
+				{
+					"name": "Metrics",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-20.05",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"metrics:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                }\n            ]\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/metrics:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-20.05",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"metrics:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 27 Feb 2024 18:08:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2768"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"fact\":\"sales\",\"fact_label\":\"Sales\",\"metric\":\"sales\",\"label\":\"Sales $\",\"format\":\"MasterCard\",\"report_guide\":\"Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates.\"}]"
+						},
+						{
+							"name": "Grid - Sales Trends",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"psku\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"20652804\",\r\n                        \"01911901\"\r\n                    ],\r\n                    \"path\": \"\"\r\n                }\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"sku\",\r\n                \"itemdesc\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"product\": [\r\n                    \"sku\",\r\n                    \"itemdesc\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                },\r\n                {\r\n                    \"value\": \"baskets\"\r\n                },\r\n                {\r\n                    \"value\": \"sales_psw\"\r\n                },\r\n                {\r\n                    \"value\": \"sales_pt\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"pct\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"scr:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 Apr 2024 15:54:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "415"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"sku_product\":\"20652804\",\"itemdesc_product\":\"KLG FROSTED FLAKES 17.3OZ\",\"sales_sales_c1\":2838614.5200000005,\"sales_sales_c2\":422602.12000000005,\"sales_sales_pct\":5.7169907240408548,\"sales_baskets_c1\":525293,\"sales_baskets_c2\":83502,\"sales_baskets_pct\":5.2907834542885199,\"sales_sales_psw_c1\":11.124100212793474,\"sales_sales_psw_c2\":4.7167520871467481,\"sales_sales_psw_pct\":1.3584237643328527,\"sales_sales_pt_c1\":5.4038689264848392,\"sales_sales_pt_c2\":5.0609820124068889,\"sales_sales_pt_pct\":0.067751063575679643},{\"sku_product\":\"20652801\",\"itemdesc_product\":\"KLG FROSTED FLAKES FAM\",\"sales_sales_c1\":69.870000000000005,\"sales_sales_c2\":772221.76000000047,\"sales_sales_pct\":-0.99990952080915207,\"sales_baskets_c1\":15,\"sales_baskets_c2\":158511,\"sales_baskets_pct\":-0.99990536934345253,\"sales_sales_psw_c1\":0.44788461538461544,\"sales_sales_psw_c2\":3.5582648763719829,\"sales_sales_psw_pct\":-0.87412836566532393,\"sales_sales_pt_c1\":4.6580000000000004,\"sales_sales_pt_c2\":4.8717234766041502,\"sales_sales_pt_pct\":-0.043870198633097789}]"
+						}
+					]
+				},
+				{
+					"name": "Dimension",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"class\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1142\"\r\n                    ],\r\n                    \"path\": \"\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-20.05",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"dimension:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"class\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1142\"\r\n                    ],\r\n                    \"path\": \"\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/dimension:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-20.05",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"dimension:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 27 Feb 2024 18:08:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"pdiv_product\":\"10\",\"dept_product\": \"100\",\"class_product\": \"1141\",\"psku_product\": \"20652804\",\"sku_product\":\"20652804\"}]"
+						}
+					]
+				},
+				{
+					"name": "Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-20.05",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.momos",
+								"config:json.keyed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-20.05/api/cip.dev.v4_15.misc.rb3.api.momos/config:json.keyed",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-20.05",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.momos",
+										"config:json.keyed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 27 Feb 2024 18:21:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7977"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"map\": {\"default\": {\"global\": {\"root_dir\": \"dg\",\"report\": {\"key_cols\": {\"product\": \"sku\",\"coproduct\": \"sku\",\"product2\": \"upc\",\"storeband\": \"\",\"store\": \"store\",\"supplier\": \"id\",\"trip\": \"trip\",\"pog\": \"pog_id\",\"pogstore\": \"pog_id\",\"pogprodstore\": \"pog_id\",\"time\": \"time\"},\"period_shifts\": {\"bop\": \"-1\",\"bop_lw\": \"\",\"eop\": \"0\",\"eop_lw\": \"\"},\"metric_labels\": {\"curr\": \"Curr. Per.`\",\"comp\": \"Comp. Per.`\",\"start\": \"Start\",\"end\": \"End\",\"pct\": \"% Chg`\",\"bc\": \"BP Chg`\",\"cs\": \"Comp Store`\",\"ncs\": \"Non-Comp Store`\",\"total\": \"Total\"},\"pog\": {\"salespog_dual_located_items\": \"1\"},\"link_fill\": {\"i\": \"0\",\"f\": \"0\",\"j\": \"0\"},\"misc\": {\"qd_currdate_logic\": \"1\",\"calendar_static\": \"1\"}},\"limits\": {\"calendar_multi\": \"0\",\"post_analyze\": {\"max_post_ops\": \"5\",\"rowcopylimit\": \"1000\",\"colcopylimit\": \"1000\",\"tablecopylimit\": \"1000\"}}},\"fact\": {\"dimbase\": {\"path\": \"dg.misc.sku_upc_mapping\"},\"ownitems\": {\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"compstore\": {\"path\": \"\",\"suffix\": \"_compstore\",\"cols\": {\"compstore_tycomp\": \"\",\"compstore_lycomp\": \"\",\"compstore_l2ycomp\": \"\"}},\"samestore\": {\"suffix\": \"\"},\"pogstore\": {\"path\": \"dg.misc.pog.pogstores\",\"suffix\": \"_pogstore\",\"key_col\": \"pog_id\",\"cols\": {\"pogstore_link\": \"\",\"pogstore_store\": \"store_num\",\"pogstore_ass_count\": \"association_count\",\"pogstore_eff_from\": \"effective_from\",\"pogstore_eff_to\": \"effective_to\"},\"link\": {\"pog\": {\"col\": \"pog_id_pog\",\"col2\": \"pog_id_pogstore\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_num_pogstore\"}}},\"pogprodstore\": {\"path\": \"dg.misc.pog.pogstorebase\",\"suffix\": \"_pogprodstore\",\"key_col\": \"pog_id\",\"cols\": {\"pogprodstore_link\": \"\",\"pogprodstore_product\": \"sku\",\"pogprodstore_store\": \"store_num\",\"pogprodstore_eff_from\": \"effective_from\",\"pogprodstore_eff_to\": \"effective_to\"},\"link\": {\"pog\": {\"col\": \"pog_id_pog\",\"col2\": \"pog_id_pogprodstore\"},\"pogstore\": {\"col\": \"store_num_pogstore\",\"col2\": \"store_num_pogprodstore\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_pogprodstore\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_num_pogprodstore\"}}},\"datesloaded\": {\"cols\": {\"sales_date\": \"date\",\"salestrip_date\": \"date\",\"pickup_date\": \"date\",\"store_inventory_date\": \"date\",\"dc_inventory_date\": \"date\",\"salespog_date\": \"date\",\"receipts_date\": \"date\"}},\"sales\": {\"path\": \"dg.item\",\"dates_loaded_path\": \"dg.misc.ref.dates_archive\",\"suffix\": \"_sales\",\"link\": {\"calendar\": {\"col\": \"date_sales\",\"col2\": \"date_calendar\"},\"product\": {\"col\": \"sku_sales\",\"col2\": \"sku_product\"},\"product2\": {\"col\": \"upc_sales\",\"col2\": \"upc_upc\"},\"coproduct\": {\"col\": \"sku_sales\",\"col2\": \"sku_coprod\"},\"storeband\": {\"col\": \"class_sales,store_sales\",\"col2\": \"class_storeband,store_storeband\"},\"store\": {\"col\": \"store_sales\",\"col2\": \"store_store\"},\"trip\": {\"col\": \"trip_sales\",\"col2\": \"trip_trip\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_sales\",\"col2\": \"store_compstore\"}},\"cols\": {\"cost\": \"cost\",\"date\": \"date\",\"sales\": \"sales\",\"sku\": \"sku\",\"store\": \"store\",\"trans\": \"transid\",\"units\": \"units\",\"xpluprice\": \"xpluprice\"}},\"sales2\": {\"path\": \"dg.item\",\"suffix\": \"_sales2\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_sales2\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_sales2\"},\"product2\": {\"col\": \"upc_upc\",\"col2\": \"upc_sales2\"},\"storeband\": {\"col\": \"class_storeband,store_storeband\",\"col2\": \"class_sales2,store_sales2\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_sales2\"},\"trip\": {\"col\": \"trip_trip\",\"col2\": \"trip_sales2\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_compstore\",\"col2\": \"store_sales2\"},\"time\": {\"col\": \"time_time\",\"col2\": \"time_sales2\"}},\"cols\": {\"sales2_cost\": \"cost\",\"sales2_date\": \"date\",\"sales2_sales\": \"sales\",\"sales2_sku\": \"sku\",\"sales2_store\": \"store\",\"sales2_trans\": \"transid\",\"sales2_units\": \"units\",\"sales2_xpluprice\": \"xpluprice\"}},\"salestrip\": {\"path\": \"dg.item\",\"suffix\": \"_sales\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_sales\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_sales\"},\"product2\": {\"col\": \"upc_upc\",\"col2\": \"upc_sales\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_sales\"},\"trip\": {\"col\": \"trip_trip\",\"col2\": \"trip_sales\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_compstore\",\"col2\": \"store_sales\"}},\"cols\": {\"salestrip_cost\": \"cost\",\"salestrip_date\": \"date\",\"salestrip_sales\": \"sales\",\"salestrip_sku\": \"sku\",\"salestrip_store\": \"store\",\"salestrip_trans\": \"transid\",\"salestrip_units\": \"units\",\"salestrip_xpluprice\": \"xpluprice\"}},\"salespog\": {\"path\": \"dg.misc.pog.pog_store_sku\",\"suffix\": \"_salespog\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"fwkended_salespog\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"psku_pm_salespog\"},\"product2\": {\"col\": \"\",\"col2\": \"\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_num_salespog\"},\"trip\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"pog\": {\"col\": \"pog_id_pog\",\"col2\": \"pog_id_salespog\"},\"pogstore\": {\"col\": \"pog_id_pogstore,store_num_pogstore\",\"col2\": \"pog_id_salespog,store_num_salespog\"}},\"cols\": {\"salespog_date\": \"fwkended\",\"salespog_width\": \"width\",\"salespog_sales\": \"sales\",\"salespog_units\": \"units\",\"salespog_cost\": \"cost\",\"salespog_xpluprice\": \"xpluprice\",\"salespog_product\": \"psku_pm\",\"salespog_stores\": \"store_num\",\"salespog_stores_selling\": \"store_sold\",\"salespog_shrink\": \"shrnk_retail\",\"salespog_mrkd\": \"mrdwn_retail\",\"salespog_dmg\": \"dmg_retail\",\"salespog_rbt\": \"rbt_mrdwn_retail\"}},\"pickup\": {\"path\": \"dg.cip.storepickup_item\",\"suffix\": \"_pickup\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_pickup\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_pickup\"},\"product2\": {\"col\": \"upc_upc\",\"col2\": \"upc_pickup\"},\"coproduct\": {\"col\": \"sku_coprod\",\"col2\": \"sku_pickup\"},\"storeband\": {\"col\": \"class_storeband,store_storeband\",\"col2\": \"class_pickup,store_pickup\"},\"storedecile\": {\"col\": \"class_storedecile,store_storedecile\",\"col2\": \"class_pickup,store_pickup\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_pickup\"},\"trip\": {\"col\": \"trip_trip\",\"col2\": \"trip_pickup\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_compstore\",\"col2\": \"store_pickup\"}},\"cols\": {\"pickup_cost\": \"cost\",\"pickup_date\": \"date\",\"pickup_sales\": \"sales\",\"pickup_sku\": \"sku\",\"pickup_store\": \"store\",\"pickup_trans\": \"transid\",\"pickup_units\": \"units\",\"pickup_xpluprice\": \"xpluprice\"}},\"dc_inventory\": {\"path\": \"dg.dcperpinv\",\"suffix\": \"_dcinv\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_dcinv\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_dcinv\"},\"coproduct\": {\"col\": \"sku_product\",\"col2\": \"sku_dcinv\"},\"product2\": {\"col\": \"\",\"col2\": \"\"},\"store\": {\"col\": \"dc_store\",\"col2\": \"dc_dcinv\"},\"trip\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"pog\": {\"col\": \"\",\"col2\": \"\"}},\"cols\": {\"dc_inventory_date\": \"date\",\"dc_inventory_dc\": \"dc\",\"dc_inventory_sku\": \"sku\",\"dc_inventory_units\": \"units\",\"dc_inventory_xretail\": \"xretail\",\"dc_inventory_intrans_units\": \"\",\"dc_inventory_oo_units\": \"\"}},\"wkdmdxouts\": {\"path\": \"dg.cip.WKDmdXouts\",\"suffix\": \"_wkdmdxouts\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"wkend_wkdmdxouts\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"sku_wkdmdxouts\"},\"coproduct\": {\"col\": \"sku_product\",\"col2\": \"sku_wkdmdxouts\"},\"product2\": {\"col\": \"\",\"col2\": \"\"},\"store\": {\"col\": \"dc_store\",\"col2\": \"dc_wkdmdxouts\"},\"trip\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"pog\": {\"col\": \"\",\"col2\": \"\"}},\"cols\": {\"wkdmdxouts_date\": \"wkend\",\"wkdmdxouts_dc\": \"dc\",\"wkdmdxouts_sku\": \"sku\",\"wkdmdxouts_units\": \"\",\"wkdmdxouts_xretail\": \"\"}},\"store_inventory\": {\"path\": \"dg.storeperpinv\",\"dates_loaded_path\": \"dg.misc.ref.invdates\",\"suffix\": \"_store_inventory\",\"link\": {\"calendar\": {\"col\": \"date_store_inventory\",\"col2\": \"date_calendar\"},\"product\": {\"col\": \"sku_store_inventory\",\"col2\": \"sku_product\"},\"coproduct\": {\"col\": \"sku_store_inventory\",\"col2\": \"sku_coproduct\"},\"product2\": {\"col\": \"\",\"col2\": \"\"},\"storeband\": {\"col\": \"class_store_inventory,store_store_inventory\",\"col2\": \"class_storeband,store_storeband\"},\"store\": {\"col\": \"store_store_inventory\",\"col2\": \"store_store\"},\"trip\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"\",\"col2\": \"\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_store_inventory\",\"col2\": \"store_compstore\"}},\"cols\": {\"cost\": \"\",\"date\": \"date\",\"sku\": \"sku\",\"store\": \"store\",\"units\": \"units\",\"intrans_units\": \"transitunits\",\"oo_units\": \"\",\"xretail\": \"xretail\"}},\"receipts\": {\"path\": \"dg.misc.receipts\",\"suffix\": \"_receipts\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_receipts\"},\"product\": {\"col\": \"sku_product\",\"col2\": \"psku_receipts\"},\"product2\": {\"col\": \"\",\"col2\": \"\"},\"store\": {\"col\": \"store_store\",\"col2\": \"dest_receipts\"},\"trip\": {\"col\": \"\",\"col2\": \"\"},\"supplier\": {\"col\": \"id_vendor\",\"col2\": \"vendor_receipts\"},\"pog\": {\"col\": \"\",\"col2\": \"\"},\"compstore\": {\"col\": \"store_compstore\",\"col2\": \"dest_receipts\"}},\"cols\": {\"receipts_date\": \"date\",\"receipts_store\": \"dest\",\"receipts_sku\": \"psku\",\"receipts_units\": \"units\",\"receipts_cost\": \"xcost\",\"receipts_retail\": \"xretail\"}},\"pvt\": {\"path\": \"dg.misc.apv_summary_table\",\"suffix\": \"_sm\",\"link\": {\"calendar\": {\"col\": \"date_calendar\",\"col2\": \"date_adj_sm\"},\"product\": {\"col\": \"psku_product\",\"col2\": \"psku_sm\"},\"store\": {\"col\": \"store_store\",\"col2\": \"store_sm\"}},\"cols\": {\"pvt_date\": \"date_adj\",\"pvt_sku\": \"psku\",\"pvt_store\": \"store\"}},\"pds\": {\"path\": \"dg.pds\"},\"pdi\": {\"path\": \"dg.pdi\"},\"bfa\": {\"path\": \"dg.cip.qfs_summary\",\"cols\": {\"bfa_date\": \"date\",\"bfa_trans\": \"date\",\"bfa_sales_pt\": \"total_avg_basket_sales\",\"bfa_units_pt\": \"total_avg_basket_units\"}},\"report\": {\"cols\": {\"report_cat\": \"class\"}},\"users\": {\"path\": \"dg.cip.users\"}},\"dimension\": {\"product\": {\"path\": \"dg.products\",\"suffix\": \"_product\",\"key_col\": \"sku\",\"cols\": {\"product_link\": \"\",\"product_filter_vend\": \"company\",\"product_filter_cat\": \"class\"},\"surrkeys\": {},\"hiers\": [[\"pdiv\",\"dept\",\"class\",\"psku\",\"sku\"],[\"buyer\"]],\"descs\": {\"pdiv\": [\"pdivdesc\"],\"dept\": [\"deptdesc\"],\"class\": [\"classdesc\"],\"psku\": [\"pskudesc\"],\"sku\": [\"itemdesc\"]},\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"}]},\"coproduct\": {\"path\": \"dg.products\",\"suffix\": \"_coprod\",\"key_col\": \"sku\",\"cols\": {\"coproduct_link\": \"\",\"coproduct_filter_vend\": \"company\",\"coproduct_filter_cat\": \"class\"},\"surrkeys\": {},\"descs\": {\"pdiv\": [\"pdivdesc\"],\"dept\": [\"deptdesc\"],\"class\": [\"classdesc\"],\"psku\": [\"pskudesc\"],\"sku\": [\"itemdesc\"]},\"checkboxes\": [{\"name\": \"pl_coprod\",\"value\": \"contains(brandtype_coprod;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_coprod\"}]},\"product2\": {\"path\": \"dg.misc.upcs\",\"suffix\": \"_upc\",\"key_col\": \"upc\",\"cols\": {\"product2_link\": \"\"},\"surrkeys\": {},\"descs\": {\"upc\": [\"itemdesc\"]},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"storeband\": {\"path\": \"dgwfprod.storeclassband\",\"suffix\": \"_storeband\",\"key_col\": \"\",\"cols\": {\"storeband_link\": \"\"},\"surrkeys\": {},\"descs\": {},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"store\": {\"path\": \"dg.stores\",\"suffix\": \"_store\",\"key_col\": \"store\",\"cols\": {\"store_link\": \"\",\"store_compdate\": \"compeffdate\",\"store_lycompdate\": \"pycompeffdate\",\"store_l2ycompdate\": \"\",\"store_opendate\": \"\",\"store_closedate\": \"\",\"store_state\": \"state\",\"store_dc\": \"dc\"},\"surrkeys\": {},\"hiers\": [[\"sdiv\",\"region\",\"district\",\"store\"],[\"state\",\"city\"],[\"dc\"]],\"descs\": {\"sdiv\": [\"sdivmgr\"],\"region\": [\"regmgr\"],\"district\": [\"distmgr\"],\"store\": [\"state\",\"city\",\"addr\"],\"dc\": [\"dccity\"]},\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1\"}]},\"supplier\": {\"path\": \"dg.misc.vendors\",\"suffix\": \"_vendor\",\"key_col\": \"id\",\"cols\": {\"supplier_link\": \"\"},\"surrkeys\": {},\"descs\": {\"id\": [\"name\"]},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"trip\": {\"path\": \"dg.misc.tripmst\",\"suffix\": \"_trip\",\"key_col\": \"trip\",\"cols\": {\"trip_link\": \"\"},\"surrkeys\": {},\"descs\": {\"trip\": [\"tripdesc\"]},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"pog\": {\"path\": \"dg.misc.pog.pogs\",\"suffix\": \"_pog\",\"key_col\": \"pog_id\",\"cols\": {\"pog_link\": \"\",\"pog_width\": \"width\",\"pog_name\": \"pog_name\",\"pog_eff_from\": \"effective_from\",\"pog_eff_to\": \"effective_to\"},\"surrkeys\": {},\"descs\": {},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]},\"calendar\": {\"path\": \"dg.misc.cal\",\"suffix\": \"_calendar\",\"cols\": {\"date\": \"date\",\"day\": \"fwkdaynum\",\"week\": \"fweek\",\"month\": \"fmonth\",\"quarter\": \"fqtr\",\"year\": \"fyear\"},\"surrkeys\": {},\"descs\": {\"fyear\": [\"fyear_desc\"],\"fqtr\": [\"fqtr_desc\"],\"fmonth\": [\"fmonth_desc\"],\"fweek\": [\"fweek_desc\"],\"fwkdaynum\": [\"day\"],\"date\": [\"date_desc\"]}},\"time\": {\"path\": \"dg.cip.day_part\",\"suffix\": \"_time\",\"key_col\": \"time\",\"cols\": {\"time_link\": \"\"},\"surrkeys\": {},\"descs\": {},\"checkboxes\": [{\"name\": \"\",\"value\": \"\",\"checklist\": \"\",\"checked\": \"\"}]}},\"cube\": {\"pcs\": {\"path\": \"dg.pcs\",\"date_col\": \"per_end\",\"product_breaks\": [\"pdiv_product\",\"dept_product\",\"class_product\",\"psku_product\",\"sku_product\"],\"product_breaks_titles\": [\"Division\",\"Department\",\"Class\",\"Primary SKU\",\"Item SKU\"],\"load\": {\"date_shift\": \"-1\",\"min\": {\"daily\": {\"days\": \"-7\",\"pct\": \"97.5\"},\"history\": {\"days\": \"-7\",\"pct\": \"97.5\"}}},\"build_l52_weeks\": \"0\"},\"pcss\": {\"path\": \"dg.pcss\",\"date_col\": \"per_end\",\"product_breaks\": [\"pdiv_product\",\"dept_product\",\"class_product\"],\"store_breaks\": [\"sdiv_store\",\"region_store\",\"district_store\"],\"product_cube_rollup_cols\": [],\"store_cube_rollup_cols\": [\"sdiv_store\",\"region_store\",\"district_store\"],\"load\": {\"date_shift\": \"-1\",\"min\": {\"daily\": {\"days\": \"-7\",\"pct\": \"97.5\"},\"history\": {\"days\": \"-7\",\"pct\": \"97.5\"}}}}}},\"unknown\": {\"dim_titles\": \"Calendar,Time,POG,Trip,Product,UPC,Co-Product,Store,Store Band,Vendor\",\"dim_types\": \"calendar,time,pog,trip,product,product2,coproduct,store,storeband,supplier\",\"dimbase_types\": \"product,product2\",\"product_dd_default_titles\": \"All Products,#hier_insert#,Custom Product Hierarchy,Manual Product Entry,Custom Product List\",\"product_dd_default_names\": \"all,#hier_insert#,ch,me,cl\",\"product_hier_by\": \"Product Master Hierarchy|Buyer\",\"product_hier_titles\": \"Division,Department,Class,Primary SKU,Item SKU|Buyer\",\"product_hier_cols\": \"pdiv_product,dept_product,class_product,psku_product,sku_product|buyer_product\",\"product_customs_titles\": \"Department,Class,Primary SKU,Item SKU|Class,PSKU,SKU\",\"product_customs_params\": \"dept,class,psku,sku|class,psku,sku\",\"product_checkbox_titles\": \"Private Label Only|Own Items Only|All Inventory Types|NCI Items Only\",\"product_breaks\": \"pdiv_product,dept_product,class_product,psku_product,sku_product\",\"product_breaks_default\": \"\",\"product_filter_ownitems_path\": \"dg.cip.companysku\",\"product_filter_cat_path\": \"dg.cip.companyclass\",\"product_filter_cat_col_desc\": \"classdesc\",\"product_hier_rmv\": \"\",\"coproduct_dd_default_titles\": \"All Products,#hier_insert#,Custom Product Hierarchy,Manual Product Entry,Custom Product List\",\"coproduct_dd_default_names\": \"all,#hier_insert#,ch,me,cl\",\"coproduct_hier_by\": \"Product Master Hierarchy|Buyer\",\"coproduct_hier_titles\": \"Division,Department,Class,Primary SKU,Item SKU|Buyer\",\"coproduct_hier_cols\": \"pdiv_coprod,dept_coprod,class_coprod,psku_coprod,sku_coprod|buyer_coprod\",\"coproduct_customs_titles\": \"Department,Class,Primary SKU,Item SKU|Class,PSKU,SKU\",\"coproduct_customs_params\": \"dept,class,psku,sku|class,psku,sku\",\"coproduct_checkbox_titles\": \"Private Label Only|Own Items Only|All Inventory Types\",\"coproduct_breaks\": \"pdiv_coprod,dept_coprod,class_coprod,psku_coprod,sku_coprod,invtype_coprod,casepack_coprod\",\"coproduct_breaks_default\": \"\",\"coproduct_filter_ownitems_path\": \"dg.cip.companysku\",\"coproduct_filter_cat_path\": \"dg.cip.companyclass\",\"coproduct_filter_cat_col_desc\": \"classdesc\",\"coproduct_hier_rmv\": \"\",\"product2_dd_default_titles\": \"All UPCs,Custom UPC Hierarchy,Manual UPC Entry,Custom UPC List\",\"product2_dd_default_names\": \"all,ch,me,cl\",\"product2_hier_by\": \"\",\"product2_hier_titles\": \"\",\"product2_hier_cols\": \"upc_upc\",\"product2_customs_titles\": \"UPC|UPC\",\"product2_customs_params\": \"upc|upc\",\"product2_checkbox_titles\": \"\",\"product2_breaks\": \"upc_upc\",\"product2_breaks_default\": \"\",\"product2_hier_rmv\": \"\",\"storeband_dd_default_titles\": \"All Store Bands,#hier_insert#,Manual Store Band Entry\",\"storeband_dd_default_names\": \"all,#hier_insert#,me\",\"storeband_hier_by\": \"Store Band Master Hierarchy\",\"storeband_hier_titles\": \"Band,Class,Store\",\"storeband_hier_cols\": \"band_storeband,class_storeband,store_storeband\",\"storeband_hier_rmv\": \"\",\"storeband_customs_titles\": \"\",\"storeband_customs_params\": \"\",\"storeband_checkbox_titles\": \"\",\"storeband_breaks\": \"band_storeband\",\"storeband_breaks_default\": \"\",\"store_dd_default_titles\": \"All Stores,#hier_insert#,Custom Store Hierarchy,Manual Store Entry,Custom Store List\",\"store_dd_default_names\": \"all,#hier_insert#,ch,me,cl\",\"store_hier_by\": \"Store Master Hierarchy|State/City|Distribution Center\",\"store_hier_titles\": \"Division,Region,District,Store|State,City|Distribution Center\",\"store_hier_cols\": \"sdiv_store,region_store,district_store,store_store|state_store,city_store|dc_store\",\"store_customs_titles\": \"Store,DC|Store,State,DC\",\"store_customs_params\": \"store,dc|store,state,dc\",\"store_checkbox_titles\": \"All Store Formats\",\"store_breaks\": \"sdiv_store,region_store,district_store,store_store,format_store,state_store,city_store,dc_store,zip_store,fresh_dc_store\",\"store_breaks_default\": \"\",\"store_hier_rmv\": \"\",\"compstore_title\": \"Comp Store Only\",\"compstore_mode\": \"\",\"samestore_title\": \"\",\"store_dc_col_desc\": \"dccity\",\"store_filter_path\": \"\",\"supplier_dd_default_titles\": \"All Vendors,#hier_insert#,Manual Vendor Entry\",\"supplier_dd_default_names\": \"all,#hier_insert#,me\",\"supplier_hier_by\": \"Vendor Master Hierarchy\",\"supplier_hier_titles\": \"Vendor\",\"supplier_hier_cols\": \"id_vendor\",\"supplier_customs_titles\": \"Vendor|\",\"supplier_customs_params\": \"id|\",\"supplier_checkbox_titles\": \"\",\"supplier_breaks\": \"id_vendor\",\"supplier_breaks_default\": \"\",\"supplier_hier_rmv\": \"\",\"trip_dd_default_titles\": \"All Trips,Custom Trip Hierarchy,Manual Trip Entry,Custom Trip List\",\"trip_dd_default_names\": \"all,ch,me,cl\",\"trip_hier_by\": \"\",\"trip_hier_titles\": \"\",\"trip_hier_cols\": \"trip_trip\",\"trip_customs_titles\": \"Trip|Trip\",\"trip_customs_params\": \"trip|trip\",\"trip_checkbox_titles\": \"\",\"trip_breaks\": \"trip_trip\",\"trip_breaks_default\": \"\",\"trip_hier_rmv\": \"\",\"pog_dd_default_titles\": \"All Planograms,#hier_insert#,Custom Planogram Hierarchy,Manual Planogram Entry,Custom Planogram List\",\"pog_dd_default_names\": \"all,#hier_insert#,ch,me,cl\",\"pog_hier_by\": \"POG Master Hierarchy\",\"pog_hier_titles\": \"Core Indx.,Division,Dept,Category,Sub-Cat.,POG Name,Planogram ID\",\"pog_hier_cols\": \"hier_node_1_pog,hier_node_2_pog,hier_node_3_pog,hier_node_4_pog,subcategory_pog,pog_name_pog,pog_id_pog\",\"pog_customs_titles\": \"POG ID,POG Division,POG Department,POG Category,POG Subcategory,POG Name|POG ID\",\"pog_customs_params\": \"pog_id,hier_node_2,hier_node_3,hier_node_4,subcategory,pog_name|pog_id\",\"pog_checkbox_titles\": \"\",\"pog_breaks\": \"hier_node_1_pog,hier_node_2_pog,hier_node_3_pog,hier_node_4_pog,subcategory_pog,pog_name_pog,pog_id_pog,effective_from_pog,effective_to_pog,base_cat_pog,macro_cat_pog\",\"pog_breaks_default\": \"\",\"pog_hier_rmv\": \"\",\"calendar_breaks\": \"fyear_cal,fqtr_cal,fmonth_cal,fweek_cal,date_cal,fwkdaynum_cal\",\"calendar_breaks_default\": \"\",\"calendar_cols_ly\": \"1\",\"calendar_start_of_ad_week_logic\": \"1\",\"calendar_start_of_week_logic\": \"7\",\"calendar_promo_path\": \"\",\"calendar_promo_start\": \"\",\"calendar_promo_end\": \"\",\"calendar_promo_desc\": \"\",\"calendar_static\": \"0\",\"calendar_qd_default\": \"\",\"calendar_qd_rmv\": \"\",\"datesloaded_salestrip_path\": \"dg.misc.ref.dates\",\"datesloaded_pickup_path\": \"dg.misc.ref.dates\",\"datesloaded_dc_inventory_path\": \"dg.misc.ref.invdates\",\"datesloaded_salespog_path\": \"dg.misc.ref.pogdates\",\"datesloaded_receipts_path\": \"dg.misc.ref.receiptdates\",\"datesloaded_pcs_path\": \"dg.misc.ref.pcs_dl\",\"datesloaded_pcss_path\": \"dg.misc.ref.pcss_dl\",\"sales_promo_expr\": \"0\",\"sales_metric_tcols\": \"sales,sum,sales,sales sales_pt avgretail sales_psw_lb sales_psw,|units,sum,units,units units_pt avgretail avgplu units_psw_lb units_psw,|trans,ucnte,transid,trans sales_pt units_pt,|stores,ucnt,store,stores sales_psw units_psw,sales_psw_lb units_psw_lb|xpluprice,sum,xpluprice,avgplu,\",\"sales_metric_willbes\": \"sales,sales,Sales $,dec:2,0,0|units,units,Units,dec:0,0,0|trans,trans,Baskets,dec:0,0,0|stores,stores,Stores,dec:0,0,0|avgplu,xpluprice/units,Avg. PLU`Price,dec:2,0,0|sales_psw_lb,sales/(stores_lb*daycnt_cal/7),Sales/`Store/`Week,dec:2,0,0|units_psw_lb,units/(stores_lb*daycnt_cal/7),Units/`Store/`Week,dec:2,0,0|sales_psw,sales/(stores*weeks),Sales/`Store/`Week,dec:2,0,0|units_psw,units/(stores*weeks),Units/`Store/`Week,dec:2,0,0|sales_pt,sales/trans,Sales $`/Basket,dec:2,0,NA|units_pt,units/trans,Units`/Basket,dec:2,0,NA|avgretail,sales/units,Avg Retail,dec:2,0,0\",\"sales2_promo_expr\": \"0\",\"sales2_metric_tcols\": \"sales,sum,sales,sales sales_pt avgretail sales_psw_lb sales_psw,|units,sum,units,units units_pt avgretail avgplu units_psw_lb units_psw,|trans,ucnte,transid,trans sales_pt units_pt,|stores,ucnt,store,stores sales_psw units_psw,sales_psw_lb units_psw_lb|xpluprice,sum,xpluprice,avgplu,\",\"sales2_metric_willbes\": \"sales,sales,Sales $,dec:2,0,0|units,units,Units,dec:0,0,0|trans,trans,Baskets,dec:0,0,0|stores,stores,Stores,dec:0,0,0|avgplu,xpluprice/units,Avg. PLU`Price,dec:2,0,0|sales_psw_lb,sales/(stores_lb*daycnt_cal/7),Sales/`Store/`Week,dec:2,0,0|units_psw_lb,units/(stores_lb*daycnt_cal/7),Units/`Store/`Week,dec:2,0,0|sales_psw,sales/(stores*weeks),Sales/`Store/`Week,dec:2,0,0|units_psw,units/(stores*weeks),Units/`Store/`Week,dec:2,0,0|sales_pt,sales/trans,Sales $`/Basket,dec:2,0,NA|units_pt,units/trans,Units`/Basket,dec:2,0,NA|avgretail,sales/units,Avg Retail,dec:2,0,0\",\"salestrip_promo_expr\": \"0\",\"salestrip_metric_tcols\": \"sales,sum,sales,sales sales_pt avgretail sales_psw_lb sales_psw,|units,sum,units,units units_pt avgretail avgplu units_psw_lb units_psw,|trans,ucnte,transid,trans sales_pt units_pt,|stores,ucnt,store,stores sales_psw units_psw,sales_psw_lb units_psw_lb|xpluprice,sum,xpluprice,avgplu,\",\"salestrip_metric_willbes\": \"sales,sales,Sales $,dec:2,0,0|units,units,Units,dec:0,0,0|trans,trans,Baskets,dec:0,0,0|stores,stores,Stores,dec:0,0,0|avgplu,xpluprice/units,Avg. PLU`Price,dec:2,0,0|sales_psw_lb,sales/(stores_lb*daycnt_cal/7),Sales/`Store/`Week,dec:2,0,0|units_psw_lb,units/(stores_lb*daycnt_cal/7),Units/`Store/`Week,dec:2,0,0|sales_psw,sales/(stores*weeks),Sales/`Store/`Week,dec:2,0,0|units_psw,units/(stores*weeks),Units/`Store/`Week,dec:2,0,0|sales_pt,sales/trans,Sales $`/Basket,dec:2,0,NA|units_pt,units/trans,Units`/Basket,dec:2,0,NA|avgretail,sales/units,Avg Retail,dec:2,0,0\",\"pickup_promo_expr\": \"0\",\"pvtlist_params\": \"dgdev.build.shelf_monitor.product_list,psku\",\"report_launcher_rmv\": \"report:|saved:\",\"report_ownitems_filter\": \"1\",\"report_link_fill\": \"i:|f:|j:\",\"report_menu_excl\": \"\",\"report_addsaved_dirs\": \"\",\"report_xlsx_header\": \"\",\"report_queue_limits\": \"0\",\"report_queue_days_history\": \"56\",\"report_sched_autoversion\": \"0\",\"report_attr_autolink\": \"1\",\"cm_pds_metrics\": \"pds,sales,Sales $,sales,grid trend bar gauge;pds,units,Units,units,grid trend bar gauge;\",\"cm_pdi_metrics\": \"pdi,store_inv_xretail,Store Inv.`Ext. Retail,sales,trend grid;pdi,store_inv_units,Store Inv.`Units,units,trend grid;\",\"admin_ftp_server\": \"\",\"pog_dims_contain_history\": \"0\",\"prt_default_weeks\": \"12\",\"prt_max_weeks\": \"26\",\"prt_metrics\": \"salespog_sales_psw,salespog_units_psw,salespog_imud_psw,salespog_imup,salespog_avgretail,salespog_stores\",\"tp_metrics\": \"salespog_sales_psw,salespog_units_psw,salespog_sales_psy_fourft,salespog_units_psy_fourft,salespog_ass_count_width,salespog_stores,salespog_weeks\",\"tp_metrics_cdl_f\": \"salespog_sales_psy_fourft,salespog_units_psy_fourft,salespog_imud_psy_fourft,salespog_imup_psy_fourft,salespog_sales_psw,salespog_units_psw,salespog_sales_psy,salespog_units_psy\",\"tp_metrics_rank\": \"salespog_sales_psy_fourft,salespog_units_psy_fourft\",\"tp_colors\": \"#6699FF,#FFF3C4,#EF7677\",\"tier_map_path\": \"dg.cip.vend_level\",\"tier_memory_limits\": \"x1010data/61440,32212254720|internal/61440,32212254720|internalplus/61440,32212254720|basic/61440,32212254720|basiclite/61440,32212254720|basicplus/61440,32212254720|bronze/61440,32212254720|bronzeplus/61440,32212254720|silver/61440,32212254720|silverplus/61440,32212254720|gold/61440,32212254720|goldplus/61440,32212254720|platinum/61440,32212254720|platinumplus/61440,32212254720|custom/61440,32212254720|customplus/61440,32212254720\",\"tier_sls_limits\": \"x1010data/svdrpt_max:100,sched_max:100,sched_multi:0,sched_dailylimit:7|internal/svdrpt_max:100,sched_max:100,sched_multi:0,sched_dailylimit:7|custom/svdrpt_max:10,sched_max:0,sched_multi:0,sched_dailylimit:0/millercoors:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/ab:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/scj:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0|platinum/svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:7/dpsg:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/jj:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/nestleusa:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/nestlepurina:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/nestlepurinaplatinum:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0|gold/svdrpt_max:10,sched_max:0,sched_multi:0,sched_dailylimit:0/campbellgold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/unilevergold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/mondelezgold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/scjgold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/pepsicogold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/nestlepurinagold:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/pggold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/nestleusagold:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/cloroxgold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/kellogggold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/kraftgold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/marspetcaregold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/wrigleygold:svdrpt_max:20,sched_max:2,sched_multi:0,sched_dailylimit:0/drpeppergold:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0/johnsonjohnsongold:svdrpt_max:20,sched_max:8,sched_multi:0,sched_dailylimit:0|silver/svdrpt_max:10,sched_max:0,sched_multi:0,sched_dailylimit:0/nam:svdrpt_max:20,sched_max:0,sched_multi:0,sched_dailylimit:0/artskills:svdrpt_max:10,sched_max:4,sched_multi:0,sched_dailylimit:0/mmm:svdrpt_max:30,sched_max:30,sched_multi:0,sched_dailylimit:0/storck:svdrpt_max:10,sched_max:4,sched_multi:0,sched_dailylimit:0|bronze/svdrpt_max:4,sched_max:0,sched_multi:0,sched_dailylimit:0|basic/svdrpt_max:0,sched_max:0,sched_multi:0,sched_dailylimit:0|basiclite/svdrpt_max:0,sched_max:0,sched_multi:0,sched_dailylimit:0|basicplus/svdrpt_max:4,sched_max:0,sched_multi:0,sched_dailylimit:0\",\"time_dd_default_titles\": \"All Times,#hier_insert#,Manual Time Entry\",\"time_dd_default_names\": \"all,#hier_insert#,me\",\"time_hier_by\": \"Day Part Hierarchy\",\"time_hier_titles\": \"Hour,Half Hour,Quarter Hour,Time\",\"time_hier_cols\": \"hour_time,half_hour_time,fifteen_min_time,time_time\",\"time_hier_rmv\": \"\",\"time_customs_titles\": \"\",\"time_customs_params\": \"\",\"time_checkbox_titles\": \"\",\"time_breaks_titles\": \"Hour,Half Hour,Quarter Hour,Time\",\"time_breaks\": \"hour_time,half_hour_time,fifteen_min_time,time_time\",\"time_breaks_default\": \"\",\"custom_theme_colors\": \"\",\"custom_loading_gif_url\": \"\",\"gui_show_save_inherit_checkbox\": \"1\",\"gui_show_type_ch_template_dl\": \"1\",\"gui_show_cdr_template_dl_p\": \"1\",\"gui_show_expand_sku_chkbx\": \"1\",\"report_abx_basket_calculations\": \"0\",\"report_abx_account_specific_metric_calculation\": \"0\",\"report_irs_sel_type_dc_inventory\": \"0\",\"report_irs_total_units_expr\": \"1\",\"apvsc_insert_block_pvt_scorecard\": \"0\",\"apvsc_show_widget_comp_sales_text\": \"1\",\"apvsc_show_widget_comp_sales_grid\": \"1\",\"apvsc_selection_for_dropdown_widget\": \"0\"},\"reports\": {\"str\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"store\": {\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1|nci_store\"}]}}},\"sbi\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"store\": {\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1|nci_store\"}]}}},\"itbis\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"store\": {\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1|nci_store\"}]}}},\"scr\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"store\": {\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1|nci_store\"}]}}},\"rsr\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|invtype_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"store\": {\"checkboxes\": [{\"name\": \"format_store\",\"value\": \"\",\"checklist\": \"1\",\"checked\": \"1|nci_store\"}]}}},\"hstr\": {\"dimension\": {\"sales\": {\"path\": [\"dg.archive.item\"]}}}},\"gids\": {\"silver\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"ownitems\": {\"checkboxes\": [{\"name\": \"own_item_product\",\"value\": \"\",\"checklist\": \"0\",\"checked\": \"0\"}]},\"coproduct\": {\"checkboxes\": [{\"name\": \"pl_coprod\",\"value\": \"contains(brandtype_coprod;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_coprod\"}]}}},\"gold\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"ownitems\": {\"checkboxes\": [{\"name\": \"own_item_product\",\"value\": \"\",\"checklist\": \"0\",\"checked\": \"0\"}]},\"coproduct\": {\"checkboxes\": [{\"name\": \"pl_coprod\",\"value\": \"contains(brandtype_coprod;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_coprod\"}]}}},\"platinum\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"ownitems\": {\"checkboxes\": [{\"name\": \"own_item_product\",\"value\": \"\",\"checklist\": \"0\",\"checked\": \"0\"}]},\"coproduct\": {\"checkboxes\": [{\"name\": \"pl_coprod\",\"value\": \"contains(brandtype_coprod;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_coprod\"}]}}},\"custom\": {\"dimension\": {\"product\": {\"checkboxes\": [{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"},{\"name\": \"pl_product\",\"value\": \"contains(brandtype_product;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_product\"}]},\"ownitems\": {\"checkboxes\": [{\"name\": \"own_item_product\",\"value\": \"\",\"checklist\": \"0\",\"checked\": \"0\"}]},\"coproduct\": {\"checkboxes\": [{\"name\": \"pl_coprod\",\"value\": \"contains(brandtype_coprod;'PRIVATE' 'PL')\",\"checklist\": \"0\",\"checked\": \"0|own_item_coprod\"}]}}},\"bronze\": {\"dimension\": {\"ownitems\": {\"checkboxes\": [{\"name\": \"own_item_product\",\"value\": \"\",\"checklist\": \"0\",\"checked\": \"0\"}]}}},\"vendor_parent_group\": {\"dimension\": {\"sales\": {\"cols\": {\"sales_cost\": \"\"}},\"sales2\": {\"cols\": {\"sales2_cost\": \"\"}},\"salestrip\": {\"cols\": {\"salestrip_cost\": \"\"}},\"salespog\": {\"cols\": {\"salespog_cost\": \"\"}}}}}}}]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
