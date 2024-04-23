@@ -17,7 +17,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw",
+							"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw&=",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -37,6 +37,10 @@
 								{
 									"key": "pw",
 									"value": "my_pw"
+								},
+								{
+									"key": "",
+									"value": ""
 								}
 							]
 						}
@@ -213,7 +217,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"col\": \"own_item\",\r\n            \"ops\": \"=\",\r\n            \"values\": [\r\n                \"1\"\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"own_item\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -300,7 +304,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"01911901\",\n                        \"12040801\"\n                    ]\n                },\n                {\n                    \"col\": \"own_item\",\n                    \"ops\": \"=\",\n                    \"values\": [\n                        \"1\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"psku\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"10207002\",\n                        \"05913301\"\n                    ]\n                },\n                {\n                    \"col\": \"own_item\",\n                    \"ops\": \"=\",\n                    \"values\": [\n                        \"1\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"sku\",\n                \"itemdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"sku\",\n                    \"itemdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"sales_pt\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
