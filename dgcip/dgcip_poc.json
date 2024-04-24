@@ -368,52 +368,6 @@
                     }
                   }
                 },
-                "KPIs Metadata": {
-                  "value": {
-                    "input": {
-                      "dates": [
-                        {
-                          "value": [
-                            [
-                              "l13"
-                            ]
-                          ]
-                        }
-                      ],
-                      "filters": {},
-                      "groups": {
-                        "col": [],
-                        "col_dims": {},
-                        "rollup": {
-                          "col": "0",
-                          "row": "0"
-                        },
-                        "row": [],
-                        "row_dims": {}
-                      },
-                      "metrics": {
-                        "sales": [
-                          {
-                            "value": "sales"
-                          },
-                          {
-                            "value": "units"
-                          },
-                          {
-                            "value": "sales_psw"
-                          },
-                          {
-                            "value": "units_psw"
-                          }
-                        ]
-                      },
-                      "report": {
-                        "chg": "pct",
-                        "sort": "period"
-                      }
-                    }
-                  }
-                },
                 "Line Chart": {
                   "value": {
                     "input": {
@@ -537,7 +491,7 @@
         },
         "responses": {
           "200": {
-            "description": "success response / success response / success response / success response",
+            "description": "success response / success response / success response",
             "headers": {
               "Connection": {
                 "schema": {
@@ -780,6 +734,404 @@
                         "sku_product": "17411303"
                       }
                     ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr/!cols:json": {
+      "post": {
+        "tags": [
+          "Widgets"
+        ],
+        "summary": "KPIs Metadata",
+        "description": "KPIs Metadata",
+        "operationId": "kpisMetadata",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "object",
+                    "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "l13"
+                                },
+                                "example": [
+                                  "l13"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "l13"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "l13"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      "filters": {
+                        "type": "object",
+                        "properties": {}
+                      },
+                      "groups": {
+                        "type": "object",
+                        "properties": {
+                          "col": {
+                            "type": "array",
+                            "items": {},
+                            "example": []
+                          },
+                          "col_dims": {
+                            "type": "object",
+                            "properties": {}
+                          },
+                          "rollup": {
+                            "type": "object",
+                            "properties": {
+                              "col": {
+                                "type": "string",
+                                "example": "0"
+                              },
+                              "row": {
+                                "type": "string",
+                                "example": "0"
+                              }
+                            }
+                          },
+                          "row": {
+                            "type": "array",
+                            "items": {},
+                            "example": []
+                          },
+                          "row_dims": {
+                            "type": "object",
+                            "properties": {}
+                          }
+                        }
+                      },
+                      "metrics": {
+                        "type": "object",
+                        "properties": {
+                          "sales": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string",
+                                  "example": "sales"
+                                }
+                              }
+                            },
+                            "example": [
+                              {
+                                "value": "sales"
+                              },
+                              {
+                                "value": "units"
+                              },
+                              {
+                                "value": "sales_psw"
+                              },
+                              {
+                                "value": "units_psw"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "report": {
+                        "type": "object",
+                        "properties": {
+                          "chg": {
+                            "type": "string",
+                            "example": "pct"
+                          },
+                          "sort": {
+                            "type": "string",
+                            "example": "period"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "KPIs Metadata": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "l13"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {},
+                      "groups": {
+                        "col": [],
+                        "col_dims": {},
+                        "rollup": {
+                          "col": "0",
+                          "row": "0"
+                        },
+                        "row": [],
+                        "row_dims": {}
+                      },
+                      "metrics": {
+                        "sales": [
+                          {
+                            "value": "sales"
+                          },
+                          {
+                            "value": "units"
+                          },
+                          {
+                            "value": "sales_psw"
+                          },
+                          {
+                            "value": "units_psw"
+                          }
+                        ]
+                      },
+                      "report": {
+                        "chg": "pct",
+                        "sort": "period"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 24 Apr 2024 02:27:41 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "desc": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Sum of sales_sales"
+                      },
+                      "example": [
+                        "Sum of sales_sales",
+                        "Sum of units_sales",
+                        "sales_sales / (sales_stores * sales_weeks)",
+                        "sales_units / (sales_stores * sales_weeks)"
+                      ]
+                    },
+                    "fixed": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "example": 0
+                      },
+                      "example": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ]
+                    },
+                    "format": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "type:num;dec:2"
+                      },
+                      "example": [
+                        "type:num;dec:2",
+                        "type:num;dec:0",
+                        "type:num;dec:2",
+                        "type:num;dec:2"
+                      ]
+                    },
+                    "label": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Sales $"
+                      },
+                      "example": [
+                        "Sales $",
+                        "Units",
+                        "Sales/\nStore/\nWeek",
+                        "Units/\nStore/\nWeek"
+                      ]
+                    },
+                    "name": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "sales_sales"
+                      },
+                      "example": [
+                        "sales_sales",
+                        "sales_units",
+                        "sales_sales_psw",
+                        "sales_units_psw"
+                      ]
+                    },
+                    "total": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "nullable": true,
+                        "example": 9773766156.212107
+                      },
+                      "example": [
+                        9773766156.212107,
+                        2991724909,
+                        null,
+                        null
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "f"
+                      },
+                      "example": [
+                        "f",
+                        "f",
+                        "f",
+                        "f"
+                      ]
+                    },
+                    "width": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "example": -1
+                      },
+                      "example": [
+                        -1,
+                        -1,
+                        -1,
+                        -1
+                      ]
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "desc": [
+                        "Sum of sales_sales",
+                        "Sum of units_sales",
+                        "sales_sales / (sales_stores * sales_weeks)",
+                        "sales_units / (sales_stores * sales_weeks)"
+                      ],
+                      "fixed": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "format": [
+                        "type:num;dec:2",
+                        "type:num;dec:0",
+                        "type:num;dec:2",
+                        "type:num;dec:2"
+                      ],
+                      "label": [
+                        "Sales $",
+                        "Units",
+                        "Sales/\nStore/\nWeek",
+                        "Units/\nStore/\nWeek"
+                      ],
+                      "name": [
+                        "sales_sales",
+                        "sales_units",
+                        "sales_sales_psw",
+                        "sales_units_psw"
+                      ],
+                      "total": [
+                        9773766156.212107,
+                        2991724909,
+                        null,
+                        null
+                      ],
+                      "type": [
+                        "f",
+                        "f",
+                        "f",
+                        "f"
+                      ],
+                      "width": [
+                        -1,
+                        -1,
+                        -1,
+                        -1
+                      ]
+                    }
                   }
                 }
               }
