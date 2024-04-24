@@ -16,7 +16,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw",
+							"raw": "https://www2.1010data.com/beta-latest/api/!login?uid=my_uid&pw=my_pw&=",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -36,6 +36,10 @@
 								{
 									"key": "pw",
 									"value": "my_pw"
+								},
+								{
+									"key": "",
+									"value": ""
 								}
 							]
 						}
@@ -349,7 +353,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"col\": \"own_item\",\r\n            \"ops\": \"=\",\r\n            \"values\": [\r\n                \"1\"\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"own_item\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"1\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyear\",\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyear\",\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
