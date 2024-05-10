@@ -392,12 +392,10 @@
                           "row": "0"
                         },
                         "row": [
-                          "fyear",
                           "fweek"
                         ],
                         "row_dims": {
                           "calendar": [
-                            "fyear",
                             "fweek"
                           ]
                         }
@@ -2056,13 +2054,13 @@
               "Content-Length": {
                 "schema": {
                   "type": "string",
-                  "example": "1126"
+                  "example": "1136"
                 }
               },
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Thu, 02 May 2024 19:18:03 GMT"
+                  "example": "Fri, 10 May 2024 03:00:10 GMT"
                 }
               },
               "Keep-Alive": {
@@ -2091,6 +2089,10 @@
                   "items": {
                     "type": "object",
                     "properties": {
+                      "fact_table_label": {
+                        "type": "string",
+                        "example": "Sales"
+                      },
                       "fact_table_type": {
                         "type": "string",
                         "example": "sales"
@@ -2115,6 +2117,7 @@
                   },
                   "example": [
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
                       "label": "Sales $",
@@ -2122,6 +2125,7 @@
                       "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
                       "label": "Units",
@@ -2129,6 +2133,7 @@
                       "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
                       "label": "Baskets",
@@ -2136,20 +2141,23 @@
                       "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
-                      "label": "Stores`Selling",
+                      "label": "Stores Selling",
                       "name": "stores",
                       "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Extended`PLU Price",
+                      "label": "Extended PLU Price",
                       "name": "xpluprice",
                       "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
                       "label": "Weeks",
@@ -2157,48 +2165,55 @@
                       "report_guide": "Number of weeks included in the selected date range."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Units`/Basket",
+                      "label": "Units/Basket",
                       "name": "units_pt",
                       "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product)."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Sales $`/Basket",
+                      "label": "Sales $/Basket",
                       "name": "sales_pt",
                       "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product)."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Units/`Store/`Week",
+                      "label": "Units/Store/Week",
                       "name": "units_psw",
                       "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Sales/`Store/`Week",
+                      "label": "Sales/Store/Week",
                       "name": "sales_psw",
                       "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Avg`Retail",
+                      "label": "Avg Retail",
                       "name": "avgretail",
                       "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure."
                     },
                     {
+                      "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
-                      "label": "Avg. PLU`Price",
+                      "label": "Avg. PLU Price",
                       "name": "avgplu",
                       "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)"
                     },
                     {
+                      "fact_table_label": "Composite",
                       "fact_table_type": "cws",
                       "format": "type:pct;dec:2",
                       "label": "Sell Through %",
@@ -2206,6 +2221,7 @@
                       "report_guide": "The percentage of store inventory sold for the selected product within the store criteria and date range. Calculated as units sold within the date range / (units sold within the date range + units of store inventory on the last date within the selected date range)."
                     },
                     {
+                      "fact_table_label": "Composite",
                       "fact_table_type": "cws",
                       "format": "type:num;dec:2",
                       "label": "Potential Lost`Sales $",
@@ -2218,6 +2234,7 @@
                   "success response": {
                     "value": [
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
                         "label": "Sales $",
@@ -2225,6 +2242,7 @@
                         "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
                         "label": "Units",
@@ -2232,6 +2250,7 @@
                         "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
                         "label": "Baskets",
@@ -2239,20 +2258,23 @@
                         "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
-                        "label": "Stores`Selling",
+                        "label": "Stores Selling",
                         "name": "stores",
                         "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Extended`PLU Price",
+                        "label": "Extended PLU Price",
                         "name": "xpluprice",
                         "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
                         "label": "Weeks",
@@ -2260,48 +2282,55 @@
                         "report_guide": "Number of weeks included in the selected date range."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Units`/Basket",
+                        "label": "Units/Basket",
                         "name": "units_pt",
                         "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product)."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Sales $`/Basket",
+                        "label": "Sales $/Basket",
                         "name": "sales_pt",
                         "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product)."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Units/`Store/`Week",
+                        "label": "Units/Store/Week",
                         "name": "units_psw",
                         "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Sales/`Store/`Week",
+                        "label": "Sales/Store/Week",
                         "name": "sales_psw",
                         "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Avg`Retail",
+                        "label": "Avg Retail",
                         "name": "avgretail",
                         "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure."
                       },
                       {
+                        "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
-                        "label": "Avg. PLU`Price",
+                        "label": "Avg. PLU Price",
                         "name": "avgplu",
                         "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)"
                       },
                       {
+                        "fact_table_label": "Composite",
                         "fact_table_type": "cws",
                         "format": "type:pct;dec:2",
                         "label": "Sell Through %",
@@ -2309,6 +2338,7 @@
                         "report_guide": "The percentage of store inventory sold for the selected product within the store criteria and date range. Calculated as units sold within the date range / (units sold within the date range + units of store inventory on the last date within the selected date range)."
                       },
                       {
+                        "fact_table_label": "Composite",
                         "fact_table_type": "cws",
                         "format": "type:num;dec:2",
                         "label": "Potential Lost`Sales $",
