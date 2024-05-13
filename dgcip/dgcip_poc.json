@@ -392,11 +392,11 @@
                           "row": "0"
                         },
                         "row": [
-                          "fweek"
+                          "fyrwk"
                         ],
                         "row_dims": {
                           "calendar": [
-                            "fweek"
+                            "fyrwk"
                           ]
                         }
                       },
@@ -2496,7 +2496,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Thu, 02 May 2024 19:01:29 GMT"
+                  "example": "Mon, 13 May 2024 03:01:52 GMT"
                 }
               },
               "Keep-Alive": {
@@ -2523,7 +2523,34 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "dim_hierarchy": {
+                    "label": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Today"
+                      },
+                      "example": [
+                        "Today",
+                        "Yesterday",
+                        "Week To Date",
+                        "Last Week",
+                        "This Month",
+                        "This Month (Completed Weeks Only)",
+                        "Last Month",
+                        "This Quarter",
+                        "This Quarter (Completed Weeks Only)",
+                        "Last Quarter",
+                        "This Year",
+                        "This Year (Completed Weeks Only)",
+                        "Last Year",
+                        "Last Week",
+                        "Last 4 Weeks",
+                        "Last 13 Weeks",
+                        "Last 26 Weeks",
+                        "Last 52 Weeks"
+                      ]
+                    },
+                    "name": {
                       "type": "array",
                       "items": {
                         "type": "string",
@@ -2555,7 +2582,27 @@
                 "examples": {
                   "success response": {
                     "value": {
-                      "dim_hierarchy": [
+                      "label": [
+                        "Today",
+                        "Yesterday",
+                        "Week To Date",
+                        "Last Week",
+                        "This Month",
+                        "This Month (Completed Weeks Only)",
+                        "Last Month",
+                        "This Quarter",
+                        "This Quarter (Completed Weeks Only)",
+                        "Last Quarter",
+                        "This Year",
+                        "This Year (Completed Weeks Only)",
+                        "Last Year",
+                        "Last Week",
+                        "Last 4 Weeks",
+                        "Last 13 Weeks",
+                        "Last 26 Weeks",
+                        "Last 52 Weeks"
+                      ],
+                      "name": [
                         "today",
                         "yesterday",
                         "wtd",

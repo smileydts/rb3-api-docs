@@ -349,7 +349,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyrwk\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyrwk\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -380,7 +380,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fweek\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fweek\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
+									"raw": "{\r\n    \"input\": {\r\n        \"dates\": [\r\n            {\r\n                \"value\": [\r\n                    [\r\n                        \"l13\"\r\n                    ],\r\n                    [\r\n                        \"ly_l13\"\r\n                    ]\r\n                ]\r\n            }\r\n        ],\r\n        \"filters\": {},\r\n        \"groups\": {\r\n            \"row\": [\r\n                \"fyrwk\"\r\n            ],\r\n            \"row_dims\": {\r\n                \"calendar\": [\r\n                    \"fyrwk\"\r\n                ]\r\n            },\r\n            \"col\": [],\r\n            \"col_dims\": {},\r\n            \"rollup\": {\r\n                \"row\": \"0\",\r\n                \"col\": \"0\"\r\n            }\r\n        },\r\n        \"metrics\": {\r\n            \"sales\": [\r\n                {\r\n                    \"value\": \"sales\"\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"chg\": \"\",\r\n            \"sort\": \"period\"\r\n        }\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -409,7 +409,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Fri, 10 May 2024 03:02:31 GMT"
+									"value": "Mon, 13 May 2024 02:28:59 GMT"
 								},
 								{
 									"key": "Server",
@@ -425,7 +425,7 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "554"
+									"value": "560"
 								},
 								{
 									"key": "Keep-Alive",
@@ -441,7 +441,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[{\"fweek_calendar\":1,\"sales_sales_c1\":735966252.6088798,\"sales_sales_c2\":697747591.39866328,\"sales_sales_pct\":0.054774336280553358},{\"fweek_calendar\":2,\"sales_sales_c1\":785020824.46526277,\"sales_sales_c2\":737919386.78943551,\"sales_sales_pct\":0.063830058566095929},{\"fweek_calendar\":3,\"sales_sales_c1\":728926704.50862896,\"sales_sales_c2\":697474325.79135776,\"sales_sales_pct\":0.045094675967585165},{\"fweek_calendar\":4,\"sales_sales_c1\":768058187.63566792,\"sales_sales_c2\":731698044.40204632,\"sales_sales_pct\":0.049692825492427831},{\"fweek_calendar\":5,\"sales_sales_c1\":778840309.68081415,\"sales_sales_c2\":723083392.52460456,\"sales_sales_pct\":0.077109940198650501},{\"fweek_calendar\":6,\"sales_sales_c1\":753733873.71520066,\"sales_sales_c2\":697651149.5026381,\"sales_sales_pct\":0.080387919166397773},{\"fweek_calendar\":7,\"sales_sales_c1\":749690703.06156778,\"sales_sales_c2\":692014857.15666521,\"sales_sales_pct\":0.083344808725465486},{\"fweek_calendar\":8,\"sales_sales_c1\":775299099.26551402,\"sales_sales_c2\":705181882.56689548,\"sales_sales_pct\":0.099431392711605893},{\"fweek_calendar\":9,\"sales_sales_c1\":806105333.26909482,\"sales_sales_c2\":774814933.56516051,\"sales_sales_pct\":0.040384352893093597},{\"fweek_calendar\":10,\"sales_sales_c1\":748150723.15472949,\"sales_sales_c2\":743568320.18641019,\"sales_sales_pct\":0.00616271947569055},{\"fweek_calendar\":11,\"sales_sales_c1\":755410027.77822781,\"sales_sales_c2\":705389677.42948747,\"sales_sales_pct\":0.07091165627915004},{\"fweek_calendar\":12,\"sales_sales_c1\":742134335.67855465,\"sales_sales_c2\":698489501.59007335,\"sales_sales_pct\":0.062484595672699754},{\"fweek_calendar\":13,\"sales_sales_c1\":779153860.16554868,\"sales_sales_c2\":733498384.94831979,\"sales_sales_pct\":0.062243457046528665}]"
+							"body": "[{\"fyrwk_calendar\":202402,\"sales_sales_c1\":785020824.46526277,\"sales_sales_c2\":737919386.78943563,\"sales_sales_pct\":0.063830058566095763},{\"fyrwk_calendar\":202403,\"sales_sales_c1\":728926704.50862873,\"sales_sales_c2\":697474325.79135752,\"sales_sales_pct\":0.045094675967585186},{\"fyrwk_calendar\":202404,\"sales_sales_c1\":768058187.63566792,\"sales_sales_c2\":731698044.40204644,\"sales_sales_pct\":0.049692825492427657},{\"fyrwk_calendar\":202405,\"sales_sales_c1\":778840309.68081427,\"sales_sales_c2\":723083392.52460456,\"sales_sales_pct\":0.077109940198650667},{\"fyrwk_calendar\":202406,\"sales_sales_c1\":753733873.7152009,\"sales_sales_c2\":697651149.5026381,\"sales_sales_pct\":0.08038791916639812},{\"fyrwk_calendar\":202407,\"sales_sales_c1\":749690703.06156802,\"sales_sales_c2\":692014857.15666521,\"sales_sales_pct\":0.083344808725465819},{\"fyrwk_calendar\":202408,\"sales_sales_c1\":775299099.2655139,\"sales_sales_c2\":705181882.56689537,\"sales_sales_pct\":0.099431392711605907},{\"fyrwk_calendar\":202409,\"sales_sales_c1\":806105333.26909482,\"sales_sales_c2\":774814933.56516063,\"sales_sales_pct\":0.040384352893093438},{\"fyrwk_calendar\":202410,\"sales_sales_c1\":748150723.15472972,\"sales_sales_c2\":743568320.18641031,\"sales_sales_pct\":0.0061627194756907096},{\"fyrwk_calendar\":202411,\"sales_sales_c1\":755410027.77822793,\"sales_sales_c2\":705389677.42948759,\"sales_sales_pct\":0.070911656279150026},{\"fyrwk_calendar\":202412,\"sales_sales_c1\":742134335.67855465,\"sales_sales_c2\":698489501.59007335,\"sales_sales_pct\":0.062484595672699754},{\"fyrwk_calendar\":202413,\"sales_sales_c1\":779153860.16554856,\"sales_sales_c2\":733498384.94831979,\"sales_sales_pct\":0.062243457046528498},{\"fyrwk_calendar\":202414,\"sales_sales_c1\":797040643.50740457,\"sales_sales_c2\":754399672.31502926,\"sales_sales_pct\":0.056523051052663885}]"
 						}
 					]
 				},
@@ -1056,7 +1056,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Thu, 02 May 2024 19:01:29 GMT"
+									"value": "Mon, 13 May 2024 03:01:52 GMT"
 								},
 								{
 									"key": "Server",
@@ -1080,7 +1080,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"dim_hierarchy\": [\n        \"today\",\n        \"yesterday\",\n        \"wtd\",\n        \"lw\",\n        \"tm\",\n        \"tm_cw\",\n        \"lm\",\n        \"tq\",\n        \"tq_cw\",\n        \"lq\",\n        \"ty\",\n        \"ty_cw\",\n        \"ly\",\n        \"l1\",\n        \"l4\",\n        \"l13\",\n        \"l26\",\n        \"l52\"\n    ]\n}"
+							"body": "{\n    \"name\": [\n        \"today\",\n        \"yesterday\",\n        \"wtd\",\n        \"lw\",\n        \"tm\",\n        \"tm_cw\",\n        \"lm\",\n        \"tq\",\n        \"tq_cw\",\n        \"lq\",\n        \"ty\",\n        \"ty_cw\",\n        \"ly\",\n        \"l1\",\n        \"l4\",\n        \"l13\",\n        \"l26\",\n        \"l52\"\n    ],\n    \"label\": [\n        \"Today\",\n        \"Yesterday\",\n        \"Week To Date\",\n        \"Last Week\",\n        \"This Month\",\n        \"This Month (Completed Weeks Only)\",\n        \"Last Month\",\n        \"This Quarter\",\n        \"This Quarter (Completed Weeks Only)\",\n        \"Last Quarter\",\n        \"This Year\",\n        \"This Year (Completed Weeks Only)\",\n        \"Last Year\",\n        \"Last Week\",\n        \"Last 4 Weeks\",\n        \"Last 13 Weeks\",\n        \"Last 26 Weeks\",\n        \"Last 52 Weeks\"\n    ]\n}"
 						}
 					]
 				},
