@@ -145,7 +145,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -155,8 +155,8 @@
 							"path": [
 								"beta-latest",
 								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
+								"cip.arch.v4_15.misc.rb3.api.momos",
+								"general:json"
 							]
 						}
 					},
@@ -176,7 +176,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -186,125 +186,8 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Thu, 18 Apr 2024 18:38:53 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Apache"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "Content-Length",
-									"value": "116"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5, max=18000"
-								},
-								{
-									"key": "Connection",
-									"value": "Keep-Alive"
-								},
-								{
-									"key": "Content-Type",
-									"value": "text/plain"
-								}
-							],
-							"cookie": [],
-							"body": "[{\"sales_sales\":9699969254.9336891,\"sales_units\":2972404253,\"sales_sales_psw\":37120.117464242838,\"sales_units_psw\":11374.880901447688}]"
-						}
-					]
-				},
-				{
-					"name": "KPIs Metadata",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {},\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr/!cols:json",
-							"protocol": "https",
-							"host": [
-								"www2",
-								"1010data",
-								"com"
-							],
-							"path": [
-								"beta-latest",
-								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr",
-								"!cols:json"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "success response",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {},\n        \"groups\": {\n            \"row\": [],\n            \"row_dims\": {},\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"units\"\n                },\n                {\n                    \"value\": \"sales_psw\"\n                },\n                {\n                    \"value\": \"units_psw\"\n                }\n            ]\n        },\n        \"report\": {\n            \"chg\": \"pct\",\n            \"sort\": \"period\"\n        }\n    }\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr/!cols:json",
-									"protocol": "https",
-									"host": [
-										"www2",
-										"1010data",
-										"com"
-									],
-									"path": [
-										"beta-latest",
-										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr",
-										"!cols:json"
+										"cip.arch.v4_15.misc.rb3.api.momos",
+										"general:json"
 									]
 								}
 							},
@@ -314,7 +197,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Wed, 24 Apr 2024 02:27:41 GMT"
+									"value": "Mon, 20 May 2024 02:21:34 GMT"
 								},
 								{
 									"key": "Server",
@@ -338,7 +221,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"name\": [\n        \"sales_sales\",\n        \"sales_units\",\n        \"sales_sales_psw\",\n        \"sales_units_psw\"\n    ],\n    \"label\": [\n        \"Sales $\",\n        \"Units\",\n        \"Sales/\\nStore/\\nWeek\",\n        \"Units/\\nStore/\\nWeek\"\n    ],\n    \"desc\": [\n        \"Sum of sales_sales\",\n        \"Sum of units_sales\",\n        \"sales_sales / (sales_stores * sales_weeks)\",\n        \"sales_units / (sales_stores * sales_weeks)\"\n    ],\n    \"type\": [\n        \"f\",\n        \"f\",\n        \"f\",\n        \"f\"\n    ],\n    \"fixed\": [\n        0,\n        0,\n        0,\n        0\n    ],\n    \"width\": [\n        -1,\n        -1,\n        -1,\n        -1\n    ],\n    \"format\": [\n        \"type:num;dec:2\",\n        \"type:num;dec:0\",\n        \"type:num;dec:2\",\n        \"type:num;dec:2\"\n    ],\n    \"total\": [\n        9773766156.2121067,\n        2991724909,\n        null,\n        null\n    ]\n}"
+							"body": "{\n    \"data\": {\n        \"sales_sales\": [\n            9964441849.4873428\n        ],\n        \"sales_units\": [\n            3023102775\n        ],\n        \"sales_sales_psw\": [\n            37965.997666236159\n        ],\n        \"sales_units_psw\": [\n            11518.468834894858\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"sales_sales\",\n            \"sales_units\",\n            \"sales_sales_psw\",\n            \"sales_units_psw\"\n        ],\n        \"label\": [\n            \"Sales $\",\n            \"Units\",\n            \"Sales/ Store/ Week\",\n            \"Units/ Store/ Week\"\n        ],\n        \"format\": [\n            \"type:num;dec:2\",\n            \"type:num;dec:0\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\"\n        ]\n    },\n    \"total_row_count\": 1\n}"
 						}
 					]
 				},
@@ -357,7 +240,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -367,8 +250,8 @@
 							"path": [
 								"beta-latest",
 								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
+								"cip.arch.v4_15.misc.rb3.api.momos",
+								"general:json"
 							]
 						}
 					},
@@ -388,7 +271,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -398,34 +281,22 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
+										"cip.arch.v4_15.misc.rb3.api.momos",
+										"general:json"
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "plain",
+							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Mon, 13 May 2024 02:28:59 GMT"
+									"value": "Mon, 20 May 2024 02:23:02 GMT"
 								},
 								{
 									"key": "Server",
 									"value": "Apache"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "Content-Length",
-									"value": "560"
 								},
 								{
 									"key": "Keep-Alive",
@@ -436,12 +307,16 @@
 									"value": "Keep-Alive"
 								},
 								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
 									"key": "Content-Type",
-									"value": "text/plain"
+									"value": "application/json"
 								}
 							],
 							"cookie": [],
-							"body": "[{\"fyrwk_calendar\":202402,\"sales_sales_c1\":785020824.46526277,\"sales_sales_c2\":737919386.78943563,\"sales_sales_pct\":0.063830058566095763},{\"fyrwk_calendar\":202403,\"sales_sales_c1\":728926704.50862873,\"sales_sales_c2\":697474325.79135752,\"sales_sales_pct\":0.045094675967585186},{\"fyrwk_calendar\":202404,\"sales_sales_c1\":768058187.63566792,\"sales_sales_c2\":731698044.40204644,\"sales_sales_pct\":0.049692825492427657},{\"fyrwk_calendar\":202405,\"sales_sales_c1\":778840309.68081427,\"sales_sales_c2\":723083392.52460456,\"sales_sales_pct\":0.077109940198650667},{\"fyrwk_calendar\":202406,\"sales_sales_c1\":753733873.7152009,\"sales_sales_c2\":697651149.5026381,\"sales_sales_pct\":0.08038791916639812},{\"fyrwk_calendar\":202407,\"sales_sales_c1\":749690703.06156802,\"sales_sales_c2\":692014857.15666521,\"sales_sales_pct\":0.083344808725465819},{\"fyrwk_calendar\":202408,\"sales_sales_c1\":775299099.2655139,\"sales_sales_c2\":705181882.56689537,\"sales_sales_pct\":0.099431392711605907},{\"fyrwk_calendar\":202409,\"sales_sales_c1\":806105333.26909482,\"sales_sales_c2\":774814933.56516063,\"sales_sales_pct\":0.040384352893093438},{\"fyrwk_calendar\":202410,\"sales_sales_c1\":748150723.15472972,\"sales_sales_c2\":743568320.18641031,\"sales_sales_pct\":0.0061627194756907096},{\"fyrwk_calendar\":202411,\"sales_sales_c1\":755410027.77822793,\"sales_sales_c2\":705389677.42948759,\"sales_sales_pct\":0.070911656279150026},{\"fyrwk_calendar\":202412,\"sales_sales_c1\":742134335.67855465,\"sales_sales_c2\":698489501.59007335,\"sales_sales_pct\":0.062484595672699754},{\"fyrwk_calendar\":202413,\"sales_sales_c1\":779153860.16554856,\"sales_sales_c2\":733498384.94831979,\"sales_sales_pct\":0.062243457046528498},{\"fyrwk_calendar\":202414,\"sales_sales_c1\":797040643.50740457,\"sales_sales_c2\":754399672.31502926,\"sales_sales_pct\":0.056523051052663885}]"
+							"body": "{\n    \"data\": {\n        \"fyrwk_calendar\": [\n            202403,\n            202404,\n            202405,\n            202406,\n            202407,\n            202408,\n            202409,\n            202410,\n            202411,\n            202412,\n            202413,\n            202414,\n            202415\n        ],\n        \"sales_sales_c1\": [\n            728926704.50862873,\n            768058187.63566792,\n            778840309.68081427,\n            753733873.71520078,\n            749690703.06156802,\n            775299099.26551378,\n            806105333.26909471,\n            748150723.15472949,\n            755410027.77822781,\n            742134335.67855465,\n            779153860.16554844,\n            797198410.20347691,\n            781740281.37032259\n        ],\n        \"sales_sales_c2\": [\n            697474325.79135752,\n            731698044.4020462,\n            723083392.52460456,\n            697651149.5026381,\n            692014857.15666521,\n            705181882.56689525,\n            774814933.56516051,\n            743568320.18641019,\n            705389677.42948747,\n            698489501.59007323,\n            733498384.94831991,\n            754399672.31502926,\n            753325949.28711629\n        ],\n        \"sales_sales_pct\": [\n            0.045094675967585186,\n            0.049692825492427997,\n            0.077109940198650667,\n            0.080387919166397939,\n            0.083344808725465819,\n            0.09943139271160592,\n            0.040384352893093445,\n            0.00616271947569055,\n            0.07091165627915004,\n            0.062484595672699941,\n            0.062243457046528165,\n            0.056732179849854632,\n            0.037718509643926652\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"fyrwk_calendar\",\n            \"sales_sales_c1\",\n            \"sales_sales_c2\",\n            \"sales_sales_pct\"\n        ],\n        \"label\": [\n            \"Fiscal Yr/Wk\",\n            \"Curr. Per.  Sales $\",\n            \"Comp. Per.  Sales $\",\n            \"% Chg  Sales $\"\n        ],\n        \"format\": [\n            \"type:nocommas\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 13\n}"
 						}
 					]
 				},
@@ -472,7 +347,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -482,8 +357,8 @@
 							"path": [
 								"beta-latest",
 								"api",
-								"cip.dev.v4_15.misc.rb3.api.momos",
-								"scr:json.keyed"
+								"cip.arch.v4_15.misc.rb3.api.momos",
+								"general:json"
 							]
 						}
 					},
@@ -503,7 +378,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -513,34 +388,22 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_15.misc.rb3.api.momos",
-										"scr:json.keyed"
+										"cip.arch.v4_15.misc.rb3.api.momos",
+										"general:json"
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "plain",
+							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Tue, 14 May 2024 01:04:51 GMT"
+									"value": "Mon, 20 May 2024 02:24:20 GMT"
 								},
 								{
 									"key": "Server",
 									"value": "Apache"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "Content-Length",
-									"value": "1625"
 								},
 								{
 									"key": "Keep-Alive",
@@ -551,12 +414,16 @@
 									"value": "Keep-Alive"
 								},
 								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
 									"key": "Content-Type",
-									"value": "text/plain"
+									"value": "application/json"
 								}
 							],
 							"cookie": [],
-							"body": "[{\"pskudesc_product\":\"KLG FROSTED FLAKES 17.3OZ\",\"sales_sales_c1\":2659143.2199999993,\"sales_sales_c2\":1257904.74,\"sales_sales_pct\":1.1139464185499446,\"sales_baskets_c1\":495952,\"sales_baskets_c2\":242940,\"sales_baskets_pct\":1.0414587964106363,\"sales_sales_psw_c1\":10.399058386453401,\"sales_sales_psw_c2\":5.3060925135404187,\"sales_sales_psw_pct\":0.95983359881427499,\"sales_sales_pt_c1\":5.3616947204568168,\"sales_sales_pt_c2\":5.1778411953568781,\"sales_sales_pt_pct\":0.035507756642827425},{\"pskudesc_product\":\"CINNAMON TOAST CRUNCH LG\",\"sales_sales_c1\":2506890.2100000009,\"sales_sales_c2\":2241912.7800000007,\"sales_sales_pct\":0.11819256857976432,\"sales_baskets_c1\":483755,\"sales_baskets_c2\":428346,\"sales_baskets_pct\":0.12935570776895314,\"sales_sales_psw_c1\":9.7931902118500087,\"sales_sales_psw_c2\":9.2922479244985876,\"sales_sales_psw_pct\":0.053909698860994615,\"sales_sales_pt_c1\":5.1821484222385319,\"sales_sales_pt_c2\":5.2338828423750909,\"sales_sales_pt_pct\":-0.0098845200961896976},{\"pskudesc_product\":\"KLG FROSTED FLAKES 10.9OZ\",\"sales_sales_c1\":2488833.2600000026,\"sales_sales_c2\":2283663.2100000014,\"sales_sales_pct\":0.089842516664268152,\"sales_baskets_c1\":677762,\"sales_baskets_c2\":612587,\"sales_baskets_pct\":0.10639305110947506,\"sales_sales_psw_c1\":9.6355484577831039,\"sales_sales_psw_c2\":9.2010475994778371,\"sales_sales_psw_pct\":0.04722297690644757,\"sales_sales_pt_c1\":3.6721345546076685,\"sales_sales_pt_c2\":3.7279002166222943,\"sales_sales_pt_pct\":-0.014959000717340271},{\"pskudesc_product\":\"GM CINNAMON TOAST CRUNCH\",\"sales_sales_c1\":2423297.4899999895,\"sales_sales_c2\":2481404.5900000082,\"sales_sales_pct\":-0.023417019632424603,\"sales_baskets_c1\":643918,\"sales_baskets_c2\":675808,\"sales_baskets_pct\":-0.047187958710166199,\"sales_sales_psw_c1\":9.3512340338501261,\"sales_sales_psw_c2\":10.008246442630389,\"sales_sales_psw_pct\":-0.065647105369198475,\"sales_sales_pt_c1\":3.763363487276314,\"sales_sales_pt_c2\":3.6717597157772746,\"sales_sales_pt_pct\":0.024948193397684747},{\"pskudesc_product\":\"KELLOGG STRW POPTART 12CT\",\"sales_sales_c1\":2033557.2799999951,\"sales_sales_c2\":1880260.3499999978,\"sales_sales_pct\":0.08152962966006147,\"sales_baskets_c1\":463686,\"sales_baskets_c2\":448079,\"sales_baskets_pct\":0.034830911513371525,\"sales_sales_psw_c1\":7.9308194624276362,\"sales_sales_psw_c2\":7.9984190421092389,\"sales_sales_psw_pct\":-0.0084516176666553106,\"sales_sales_pt_c1\":4.3856344163938425,\"sales_sales_pt_c2\":4.1962697426123468,\"sales_sales_pt_pct\":0.045126906847415549},{\"pskudesc_product\":\"GM HONEY NUT CHEERIOS\",\"sales_sales_c1\":1999008.6399999945,\"sales_sales_c2\":2403579.5400000098,\"sales_sales_pct\":-0.16832016301820144,\"sales_baskets_c1\":496970,\"sales_baskets_c2\":622724,\"sales_baskets_pct\":-0.20194179122693198,\"sales_sales_psw_c1\":7.7100830016353274,\"sales_sales_psw_c2\":9.6796363460632744,\"sales_sales_psw_pct\":-0.20347389860663184,\"sales_sales_pt_c1\":4.0223929814676831,\"sales_sales_pt_c2\":3.8597830499547308,\"sales_sales_pt_pct\":0.042129293125648469},{\"pskudesc_product\":\"POST FRUIT PEBBLE XL 19.5\",\"sales_sales_c1\":1928345.4099999997,\"sales_sales_c2\":1945998.3199999998,\"sales_sales_pct\":-0.0090713901541292965,\"sales_baskets_c1\":392466,\"sales_baskets_c2\":380418,\"sales_baskets_pct\":0.031670425689636135,\"sales_sales_psw_c1\":7.5653726887179209,\"sales_sales_psw_c2\":8.0792410654975413,\"sales_sales_psw_pct\":-0.063603545508017958,\"sales_sales_pt_c1\":4.9134075563233495,\"sales_sales_pt_c2\":5.1154212471544458,\"sales_sales_pt_pct\":-0.039491115407840643},{\"pskudesc_product\":\"POST FRUITY PEBBLES\",\"sales_sales_c1\":1906987.3400000131,\"sales_sales_c2\":1698652.5300000121,\"sales_sales_pct\":0.12264710193555564,\"sales_baskets_c1\":517529,\"sales_baskets_c2\":460040,\"sales_baskets_pct\":0.12496522041561603,\"sales_sales_psw_c1\":7.3851550040857301,\"sales_sales_psw_c2\":7.0998467306438906,\"sales_sales_psw_pct\":0.040185131350851666,\"sales_sales_pt_c1\":3.6847931999946151,\"sales_sales_pt_c2\":3.6924018128858624,\"sales_sales_pt_pct\":-0.0020606134643024457},{\"pskudesc_product\":\"GM LUCKY CHARMS\",\"sales_sales_c1\":1894494.1899999953,\"sales_sales_c2\":1862751.3100000068,\"sales_sales_pct\":0.017040857697739782,\"sales_baskets_c1\":509625,\"sales_baskets_c2\":524268,\"sales_baskets_pct\":-0.027930371489390923,\"sales_sales_psw_c1\":7.3143104952666107,\"sales_sales_psw_c2\":7.5114574495540385,\"sales_sales_psw_pct\":-0.026246165356249549,\"sales_sales_pt_c1\":3.7174278930586122,\"sales_sales_pt_c2\":3.5530517025643502,\"sales_sales_pt_pct\":0.046263382650926943},{\"pskudesc_product\":\"HONEY NUT CHEERIOS LG\",\"sales_sales_c1\":1874763.8999999997,\"sales_sales_c2\":1906356.6399999999,\"sales_sales_pct\":-0.016572313562482319,\"sales_baskets_c1\":357232,\"sales_baskets_c2\":362267,\"sales_baskets_pct\":-0.013898588610058327,\"sales_sales_psw_c1\":7.3293661156895542,\"sales_sales_psw_c2\":7.9078310214375787,\"sales_sales_psw_pct\":-0.073150893611642231,\"sales_sales_pt_c1\":5.2480290119586144,\"sales_sales_pt_c2\":5.2622972558913723,\"sales_sales_pt_pct\":-0.002711409720685014}]"
+							"body": "{\n    \"data\": {\n        \"pskudesc_product\": [\n            \"KLG FROSTED FLAKES 17.3OZ\",\n            \"CINNAMON TOAST CRUNCH LG\",\n            \"KLG FROSTED FLAKES 10.9OZ\",\n            \"GM CINNAMON TOAST CRUNCH\",\n            \"KELLOGG STRW POPTART 12CT\",\n            \"GM HONEY NUT CHEERIOS\",\n            \"POST FRUIT PEBBLE XL 19.5\",\n            \"GM LUCKY CHARMS\",\n            \"POST FRUITY PEBBLES\",\n            \"HONEY NUT CHEERIOS LG\"\n        ],\n        \"sales_sales_c1\": [\n            2607957.2799999993,\n            2497171.8700000001,\n            2496742.9900000035,\n            2394293.9499999899,\n            2015613.0599999952,\n            1976846.9699999948,\n            1954797.4599999993,\n            1888622.8999999953,\n            1880218.8300000143,\n            1861763.1399999999\n        ],\n        \"sales_sales_c2\": [\n            1276144.5500000005,\n            2280156.1000000006,\n            2337194.7500000009,\n            2522943.2800000082,\n            1884264.4799999974,\n            2390936.1700000102,\n            1956659.0699999998,\n            1833380.2700000065,\n            1711704.6100000129,\n            1936880.8599999999\n        ],\n        \"sales_sales_pct\": [\n            1.0436221586339873,\n            0.095175839057685355,\n            0.068264846136592811,\n            -0.050991764666234514,\n            0.069708144156067686,\n            -0.17319123998195801,\n            -0.00095142277392278062,\n            0.030131572213324034,\n            0.098448189609070522,\n            -0.038782829419874577\n        ],\n        \"sales_baskets_c1\": [\n            486582,\n            480514,\n            679914,\n            634484,\n            459338,\n            489318,\n            395815,\n            506348,\n            507960,\n            353665\n        ],\n        \"sales_baskets_c2\": [\n            244616,\n            436099,\n            624444,\n            687246,\n            448102,\n            619441,\n            384117,\n            516766,\n            464559,\n            368087\n        ],\n        \"sales_baskets_pct\": [\n            0.9891666939202669,\n            0.10184614044058803,\n            0.088831024079020701,\n            -0.076773091440328498,\n            0.025074648182779814,\n            -0.21006520395001299,\n            0.030454262633520517,\n            -0.020159995046113714,\n            0.093424086068723239,\n            -0.039180954502604004\n        ],\n        \"sales_sales_psw_c1\": [\n            10.196294712149347,\n            9.7547300348442949,\n            9.659850773409282,\n            9.2305145939110371,\n            7.8580486777932235,\n            7.6146795963175338,\n            7.6628973849368256,\n            7.2814096138424347,\n            7.282955722458774,\n            7.281500367641307\n        ],\n        \"sales_sales_psw_c2\": [\n            5.3750733934520847,\n            9.4289121103603435,\n            9.4068758653443698,\n            10.164059914109178,\n            8.0221065717545574,\n            9.6201572823034684,\n            8.1090585719436525,\n            7.3895337457931385,\n            7.1396586804368498,\n            8.0422560393293416\n        ],\n        \"sales_sales_psw_pct\": [\n            0.89695916051499414,\n            0.03455519795607679,\n            0.026892553031011131,\n            -0.091847679774323773,\n            -0.020450724818213428,\n            -0.20846620560716439,\n            -0.055020096728674507,\n            -0.014632064169442202,\n            0.02007057317943893,\n            -0.094594808716320769\n        ],\n        \"sales_sales_pt_c1\": [\n            5.3597487782120989,\n            5.1968764073471325,\n            3.6721452860214727,\n            3.7736080815276507,\n            4.3880825448797944,\n            4.0400045982367185,\n            4.9386644265629123,\n            3.7298911025618651,\n            3.7015096267422911,\n            5.2641995673872168\n        ],\n        \"sales_sales_pt_c2\": [\n            5.2169300045786073,\n            5.2285286139156488,\n            3.7428412315595967,\n            3.6710919816194028,\n            4.2049901138579999,\n            3.859828732679965,\n            5.0939142761189942,\n            3.5477958495721595,\n            3.6845795905364289,\n            5.2620191965486418\n        ],\n        \"sales_sales_pt_pct\": [\n            0.027376018752052943,\n            -0.006053750281537036,\n            -0.018888310020210457,\n            0.027925233260711096,\n            0.043541703087099683,\n            0.04667975654755372,\n            -0.030477515156451616,\n            0.051326305320432968,\n            0.0045948352559260081,\n            0.00041436010723889697\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"pskudesc_product\",\n            \"sales_sales_c1\",\n            \"sales_sales_c2\",\n            \"sales_sales_pct\",\n            \"sales_baskets_c1\",\n            \"sales_baskets_c2\",\n            \"sales_baskets_pct\",\n            \"sales_sales_psw_c1\",\n            \"sales_sales_psw_c2\",\n            \"sales_sales_psw_pct\",\n            \"sales_sales_pt_c1\",\n            \"sales_sales_pt_c2\",\n            \"sales_sales_pt_pct\"\n        ],\n        \"label\": [\n            \"Primary Sku Description\",\n            \"Curr. Per.  Sales $\",\n            \"Comp. Per.  Sales $\",\n            \"% Chg  Sales $\",\n            \"Curr. Per.  Baskets\",\n            \"Comp. Per.  Baskets\",\n            \"% Chg  Baskets\",\n            \"Curr. Per.  Sales/ Store/ Week\",\n            \"Comp. Per.  Sales/ Store/ Week\",\n            \"% Chg  Sales/ Store/ Week\",\n            \"Curr. Per.  Sales $ /Basket\",\n            \"Comp. Per.  Sales $ /Basket\",\n            \"% Chg  Sales $ /Basket\"\n        ],\n        \"format\": [\n            \"\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:0\",\n            \"type:num;dec:0\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 348\n}"
 						}
 					]
 				},
@@ -575,7 +442,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/dc_service_levels:json.keyed",
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.thukpa/dc_service_levels:json",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -585,8 +452,8 @@
 							"path": [
 								"beta-latest",
 								"api",
-								"cip.dev.v4_15.misc.rb3.api.thukpa",
-								"dc_service_levels:json.keyed"
+								"cip.arch.v4_15.misc.rb3.api.thukpa",
+								"dc_service_levels:json"
 							]
 						}
 					},
@@ -606,7 +473,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/dc_service_levels:json.keyed",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.thukpa/dc_service_levels:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -616,34 +483,22 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_15.misc.rb3.api.thukpa",
-										"dc_service_levels:json.keyed"
+										"cip.arch.v4_15.misc.rb3.api.thukpa",
+										"dc_service_levels:json"
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "plain",
+							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Mon, 06 May 2024 20:55:18 GMT"
+									"value": "Mon, 20 May 2024 02:26:14 GMT"
 								},
 								{
 									"key": "Server",
 									"value": "Apache"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "Content-Length",
-									"value": "929"
 								},
 								{
 									"key": "Keep-Alive",
@@ -654,12 +509,16 @@
 									"value": "Keep-Alive"
 								},
 								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
 									"key": "Content-Type",
-									"value": "text/plain"
+									"value": "application/json"
 								}
 							],
 							"cookie": [],
-							"body": "[{\"psku\":\"00835702\",\"pskudesc\":\"QUAKER CHWY GRAN BAR CHOC\",\"eid_desc1\":\"Quaker\",\"dc_w_xo\":19,\"demand_retail\":638015,\"demand_units\":216276,\"xout_retail\":638015,\"xout_units\":216276,\"dc_service_level\":0,\"target_dcsl\":0.95999999999999996,\"dc_eop_inv\":0,\"in_stock\":0.009114066428476909},{\"psku\":\"31187901\",\"pskudesc\":\"CNC CRNCHBRY TREAT BAR\",\"eid_desc1\":\"Cap N Crunch\",\"dc_w_xo\":19,\"demand_retail\":393669,\"demand_units\":111384,\"xout_retail\":393669,\"xout_units\":111384,\"dc_service_level\":0,\"target_dcsl\":0.90000000000000002,\"dc_eop_inv\":6,\"in_stock\":0.011961682770528273},{\"psku\":\"31345701\",\"pskudesc\":\"QUAKER CHEWY PB CHOC CHIP\",\"eid_desc1\":\"Quaker\",\"dc_w_xo\":19,\"demand_retail\":306086,\"demand_units\":103758,\"xout_retail\":287694,\"xout_units\":97524,\"dc_service_level\":0.060087687774024297,\"target_dcsl\":0.93000000000000005,\"dc_eop_inv\":7296,\"in_stock\":0.078668896764150634},{\"psku\":\"00842702\",\"pskudesc\":\"QUAKER CHEWY DIPP 6CT\",\"eid_desc1\":\"Quaker\",\"dc_w_xo\":19,\"demand_retail\":288015,\"demand_units\":97632,\"xout_retail\":267873,\"xout_units\":90804,\"dc_service_level\":0.069933857611582731,\"target_dcsl\":0.90000000000000002,\"dc_eop_inv\":8064,\"in_stock\":0.094904871003087962},{\"psku\":\"31345601\",\"pskudesc\":\"QUAKER CHEWY VARIETY PACK\",\"eid_desc1\":\"Quaker\",\"dc_w_xo\":19,\"demand_retail\":269510,\"demand_units\":49002,\"xout_retail\":269510,\"xout_units\":49002,\"dc_service_level\":0,\"target_dcsl\":0.75,\"dc_eop_inv\":-6,\"in_stock\":0.0083507653484742837},{\"psku\":\"20854601\",\"pskudesc\":\"NATURE VALLEY PROTEIN SAL\",\"eid_desc1\":\"Nature Valley\",\"dc_w_xo\":14,\"demand_retail\":218630,\"demand_units\":45496,\"xout_retail\":121282,\"xout_units\":25184,\"dc_service_level\":0.44526368750857614,\"target_dcsl\":0.90000000000000002,\"dc_eop_inv\":37480,\"in_stock\":0.90238412804268087},{\"psku\":\"37873001\",\"pskudesc\":\"CTNC CINNAMON CEREAL\",\"eid_desc1\":\"Cap N Crunch\",\"dc_w_xo\":7,\"demand_retail\":192221,\"demand_units\":50724,\"xout_retail\":41174,\"xout_units\":10836,\"dc_service_level\":0.78579863802602212,\"target_dcsl\":null,\"dc_eop_inv\":14001,\"in_stock\":0.59052330451549684},{\"psku\":\"31343902\",\"pskudesc\":\"PEARL MILLING BTR SYRUP\",\"eid_desc1\":\"Pearl Milling\",\"dc_w_xo\":14,\"demand_retail\":184166,\"demand_units\":52260,\"xout_retail\":149698,\"xout_units\":42750,\"dc_service_level\":0.18715723857823921,\"target_dcsl\":0.90000000000000002,\"dc_eop_inv\":26274,\"in_stock\":0.67898225856088901},{\"psku\":\"00836101\",\"pskudesc\":\"POST FRUITY PEBBLES\",\"eid_desc1\":\"Post\",\"dc_w_xo\":12,\"demand_retail\":178046,\"demand_units\":48780,\"xout_retail\":69204,\"xout_units\":18960,\"dc_service_level\":0.61131393010794965,\"target_dcsl\":0.93000000000000005,\"dc_eop_inv\":29352,\"in_stock\":0.96613420043249731},{\"psku\":\"22149102\",\"pskudesc\":\"REESES PUFFS TREAT BAR\",\"eid_desc1\":\"General Mills\",\"dc_w_xo\":19,\"demand_retail\":175801,\"demand_units\":45054,\"xout_retail\":127797,\"xout_units\":28067,\"dc_service_level\":0.27313729951086341,\"target_dcsl\":0.93000000000000005,\"dc_eop_inv\":37350,\"in_stock\":0.81879370213575609}]"
+							"body": "{\n    \"data\": {\n        \"psku\": [\n            \"00835702\",\n            \"31187901\",\n            \"31345601\",\n            \"31345701\",\n            \"00842702\",\n            \"05899302\",\n            \"20652804\",\n            \"11437605\",\n            \"00836101\",\n            \"00911103\"\n        ],\n        \"pskudesc\": [\n            \"QUAKER CHWY GRAN BAR CHOC\",\n            \"CNC CRNCHBRY TREAT BAR\",\n            \"QUAKER CHEWY VARIETY PACK\",\n            \"QUAKER CHEWY PB CHOC CHIP\",\n            \"QUAKER CHEWY DIPP 6CT\",\n            \"CV 18CT VARITY CHEWY BARS\",\n            \"KLG FROSTED FLAKES 17.3OZ\",\n            \"CINNAMON TOAST CRUNCH LG\",\n            \"POST FRUITY PEBBLES\",\n            \"RICE KRISPIE TREAT ORG\"\n        ],\n        \"eid_desc1\": [\n            \"Quaker\",\n            \"Cap N Crunch\",\n            \"Quaker\",\n            \"Quaker\",\n            \"Quaker\",\n            \"Clover Valley\",\n            \"Kelloggs\",\n            \"General Mills\",\n            \"Post\",\n            \"Kelloggs\"\n        ],\n        \"dc_w_xo\": [\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            0,\n            1,\n            7,\n            6\n        ],\n        \"demand_retail\": [\n            636243,\n            388255,\n            269411,\n            264897,\n            241502,\n            219953,\n            204428,\n            190086,\n            188602,\n            177150\n        ],\n        \"demand_units\": [\n            215676,\n            111066,\n            48984,\n            89796,\n            81864,\n            49744,\n            40400,\n            37460,\n            51672,\n            47240\n        ],\n        \"xout_retail\": [\n            635358,\n            388255,\n            269411,\n            257251,\n            237820,\n            218586,\n            0,\n            892,\n            23653,\n            13920\n        ],\n        \"xout_units\": [\n            215376,\n            111066,\n            48984,\n            87204,\n            80616,\n            49432,\n            0,\n            170,\n            6480,\n            3712\n        ],\n        \"dc_service_level\": [\n            0.0013909779753961929,\n            0,\n            0,\n            0.028864049045478055,\n            0.015246250548649701,\n            0.0062149641059680936,\n            1,\n            0.99530738718264367,\n            0.87458775622739948,\n            0.92142252328535135\n        ],\n        \"target_dcsl\": [\n            0.95999999999999996,\n            0.90000000000000002,\n            0.75,\n            0.93000000000000005,\n            0.90000000000000002,\n            0.90000000000000002,\n            0.97999999999999998,\n            0.97999999999999998,\n            0.93000000000000005,\n            0.93000000000000005\n        ],\n        \"dc_eop_inv\": [\n            1950,\n            6,\n            -2,\n            8814,\n            2796,\n            600,\n            176650,\n            68316,\n            59148,\n            25960\n        ],\n        \"in_stock\": [\n            0.0096869170431303792,\n            0.012721039335979791,\n            0.0084656562011307598,\n            0.19679175665946724,\n            0.22609918200408999,\n            0.85240681072230606,\n            0.95435892661476873,\n            0.95310564121661789,\n            0.9476940704669149,\n            0.98803736433103584\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"psku\",\n            \"pskudesc\",\n            \"eid_desc1\",\n            \"dc_w_xo\",\n            \"demand_retail\",\n            \"demand_units\",\n            \"xout_retail\",\n            \"xout_units\",\n            \"dc_service_level\",\n            \"target_dcsl\",\n            \"dc_eop_inv\",\n            \"in_stock\"\n        ],\n        \"label\": [\n            \"Primary Sku\",\n            \"Primary Sku Description\",\n            \"Brand\",\n            \"DCs w/XO\",\n            \"Demand Retail $\",\n            \"Demand Units\",\n            \"Xout Retail $\",\n            \"Xout Units\",\n            \"DC Service Level\",\n            \"SL Target\",\n            \"EoP DC Inv Units\",\n            \"In Stock %\"\n        ],\n        \"format\": [\n            \"\",\n            \"\",\n            \"width:20\",\n            \"type:num;width:4\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\",\n            \"type:pct;dec:2\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\"\n        ]\n    },\n    \"total_row_count\": 10\n}"
 						}
 					]
 				},
@@ -678,7 +537,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/in_stock_levels:json.keyed",
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.laphing/in_stock_levels:json",
 							"protocol": "https",
 							"host": [
 								"www2",
@@ -688,8 +547,8 @@
 							"path": [
 								"beta-latest",
 								"api",
-								"cip.dev.v4_15.misc.rb3.api.thukpa",
-								"in_stock_levels:json.keyed"
+								"cip.arch.v4_15.misc.rb3.api.laphing",
+								"in_stock_levels:json"
 							]
 						}
 					},
@@ -709,7 +568,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/in_stock_levels:json.keyed",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.laphing/in_stock_levels:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -719,34 +578,22 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_15.misc.rb3.api.thukpa",
-										"in_stock_levels:json.keyed"
+										"cip.arch.v4_15.misc.rb3.api.laphing",
+										"in_stock_levels:json"
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "plain",
+							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Wed, 24 Apr 2024 01:50:08 GMT"
+									"value": "Mon, 20 May 2024 02:34:36 GMT"
 								},
 								{
 									"key": "Server",
 									"value": "Apache"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding"
-								},
-								{
-									"key": "Content-Encoding",
-									"value": "gzip"
-								},
-								{
-									"key": "Content-Length",
-									"value": "643"
 								},
 								{
 									"key": "Keep-Alive",
@@ -757,12 +604,16 @@
 									"value": "Keep-Alive"
 								},
 								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
 									"key": "Content-Type",
-									"value": "text/plain"
+									"value": "application/json"
 								}
 							],
 							"cookie": [],
-							"body": "[{\"psku_prod\":\"00459301\",\"pskudesc_prod\":\"NEW SKIN LIQ BNDGE 0.33OZ\",\"eid_desc1_prod\":\"New Skin\",\"stores_selling\":19881,\"stores_w_oos\":2336,\"pct_stores_w_oos\":0.1174991197625874,\"instock\":0.91920702122612685,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00459704\",\"pskudesc_prod\":\"RX N/STICK PADS 3X4-10CT\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":1087,\"pct_stores_w_oos\":0.054675318142950555,\"instock\":0.96527483269959247,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00459902\",\"pskudesc_prod\":\"BAND-AID TRUSTAY PAD 10CT\",\"eid_desc1_prod\":\"Band Aid\",\"stores_selling\":19422,\"stores_w_oos\":2193,\"pct_stores_w_oos\":0.11291319122644423,\"instock\":0.91396361923824099,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00460604\",\"pskudesc_prod\":\"RX GAUZE PADS 2X2\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19842,\"stores_w_oos\":1118,\"pct_stores_w_oos\":0.056345126499344825,\"instock\":0.96505531228393637,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00461204\",\"pskudesc_prod\":\"RX ADV AB SHEER LRG PADS\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":1306,\"pct_stores_w_oos\":0.065690860620693126,\"instock\":0.96646085062643305,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00461305\",\"pskudesc_prod\":\"RX BANDAGE ROLL-1CT\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":1418,\"pct_stores_w_oos\":0.071324380061365128,\"instock\":0.95667799972685652,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00461405\",\"pskudesc_prod\":\"RX GAUZE PADS 3X3\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":773,\"pct_stores_w_oos\":0.038881343996780844,\"instock\":0.97949267184680966,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00461901\",\"pskudesc_prod\":\"RX ELASTIC BANDAGE 3 INCH\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":1700,\"pct_stores_w_oos\":0.085508777224485688,\"instock\":0.95106418153981065,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00462201\",\"pskudesc_prod\":\"BAND-AID PLASTIC 60CT\",\"eid_desc1_prod\":\"Band Aid\",\"stores_selling\":19881,\"stores_w_oos\":1432,\"pct_stores_w_oos\":0.072028569991449118,\"instock\":0.94041158416055093,\"instock_target\":0.96999999999999997},{\"psku_prod\":\"00462402\",\"pskudesc_prod\":\"RX ADV AB W/P XL H/DUTY\",\"eid_desc1_prod\":\"Rexall\",\"stores_selling\":19881,\"stores_w_oos\":1569,\"pct_stores_w_oos\":0.078919571450128262,\"instock\":0.95927286319103511,\"instock_target\":0.96999999999999997}]"
+							"body": "{\n    \"data\": {\n        \"psku_prod\": [\n            \"00459301\",\n            \"00459704\",\n            \"00459902\",\n            \"00460604\",\n            \"00461204\",\n            \"00461305\",\n            \"00461405\",\n            \"00461901\",\n            \"00462201\",\n            \"00462402\"\n        ],\n        \"pskudesc_prod\": [\n            \"NEW SKIN LIQ BNDGE 0.33OZ\",\n            \"RX N/STICK PADS 3X4-10CT\",\n            \"BAND-AID TRUSTAY PAD 10CT\",\n            \"RX GAUZE PADS 2X2\",\n            \"RX ADV AB SHEER LRG PADS\",\n            \"RX BANDAGE ROLL-1CT\",\n            \"RX GAUZE PADS 3X3\",\n            \"RX ELASTIC BANDAGE 3 INCH\",\n            \"BAND-AID PLASTIC 60CT\",\n            \"RX ADV AB W/P XL H/DUTY\"\n        ],\n        \"eid_desc1_prod\": [\n            \"New Skin\",\n            \"Rexall\",\n            \"Band Aid\",\n            \"Rexall\",\n            \"Rexall\",\n            \"Rexall\",\n            \"Rexall\",\n            \"Rexall\",\n            \"Band Aid\",\n            \"Rexall\"\n        ],\n        \"stores_selling\": [\n            19952,\n            19952,\n            19491,\n            19913,\n            19952,\n            19952,\n            19952,\n            19952,\n            19952,\n            19952\n        ],\n        \"stores_w_oos\": [\n            3200,\n            1362,\n            4643,\n            1115,\n            1773,\n            1724,\n            967,\n            1385,\n            766,\n            1705\n        ],\n        \"pct_stores_w_oos\": [\n            0.16038492381716118,\n            0.068263833199679227,\n            0.23821250833718127,\n            0.055993572038366898,\n            0.088863271852445871,\n            0.086407377706495592,\n            0.048466319165998396,\n            0.069416599839615081,\n            0.03839214113873296,\n            0.0854550922213312\n        ],\n        \"instock\": [\n            0.89223353816624407,\n            0.95340409379341962,\n            0.82106984178189657,\n            0.96724146591749016,\n            0.94398607709165916,\n            0.94573360262415307,\n            0.97305659404408917,\n            0.96111755690200962,\n            0.97343617950811456,\n            0.95149184249351837\n        ],\n        \"instock_target\": [\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997,\n            0.96999999999999997\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"psku_prod\",\n            \"pskudesc_prod\",\n            \"eid_desc1_prod\",\n            \"stores_selling\",\n            \"stores_w_oos\",\n            \"pct_stores_w_oos\",\n            \"instock\",\n            \"instock_target\"\n        ],\n        \"label\": [\n            \"Primary Sku\",\n            \"Primary Sku Description\",\n            \"Brand\",\n            \"Authorized Stores\",\n            \"Stores w/OOS\",\n            \"% Stores w/OOS\",\n            \"In Stock %\",\n            \"Instock Target\"\n        ],\n        \"format\": [\n            \"\",\n            \"\",\n            \"width:20\",\n            \"type:num;width:8\",\n            \"type:num;width:8\",\n            \"type:pct;dec:2\",\n            \"type:pct;dec:2\",\n            \"type:pct;dec:2\"\n        ]\n    },\n    \"total_row_count\": 10\n}"
 						}
 					]
 				}

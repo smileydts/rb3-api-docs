@@ -113,7 +113,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr:json.keyed": {
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -493,444 +493,10 @@
                   "example": "Keep-Alive"
                 }
               },
-              "Content-Encoding": {
-                "schema": {
-                  "type": "string",
-                  "example": "gzip"
-                }
-              },
-              "Content-Length": {
-                "schema": {
-                  "type": "string",
-                  "example": "1625"
-                }
-              },
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Tue, 14 May 2024 01:04:51 GMT"
-                }
-              },
-              "Keep-Alive": {
-                "schema": {
-                  "type": "string",
-                  "example": "timeout=5, max=18000"
-                }
-              },
-              "Server": {
-                "schema": {
-                  "type": "string",
-                  "example": "Apache"
-                }
-              },
-              "Vary": {
-                "schema": {
-                  "type": "string",
-                  "example": "Accept-Encoding"
-                }
-              }
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "sales_sales": {
-                        "type": "number",
-                        "example": 9699969254.93369
-                      },
-                      "sales_sales_psw": {
-                        "type": "number",
-                        "example": 37120.11746424284
-                      },
-                      "sales_units": {
-                        "type": "number",
-                        "example": 2972404253
-                      },
-                      "sales_units_psw": {
-                        "type": "number",
-                        "example": 11374.880901447688
-                      }
-                    }
-                  },
-                  "example": [
-                    {
-                      "sales_sales": 9699969254.93369,
-                      "sales_sales_psw": 37120.11746424284,
-                      "sales_units": 2972404253,
-                      "sales_units_psw": 11374.880901447688
-                    }
-                  ]
-                },
-                "examples": {
-                  "success response": {
-                    "value": [
-                      {
-                        "pskudesc_product": "KLG FROSTED FLAKES 17.3OZ",
-                        "sales_baskets_c1": 495952,
-                        "sales_baskets_c2": 242940,
-                        "sales_baskets_pct": 1.0414587964106363,
-                        "sales_sales_c1": 2659143.2199999993,
-                        "sales_sales_c2": 1257904.74,
-                        "sales_sales_pct": 1.1139464185499446,
-                        "sales_sales_psw_c1": 10.3990583864534,
-                        "sales_sales_psw_c2": 5.306092513540419,
-                        "sales_sales_psw_pct": 0.959833598814275,
-                        "sales_sales_pt_c1": 5.361694720456817,
-                        "sales_sales_pt_c2": 5.177841195356878,
-                        "sales_sales_pt_pct": 0.035507756642827425
-                      },
-                      {
-                        "pskudesc_product": "CINNAMON TOAST CRUNCH LG",
-                        "sales_baskets_c1": 483755,
-                        "sales_baskets_c2": 428346,
-                        "sales_baskets_pct": 0.12935570776895314,
-                        "sales_sales_c1": 2506890.210000001,
-                        "sales_sales_c2": 2241912.7800000007,
-                        "sales_sales_pct": 0.11819256857976432,
-                        "sales_sales_psw_c1": 9.793190211850009,
-                        "sales_sales_psw_c2": 9.292247924498588,
-                        "sales_sales_psw_pct": 0.053909698860994615,
-                        "sales_sales_pt_c1": 5.182148422238532,
-                        "sales_sales_pt_c2": 5.233882842375091,
-                        "sales_sales_pt_pct": -0.009884520096189698
-                      },
-                      {
-                        "pskudesc_product": "KLG FROSTED FLAKES 10.9OZ",
-                        "sales_baskets_c1": 677762,
-                        "sales_baskets_c2": 612587,
-                        "sales_baskets_pct": 0.10639305110947506,
-                        "sales_sales_c1": 2488833.2600000026,
-                        "sales_sales_c2": 2283663.210000002,
-                        "sales_sales_pct": 0.08984251666426817,
-                        "sales_sales_psw_c1": 9.635548457783104,
-                        "sales_sales_psw_c2": 9.201047599477837,
-                        "sales_sales_psw_pct": 0.04722297690644757,
-                        "sales_sales_pt_c1": 3.672134554607669,
-                        "sales_sales_pt_c2": 3.7279002166222943,
-                        "sales_sales_pt_pct": -0.014959000717340272
-                      },
-                      {
-                        "pskudesc_product": "GM CINNAMON TOAST CRUNCH",
-                        "sales_baskets_c1": 643918,
-                        "sales_baskets_c2": 675808,
-                        "sales_baskets_pct": -0.0471879587101662,
-                        "sales_sales_c1": 2423297.4899999895,
-                        "sales_sales_c2": 2481404.590000008,
-                        "sales_sales_pct": -0.023417019632424603,
-                        "sales_sales_psw_c1": 9.351234033850126,
-                        "sales_sales_psw_c2": 10.008246442630387,
-                        "sales_sales_psw_pct": -0.06564710536919847,
-                        "sales_sales_pt_c1": 3.763363487276314,
-                        "sales_sales_pt_c2": 3.6717597157772746,
-                        "sales_sales_pt_pct": 0.024948193397684747
-                      },
-                      {
-                        "pskudesc_product": "KELLOGG STRW POPTART 12CT",
-                        "sales_baskets_c1": 463686,
-                        "sales_baskets_c2": 448079,
-                        "sales_baskets_pct": 0.034830911513371525,
-                        "sales_sales_c1": 2033557.2799999951,
-                        "sales_sales_c2": 1880260.3499999975,
-                        "sales_sales_pct": 0.08152962966006147,
-                        "sales_sales_psw_c1": 7.930819462427637,
-                        "sales_sales_psw_c2": 7.998419042109238,
-                        "sales_sales_psw_pct": -0.00845161766665531,
-                        "sales_sales_pt_c1": 4.3856344163938425,
-                        "sales_sales_pt_c2": 4.196269742612348,
-                        "sales_sales_pt_pct": 0.04512690684741555
-                      },
-                      {
-                        "pskudesc_product": "GM HONEY NUT CHEERIOS",
-                        "sales_baskets_c1": 496970,
-                        "sales_baskets_c2": 622724,
-                        "sales_baskets_pct": -0.201941791226932,
-                        "sales_sales_c1": 1999008.6399999943,
-                        "sales_sales_c2": 2403579.54000001,
-                        "sales_sales_pct": -0.16832016301820144,
-                        "sales_sales_psw_c1": 7.710083001635328,
-                        "sales_sales_psw_c2": 9.679636346063274,
-                        "sales_sales_psw_pct": -0.20347389860663184,
-                        "sales_sales_pt_c1": 4.022392981467683,
-                        "sales_sales_pt_c2": 3.859783049954731,
-                        "sales_sales_pt_pct": 0.04212929312564847
-                      },
-                      {
-                        "pskudesc_product": "POST FRUIT PEBBLE XL 19.5",
-                        "sales_baskets_c1": 392466,
-                        "sales_baskets_c2": 380418,
-                        "sales_baskets_pct": 0.031670425689636135,
-                        "sales_sales_c1": 1928345.4099999997,
-                        "sales_sales_c2": 1945998.32,
-                        "sales_sales_pct": -0.009071390154129296,
-                        "sales_sales_psw_c1": 7.565372688717922,
-                        "sales_sales_psw_c2": 8.079241065497541,
-                        "sales_sales_psw_pct": -0.06360354550801796,
-                        "sales_sales_pt_c1": 4.9134075563233495,
-                        "sales_sales_pt_c2": 5.115421247154446,
-                        "sales_sales_pt_pct": -0.03949111540784064
-                      },
-                      {
-                        "pskudesc_product": "POST FRUITY PEBBLES",
-                        "sales_baskets_c1": 517529,
-                        "sales_baskets_c2": 460040,
-                        "sales_baskets_pct": 0.12496522041561604,
-                        "sales_sales_c1": 1906987.3400000131,
-                        "sales_sales_c2": 1698652.530000012,
-                        "sales_sales_pct": 0.12264710193555564,
-                        "sales_sales_psw_c1": 7.385155004085729,
-                        "sales_sales_psw_c2": 7.099846730643891,
-                        "sales_sales_psw_pct": 0.040185131350851666,
-                        "sales_sales_pt_c1": 3.684793199994615,
-                        "sales_sales_pt_c2": 3.6924018128858624,
-                        "sales_sales_pt_pct": -0.0020606134643024457
-                      },
-                      {
-                        "pskudesc_product": "GM LUCKY CHARMS",
-                        "sales_baskets_c1": 509625,
-                        "sales_baskets_c2": 524268,
-                        "sales_baskets_pct": -0.027930371489390923,
-                        "sales_sales_c1": 1894494.1899999953,
-                        "sales_sales_c2": 1862751.3100000068,
-                        "sales_sales_pct": 0.017040857697739782,
-                        "sales_sales_psw_c1": 7.314310495266612,
-                        "sales_sales_psw_c2": 7.5114574495540385,
-                        "sales_sales_psw_pct": -0.02624616535624955,
-                        "sales_sales_pt_c1": 3.717427893058612,
-                        "sales_sales_pt_c2": 3.55305170256435,
-                        "sales_sales_pt_pct": 0.04626338265092694
-                      },
-                      {
-                        "pskudesc_product": "HONEY NUT CHEERIOS LG",
-                        "sales_baskets_c1": 357232,
-                        "sales_baskets_c2": 362267,
-                        "sales_baskets_pct": -0.013898588610058328,
-                        "sales_sales_c1": 1874763.8999999997,
-                        "sales_sales_c2": 1906356.64,
-                        "sales_sales_pct": -0.01657231356248232,
-                        "sales_sales_psw_c1": 7.329366115689553,
-                        "sales_sales_psw_c2": 7.9078310214375795,
-                        "sales_sales_psw_pct": -0.07315089361164222,
-                        "sales_sales_pt_c1": 5.248029011958614,
-                        "sales_sales_pt_c2": 5.262297255891372,
-                        "sales_sales_pt_pct": -0.002711409720685014
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.momos/scr/!cols:json": {
-      "post": {
-        "tags": [
-          "Widgets"
-        ],
-        "summary": "KPIs Metadata",
-        "description": "KPIs Metadata",
-        "operationId": "kpisMetadata",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "input": {
-                    "type": "object",
-                    "properties": {
-                      "dates": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": "array",
-                              "items": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string",
-                                  "example": "l13"
-                                },
-                                "example": [
-                                  "l13"
-                                ]
-                              },
-                              "example": [
-                                [
-                                  "l13"
-                                ]
-                              ]
-                            }
-                          }
-                        },
-                        "example": [
-                          {
-                            "value": [
-                              [
-                                "l13"
-                              ]
-                            ]
-                          }
-                        ]
-                      },
-                      "filters": {
-                        "type": "object",
-                        "properties": {}
-                      },
-                      "groups": {
-                        "type": "object",
-                        "properties": {
-                          "col": {
-                            "type": "array",
-                            "items": {},
-                            "example": []
-                          },
-                          "col_dims": {
-                            "type": "object",
-                            "properties": {}
-                          },
-                          "rollup": {
-                            "type": "object",
-                            "properties": {
-                              "col": {
-                                "type": "string",
-                                "example": "0"
-                              },
-                              "row": {
-                                "type": "string",
-                                "example": "0"
-                              }
-                            }
-                          },
-                          "row": {
-                            "type": "array",
-                            "items": {},
-                            "example": []
-                          },
-                          "row_dims": {
-                            "type": "object",
-                            "properties": {}
-                          }
-                        }
-                      },
-                      "metrics": {
-                        "type": "object",
-                        "properties": {
-                          "sales": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": "string",
-                                  "example": "sales"
-                                }
-                              }
-                            },
-                            "example": [
-                              {
-                                "value": "sales"
-                              },
-                              {
-                                "value": "units"
-                              },
-                              {
-                                "value": "sales_psw"
-                              },
-                              {
-                                "value": "units_psw"
-                              }
-                            ]
-                          }
-                        }
-                      },
-                      "report": {
-                        "type": "object",
-                        "properties": {
-                          "chg": {
-                            "type": "string",
-                            "example": "pct"
-                          },
-                          "sort": {
-                            "type": "string",
-                            "example": "period"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "examples": {
-                "KPIs Metadata": {
-                  "value": {
-                    "input": {
-                      "dates": [
-                        {
-                          "value": [
-                            [
-                              "l13"
-                            ]
-                          ]
-                        }
-                      ],
-                      "filters": {},
-                      "groups": {
-                        "col": [],
-                        "col_dims": {},
-                        "rollup": {
-                          "col": "0",
-                          "row": "0"
-                        },
-                        "row": [],
-                        "row_dims": {}
-                      },
-                      "metrics": {
-                        "sales": [
-                          {
-                            "value": "sales"
-                          },
-                          {
-                            "value": "units"
-                          },
-                          {
-                            "value": "sales_psw"
-                          },
-                          {
-                            "value": "units_psw"
-                          }
-                        ]
-                      },
-                      "report": {
-                        "chg": "pct",
-                        "sort": "period"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "success response",
-            "headers": {
-              "Connection": {
-                "schema": {
-                  "type": "string",
-                  "example": "Keep-Alive"
-                }
-              },
-              "Date": {
-                "schema": {
-                  "type": "string",
-                  "example": "Wed, 24 Apr 2024 02:27:41 GMT"
+                  "example": "Mon, 20 May 2024 02:24:20 GMT"
                 }
               },
               "Keep-Alive": {
@@ -957,164 +523,588 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "desc": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "Sum of sales_sales"
-                      },
-                      "example": [
-                        "Sum of sales_sales",
-                        "Sum of units_sales",
-                        "sales_sales / (sales_stores * sales_weeks)",
-                        "sales_units / (sales_stores * sales_weeks)"
-                      ]
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "fyrwk_calendar": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 202403
+                          },
+                          "example": [
+                            202403,
+                            202404,
+                            202405,
+                            202406,
+                            202407,
+                            202408,
+                            202409,
+                            202410,
+                            202411,
+                            202412,
+                            202413,
+                            202414,
+                            202415
+                          ]
+                        },
+                        "pskudesc_product": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "KLG FROSTED FLAKES 17.3OZ"
+                          },
+                          "example": [
+                            "KLG FROSTED FLAKES 17.3OZ",
+                            "CINNAMON TOAST CRUNCH LG",
+                            "KLG FROSTED FLAKES 10.9OZ",
+                            "GM CINNAMON TOAST CRUNCH",
+                            "KELLOGG STRW POPTART 12CT",
+                            "GM HONEY NUT CHEERIOS",
+                            "POST FRUIT PEBBLE XL 19.5",
+                            "GM LUCKY CHARMS",
+                            "POST FRUITY PEBBLES",
+                            "HONEY NUT CHEERIOS LG"
+                          ]
+                        },
+                        "sales_baskets_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 486582
+                          },
+                          "example": [
+                            486582,
+                            480514,
+                            679914,
+                            634484,
+                            459338,
+                            489318,
+                            395815,
+                            506348,
+                            507960,
+                            353665
+                          ]
+                        },
+                        "sales_baskets_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 244616
+                          },
+                          "example": [
+                            244616,
+                            436099,
+                            624444,
+                            687246,
+                            448102,
+                            619441,
+                            384117,
+                            516766,
+                            464559,
+                            368087
+                          ]
+                        },
+                        "sales_baskets_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.9891666939202668
+                          },
+                          "example": [
+                            0.9891666939202668,
+                            0.10184614044058804,
+                            0.0888310240790207,
+                            -0.0767730914403285,
+                            0.025074648182779817,
+                            -0.210065203950013,
+                            0.030454262633520517,
+                            -0.020159995046113714,
+                            0.09342408606872324,
+                            -0.039180954502604
+                          ]
+                        },
+                        "sales_sales": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 9964441849.487343
+                          },
+                          "example": [
+                            9964441849.487343
+                          ]
+                        },
+                        "sales_sales_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 728926704.5086288
+                          },
+                          "example": [
+                            728926704.5086288,
+                            768058187.6356678,
+                            778840309.6808143,
+                            753733873.7152008,
+                            749690703.061568,
+                            775299099.2655138,
+                            806105333.2690947,
+                            748150723.1547295,
+                            755410027.7782278,
+                            742134335.6785548,
+                            779153860.1655484,
+                            797198410.2034769,
+                            781740281.3703226
+                          ]
+                        },
+                        "sales_sales_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 697474325.7913575
+                          },
+                          "example": [
+                            697474325.7913575,
+                            731698044.4020462,
+                            723083392.5246044,
+                            697651149.5026381,
+                            692014857.1566652,
+                            705181882.5668952,
+                            774814933.5651605,
+                            743568320.1864102,
+                            705389677.4294875,
+                            698489501.5900732,
+                            733498384.9483198,
+                            754399672.3150293,
+                            753325949.2871163
+                          ]
+                        },
+                        "sales_sales_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.045094675967585186
+                          },
+                          "example": [
+                            0.045094675967585186,
+                            0.049692825492428,
+                            0.07710994019865067,
+                            0.08038791916639794,
+                            0.08334480872546582,
+                            0.09943139271160592,
+                            0.040384352893093445,
+                            0.00616271947569055,
+                            0.07091165627915004,
+                            0.06248459567269994,
+                            0.062243457046528165,
+                            0.05673217984985463,
+                            0.03771850964392666
+                          ]
+                        },
+                        "sales_sales_psw": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 37965.99766623616
+                          },
+                          "example": [
+                            37965.99766623616
+                          ]
+                        },
+                        "sales_sales_psw_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 10.196294712149347
+                          },
+                          "example": [
+                            10.196294712149347,
+                            9.754730034844295,
+                            9.659850773409282,
+                            9.230514593911037,
+                            7.858048677793224,
+                            7.614679596317535,
+                            7.662897384936826,
+                            7.281409613842436,
+                            7.282955722458774,
+                            7.281500367641307
+                          ]
+                        },
+                        "sales_sales_psw_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 5.375073393452085
+                          },
+                          "example": [
+                            5.375073393452085,
+                            9.428912110360343,
+                            9.40687586534437,
+                            10.164059914109178,
+                            8.022106571754557,
+                            9.620157282303468,
+                            8.109058571943653,
+                            7.389533745793139,
+                            7.13965868043685,
+                            8.042256039329342
+                          ]
+                        },
+                        "sales_sales_psw_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.896959160514994
+                          },
+                          "example": [
+                            0.896959160514994,
+                            0.03455519795607679,
+                            0.02689255303101113,
+                            -0.09184767977432377,
+                            -0.020450724818213428,
+                            -0.2084662056071644,
+                            -0.05502009672867451,
+                            -0.014632064169442202,
+                            0.02007057317943893,
+                            -0.09459480871632077
+                          ]
+                        },
+                        "sales_sales_pt_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 5.359748778212099
+                          },
+                          "example": [
+                            5.359748778212099,
+                            5.1968764073471325,
+                            3.6721452860214727,
+                            3.7736080815276503,
+                            4.388082544879794,
+                            4.0400045982367185,
+                            4.938664426562912,
+                            3.7298911025618646,
+                            3.701509626742291,
+                            5.264199567387217
+                          ]
+                        },
+                        "sales_sales_pt_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 5.216930004578607
+                          },
+                          "example": [
+                            5.216930004578607,
+                            5.228528613915649,
+                            3.7428412315595967,
+                            3.671091981619403,
+                            4.204990113858,
+                            3.859828732679965,
+                            5.093914276118994,
+                            3.5477958495721595,
+                            3.684579590536429,
+                            5.262019196548642
+                          ]
+                        },
+                        "sales_sales_pt_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.027376018752052943
+                          },
+                          "example": [
+                            0.027376018752052943,
+                            -0.006053750281537036,
+                            -0.018888310020210457,
+                            0.027925233260711096,
+                            0.04354170308709968,
+                            0.04667975654755372,
+                            -0.030477515156451616,
+                            0.05132630532043297,
+                            0.004594835255926008,
+                            0.00041436010723889697
+                          ]
+                        },
+                        "sales_units": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 3023102775
+                          },
+                          "example": [
+                            3023102775
+                          ]
+                        },
+                        "sales_units_psw": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 11518.468834894858
+                          },
+                          "example": [
+                            11518.468834894858
+                          ]
+                        }
+                      }
                     },
-                    "fixed": {
-                      "type": "array",
-                      "items": {
-                        "type": "number",
-                        "example": 0
-                      },
-                      "example": [
-                        0,
-                        0,
-                        0,
-                        0
-                      ]
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "type:num;dec:2"
+                          },
+                          "example": [
+                            "type:num;dec:2",
+                            "type:num;dec:0",
+                            "type:num;dec:2",
+                            "type:num;dec:2"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Sales $"
+                          },
+                          "example": [
+                            "Sales $",
+                            "Units",
+                            "Sales/ Store/ Week",
+                            "Units/ Store/ Week"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "sales_sales"
+                          },
+                          "example": [
+                            "sales_sales",
+                            "sales_units",
+                            "sales_sales_psw",
+                            "sales_units_psw"
+                          ]
+                        }
+                      }
                     },
-                    "format": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "type:num;dec:2"
-                      },
-                      "example": [
-                        "type:num;dec:2",
-                        "type:num;dec:0",
-                        "type:num;dec:2",
-                        "type:num;dec:2"
-                      ]
-                    },
-                    "label": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "Sales $"
-                      },
-                      "example": [
-                        "Sales $",
-                        "Units",
-                        "Sales/\nStore/\nWeek",
-                        "Units/\nStore/\nWeek"
-                      ]
-                    },
-                    "name": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "sales_sales"
-                      },
-                      "example": [
-                        "sales_sales",
-                        "sales_units",
-                        "sales_sales_psw",
-                        "sales_units_psw"
-                      ]
-                    },
-                    "total": {
-                      "type": "array",
-                      "items": {
-                        "type": "number",
-                        "nullable": true,
-                        "example": 9773766156.212107
-                      },
-                      "example": [
-                        9773766156.212107,
-                        2991724909,
-                        null,
-                        null
-                      ]
-                    },
-                    "type": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "f"
-                      },
-                      "example": [
-                        "f",
-                        "f",
-                        "f",
-                        "f"
-                      ]
-                    },
-                    "width": {
-                      "type": "array",
-                      "items": {
-                        "type": "number",
-                        "example": -1
-                      },
-                      "example": [
-                        -1,
-                        -1,
-                        -1,
-                        -1
-                      ]
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 1
                     }
                   }
                 },
                 "examples": {
                   "success response": {
                     "value": {
-                      "desc": [
-                        "Sum of sales_sales",
-                        "Sum of units_sales",
-                        "sales_sales / (sales_stores * sales_weeks)",
-                        "sales_units / (sales_stores * sales_weeks)"
-                      ],
-                      "fixed": [
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "format": [
-                        "type:num;dec:2",
-                        "type:num;dec:0",
-                        "type:num;dec:2",
-                        "type:num;dec:2"
-                      ],
-                      "label": [
-                        "Sales $",
-                        "Units",
-                        "Sales/\nStore/\nWeek",
-                        "Units/\nStore/\nWeek"
-                      ],
-                      "name": [
-                        "sales_sales",
-                        "sales_units",
-                        "sales_sales_psw",
-                        "sales_units_psw"
-                      ],
-                      "total": [
-                        9773766156.212107,
-                        2991724909,
-                        null,
-                        null
-                      ],
-                      "type": [
-                        "f",
-                        "f",
-                        "f",
-                        "f"
-                      ],
-                      "width": [
-                        -1,
-                        -1,
-                        -1,
-                        -1
-                      ]
+                      "data": {
+                        "pskudesc_product": [
+                          "KLG FROSTED FLAKES 17.3OZ",
+                          "CINNAMON TOAST CRUNCH LG",
+                          "KLG FROSTED FLAKES 10.9OZ",
+                          "GM CINNAMON TOAST CRUNCH",
+                          "KELLOGG STRW POPTART 12CT",
+                          "GM HONEY NUT CHEERIOS",
+                          "POST FRUIT PEBBLE XL 19.5",
+                          "GM LUCKY CHARMS",
+                          "POST FRUITY PEBBLES",
+                          "HONEY NUT CHEERIOS LG"
+                        ],
+                        "sales_baskets_c1": [
+                          486582,
+                          480514,
+                          679914,
+                          634484,
+                          459338,
+                          489318,
+                          395815,
+                          506348,
+                          507960,
+                          353665
+                        ],
+                        "sales_baskets_c2": [
+                          244616,
+                          436099,
+                          624444,
+                          687246,
+                          448102,
+                          619441,
+                          384117,
+                          516766,
+                          464559,
+                          368087
+                        ],
+                        "sales_baskets_pct": [
+                          0.9891666939202668,
+                          0.10184614044058804,
+                          0.0888310240790207,
+                          -0.0767730914403285,
+                          0.025074648182779817,
+                          -0.210065203950013,
+                          0.030454262633520517,
+                          -0.020159995046113714,
+                          0.09342408606872324,
+                          -0.039180954502604
+                        ],
+                        "sales_sales_c1": [
+                          2607957.2799999993,
+                          2497171.87,
+                          2496742.9900000035,
+                          2394293.94999999,
+                          2015613.0599999952,
+                          1976846.9699999948,
+                          1954797.4599999993,
+                          1888622.8999999953,
+                          1880218.8300000145,
+                          1861763.14
+                        ],
+                        "sales_sales_c2": [
+                          1276144.5500000005,
+                          2280156.100000001,
+                          2337194.750000001,
+                          2522943.280000008,
+                          1884264.4799999977,
+                          2390936.17000001,
+                          1956659.07,
+                          1833380.2700000063,
+                          1711704.610000013,
+                          1936880.86
+                        ],
+                        "sales_sales_pct": [
+                          1.043622158633987,
+                          0.09517583905768535,
+                          0.06826484613659281,
+                          -0.050991764666234514,
+                          0.06970814415606769,
+                          -0.173191239981958,
+                          -0.0009514227739227806,
+                          0.03013157221332403,
+                          0.09844818960907052,
+                          -0.03878282941987458
+                        ],
+                        "sales_sales_psw_c1": [
+                          10.196294712149347,
+                          9.754730034844295,
+                          9.659850773409282,
+                          9.230514593911037,
+                          7.858048677793224,
+                          7.614679596317535,
+                          7.662897384936826,
+                          7.281409613842436,
+                          7.282955722458774,
+                          7.281500367641307
+                        ],
+                        "sales_sales_psw_c2": [
+                          5.375073393452085,
+                          9.428912110360343,
+                          9.40687586534437,
+                          10.164059914109178,
+                          8.022106571754557,
+                          9.620157282303468,
+                          8.109058571943653,
+                          7.389533745793139,
+                          7.13965868043685,
+                          8.042256039329342
+                        ],
+                        "sales_sales_psw_pct": [
+                          0.896959160514994,
+                          0.03455519795607679,
+                          0.02689255303101113,
+                          -0.09184767977432377,
+                          -0.020450724818213428,
+                          -0.2084662056071644,
+                          -0.05502009672867451,
+                          -0.014632064169442202,
+                          0.02007057317943893,
+                          -0.09459480871632077
+                        ],
+                        "sales_sales_pt_c1": [
+                          5.359748778212099,
+                          5.1968764073471325,
+                          3.6721452860214727,
+                          3.7736080815276503,
+                          4.388082544879794,
+                          4.0400045982367185,
+                          4.938664426562912,
+                          3.7298911025618646,
+                          3.701509626742291,
+                          5.264199567387217
+                        ],
+                        "sales_sales_pt_c2": [
+                          5.216930004578607,
+                          5.228528613915649,
+                          3.7428412315595967,
+                          3.671091981619403,
+                          4.204990113858,
+                          3.859828732679965,
+                          5.093914276118994,
+                          3.5477958495721595,
+                          3.684579590536429,
+                          5.262019196548642
+                        ],
+                        "sales_sales_pt_pct": [
+                          0.027376018752052943,
+                          -0.006053750281537036,
+                          -0.018888310020210457,
+                          0.027925233260711096,
+                          0.04354170308709968,
+                          0.04667975654755372,
+                          -0.030477515156451616,
+                          0.05132630532043297,
+                          0.004594835255926008,
+                          0.00041436010723889697
+                        ]
+                      },
+                      "fields": {
+                        "format": [
+                          "",
+                          "type:num;dec:2",
+                          "type:num;dec:2",
+                          "type:pct;dec:1",
+                          "type:num;dec:0",
+                          "type:num;dec:0",
+                          "type:pct;dec:1",
+                          "type:num;dec:2",
+                          "type:num;dec:2",
+                          "type:pct;dec:1",
+                          "type:num;dec:2",
+                          "type:num;dec:2",
+                          "type:pct;dec:1"
+                        ],
+                        "label": [
+                          "Primary Sku Description",
+                          "Curr. Per.  Sales $",
+                          "Comp. Per.  Sales $",
+                          "% Chg  Sales $",
+                          "Curr. Per.  Baskets",
+                          "Comp. Per.  Baskets",
+                          "% Chg  Baskets",
+                          "Curr. Per.  Sales/ Store/ Week",
+                          "Comp. Per.  Sales/ Store/ Week",
+                          "% Chg  Sales/ Store/ Week",
+                          "Curr. Per.  Sales $ /Basket",
+                          "Comp. Per.  Sales $ /Basket",
+                          "% Chg  Sales $ /Basket"
+                        ],
+                        "name": [
+                          "pskudesc_product",
+                          "sales_sales_c1",
+                          "sales_sales_c2",
+                          "sales_sales_pct",
+                          "sales_baskets_c1",
+                          "sales_baskets_c2",
+                          "sales_baskets_pct",
+                          "sales_sales_psw_c1",
+                          "sales_sales_psw_c2",
+                          "sales_sales_psw_pct",
+                          "sales_sales_pt_c1",
+                          "sales_sales_pt_c2",
+                          "sales_sales_pt_pct"
+                        ]
+                      },
+                      "total_row_count": 348
                     }
                   }
                 }
@@ -1124,7 +1114,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/dc_service_levels:json.keyed": {
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.thukpa/dc_service_levels:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -1234,22 +1224,10 @@
                   "example": "Keep-Alive"
                 }
               },
-              "Content-Encoding": {
-                "schema": {
-                  "type": "string",
-                  "example": "gzip"
-                }
-              },
-              "Content-Length": {
-                "schema": {
-                  "type": "string",
-                  "example": "929"
-                }
-              },
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Mon, 06 May 2024 20:55:18 GMT"
+                  "example": "Mon, 20 May 2024 02:26:14 GMT"
                 }
               },
               "Keep-Alive": {
@@ -1264,358 +1242,520 @@
                   "example": "Apache"
                 }
               },
-              "Vary": {
+              "Transfer-Encoding": {
                 "schema": {
                   "type": "string",
-                  "example": "Accept-Encoding"
+                  "example": "chunked"
                 }
               }
             },
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "dc_eop_inv": {
-                        "type": "number",
-                        "example": 0
-                      },
-                      "dc_service_level": {
-                        "type": "number",
-                        "example": 0
-                      },
-                      "dc_w_xo": {
-                        "type": "number",
-                        "example": 19
-                      },
-                      "demand_retail": {
-                        "type": "number",
-                        "example": 638015
-                      },
-                      "demand_units": {
-                        "type": "number",
-                        "example": 216276
-                      },
-                      "eid_desc1": {
-                        "type": "string",
-                        "example": "Quaker"
-                      },
-                      "in_stock": {
-                        "type": "number",
-                        "example": 0.009114066428476907
-                      },
-                      "psku": {
-                        "type": "string",
-                        "example": "00835702"
-                      },
-                      "pskudesc": {
-                        "type": "string",
-                        "example": "QUAKER CHWY GRAN BAR CHOC"
-                      },
-                      "target_dcsl": {
-                        "type": "number",
-                        "nullable": true,
-                        "example": 0.96
-                      },
-                      "xout_retail": {
-                        "type": "number",
-                        "example": 638015
-                      },
-                      "xout_units": {
-                        "type": "number",
-                        "example": 216276
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "dc_eop_inv": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 1950
+                          },
+                          "example": [
+                            1950,
+                            6,
+                            -2,
+                            8814,
+                            2796,
+                            600,
+                            176650,
+                            68316,
+                            59148,
+                            25960
+                          ]
+                        },
+                        "dc_service_level": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.001390977975396193
+                          },
+                          "example": [
+                            0.001390977975396193,
+                            0,
+                            0,
+                            0.028864049045478055,
+                            0.0152462505486497,
+                            0.006214964105968094,
+                            1,
+                            0.9953073871826437,
+                            0.8745877562273995,
+                            0.9214225232853513
+                          ]
+                        },
+                        "dc_w_xo": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 19
+                          },
+                          "example": [
+                            19,
+                            19,
+                            19,
+                            19,
+                            19,
+                            19,
+                            0,
+                            1,
+                            7,
+                            6
+                          ]
+                        },
+                        "demand_retail": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 636243
+                          },
+                          "example": [
+                            636243,
+                            388255,
+                            269411,
+                            264897,
+                            241502,
+                            219953,
+                            204428,
+                            190086,
+                            188602,
+                            177150
+                          ]
+                        },
+                        "demand_units": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 215676
+                          },
+                          "example": [
+                            215676,
+                            111066,
+                            48984,
+                            89796,
+                            81864,
+                            49744,
+                            40400,
+                            37460,
+                            51672,
+                            47240
+                          ]
+                        },
+                        "eid_desc1": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Quaker"
+                          },
+                          "example": [
+                            "Quaker",
+                            "Cap N Crunch",
+                            "Quaker",
+                            "Quaker",
+                            "Quaker",
+                            "Clover Valley",
+                            "Kelloggs",
+                            "General Mills",
+                            "Post",
+                            "Kelloggs"
+                          ]
+                        },
+                        "in_stock": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.00968691704313038
+                          },
+                          "example": [
+                            0.00968691704313038,
+                            0.012721039335979793,
+                            0.00846565620113076,
+                            0.19679175665946724,
+                            0.22609918200409,
+                            0.8524068107223061,
+                            0.9543589266147688,
+                            0.9531056412166179,
+                            0.9476940704669148,
+                            0.9880373643310358
+                          ]
+                        },
+                        "psku": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "00835702"
+                          },
+                          "example": [
+                            "00835702",
+                            "31187901",
+                            "31345601",
+                            "31345701",
+                            "00842702",
+                            "05899302",
+                            "20652804",
+                            "11437605",
+                            "00836101",
+                            "00911103"
+                          ]
+                        },
+                        "pskudesc": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "QUAKER CHWY GRAN BAR CHOC"
+                          },
+                          "example": [
+                            "QUAKER CHWY GRAN BAR CHOC",
+                            "CNC CRNCHBRY TREAT BAR",
+                            "QUAKER CHEWY VARIETY PACK",
+                            "QUAKER CHEWY PB CHOC CHIP",
+                            "QUAKER CHEWY DIPP 6CT",
+                            "CV 18CT VARITY CHEWY BARS",
+                            "KLG FROSTED FLAKES 17.3OZ",
+                            "CINNAMON TOAST CRUNCH LG",
+                            "POST FRUITY PEBBLES",
+                            "RICE KRISPIE TREAT ORG"
+                          ]
+                        },
+                        "target_dcsl": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.96
+                          },
+                          "example": [
+                            0.96,
+                            0.9,
+                            0.75,
+                            0.93,
+                            0.9,
+                            0.9,
+                            0.98,
+                            0.98,
+                            0.93,
+                            0.93
+                          ]
+                        },
+                        "xout_retail": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 635358
+                          },
+                          "example": [
+                            635358,
+                            388255,
+                            269411,
+                            257251,
+                            237820,
+                            218586,
+                            0,
+                            892,
+                            23653,
+                            13920
+                          ]
+                        },
+                        "xout_units": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 215376
+                          },
+                          "example": [
+                            215376,
+                            111066,
+                            48984,
+                            87204,
+                            80616,
+                            49432,
+                            0,
+                            170,
+                            6480,
+                            3712
+                          ]
+                        }
                       }
+                    },
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": ""
+                          },
+                          "example": [
+                            "",
+                            "",
+                            "width:20",
+                            "type:num;width:4",
+                            "type:currency",
+                            "type:num;width:11;dec:0",
+                            "type:currency",
+                            "type:num;width:11;dec:0",
+                            "type:pct;dec:2",
+                            "type:pct;dec:2",
+                            "type:num;width:11;dec:0",
+                            "type:pct;dec:2"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Primary Sku"
+                          },
+                          "example": [
+                            "Primary Sku",
+                            "Primary Sku Description",
+                            "Brand",
+                            "DCs w/XO",
+                            "Demand Retail $",
+                            "Demand Units",
+                            "Xout Retail $",
+                            "Xout Units",
+                            "DC Service Level",
+                            "SL Target",
+                            "EoP DC Inv Units",
+                            "In Stock %"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "psku"
+                          },
+                          "example": [
+                            "psku",
+                            "pskudesc",
+                            "eid_desc1",
+                            "dc_w_xo",
+                            "demand_retail",
+                            "demand_units",
+                            "xout_retail",
+                            "xout_units",
+                            "dc_service_level",
+                            "target_dcsl",
+                            "dc_eop_inv",
+                            "in_stock"
+                          ]
+                        }
+                      }
+                    },
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 10
                     }
-                  },
-                  "example": [
-                    {
-                      "dc_eop_inv": 0,
-                      "dc_service_level": 0,
-                      "dc_w_xo": 19,
-                      "demand_retail": 638015,
-                      "demand_units": 216276,
-                      "eid_desc1": "Quaker",
-                      "in_stock": 0.009114066428476907,
-                      "psku": "00835702",
-                      "pskudesc": "QUAKER CHWY GRAN BAR CHOC",
-                      "target_dcsl": 0.96,
-                      "xout_retail": 638015,
-                      "xout_units": 216276
-                    },
-                    {
-                      "dc_eop_inv": 6,
-                      "dc_service_level": 0,
-                      "dc_w_xo": 19,
-                      "demand_retail": 393669,
-                      "demand_units": 111384,
-                      "eid_desc1": "Cap N Crunch",
-                      "in_stock": 0.011961682770528273,
-                      "psku": "31187901",
-                      "pskudesc": "CNC CRNCHBRY TREAT BAR",
-                      "target_dcsl": 0.9,
-                      "xout_retail": 393669,
-                      "xout_units": 111384
-                    },
-                    {
-                      "dc_eop_inv": 7296,
-                      "dc_service_level": 0.0600876877740243,
-                      "dc_w_xo": 19,
-                      "demand_retail": 306086,
-                      "demand_units": 103758,
-                      "eid_desc1": "Quaker",
-                      "in_stock": 0.07866889676415063,
-                      "psku": "31345701",
-                      "pskudesc": "QUAKER CHEWY PB CHOC CHIP",
-                      "target_dcsl": 0.93,
-                      "xout_retail": 287694,
-                      "xout_units": 97524
-                    },
-                    {
-                      "dc_eop_inv": 8064,
-                      "dc_service_level": 0.06993385761158273,
-                      "dc_w_xo": 19,
-                      "demand_retail": 288015,
-                      "demand_units": 97632,
-                      "eid_desc1": "Quaker",
-                      "in_stock": 0.09490487100308796,
-                      "psku": "00842702",
-                      "pskudesc": "QUAKER CHEWY DIPP 6CT",
-                      "target_dcsl": 0.9,
-                      "xout_retail": 267873,
-                      "xout_units": 90804
-                    },
-                    {
-                      "dc_eop_inv": -6,
-                      "dc_service_level": 0,
-                      "dc_w_xo": 19,
-                      "demand_retail": 269510,
-                      "demand_units": 49002,
-                      "eid_desc1": "Quaker",
-                      "in_stock": 0.008350765348474284,
-                      "psku": "31345601",
-                      "pskudesc": "QUAKER CHEWY VARIETY PACK",
-                      "target_dcsl": 0.75,
-                      "xout_retail": 269510,
-                      "xout_units": 49002
-                    },
-                    {
-                      "dc_eop_inv": 37480,
-                      "dc_service_level": 0.44526368750857614,
-                      "dc_w_xo": 14,
-                      "demand_retail": 218630,
-                      "demand_units": 45496,
-                      "eid_desc1": "Nature Valley",
-                      "in_stock": 0.9023841280426808,
-                      "psku": "20854601",
-                      "pskudesc": "NATURE VALLEY PROTEIN SAL",
-                      "target_dcsl": 0.9,
-                      "xout_retail": 121282,
-                      "xout_units": 25184
-                    },
-                    {
-                      "dc_eop_inv": 14001,
-                      "dc_service_level": 0.7857986380260221,
-                      "dc_w_xo": 7,
-                      "demand_retail": 192221,
-                      "demand_units": 50724,
-                      "eid_desc1": "Cap N Crunch",
-                      "in_stock": 0.5905233045154968,
-                      "psku": "37873001",
-                      "pskudesc": "CTNC CINNAMON CEREAL",
-                      "target_dcsl": null,
-                      "xout_retail": 41174,
-                      "xout_units": 10836
-                    },
-                    {
-                      "dc_eop_inv": 26274,
-                      "dc_service_level": 0.1871572385782392,
-                      "dc_w_xo": 14,
-                      "demand_retail": 184166,
-                      "demand_units": 52260,
-                      "eid_desc1": "Pearl Milling",
-                      "in_stock": 0.678982258560889,
-                      "psku": "31343902",
-                      "pskudesc": "PEARL MILLING BTR SYRUP",
-                      "target_dcsl": 0.9,
-                      "xout_retail": 149698,
-                      "xout_units": 42750
-                    },
-                    {
-                      "dc_eop_inv": 29352,
-                      "dc_service_level": 0.6113139301079497,
-                      "dc_w_xo": 12,
-                      "demand_retail": 178046,
-                      "demand_units": 48780,
-                      "eid_desc1": "Post",
-                      "in_stock": 0.9661342004324973,
-                      "psku": "00836101",
-                      "pskudesc": "POST FRUITY PEBBLES",
-                      "target_dcsl": 0.93,
-                      "xout_retail": 69204,
-                      "xout_units": 18960
-                    },
-                    {
-                      "dc_eop_inv": 37350,
-                      "dc_service_level": 0.2731372995108634,
-                      "dc_w_xo": 19,
-                      "demand_retail": 175801,
-                      "demand_units": 45054,
-                      "eid_desc1": "General Mills",
-                      "in_stock": 0.8187937021357562,
-                      "psku": "22149102",
-                      "pskudesc": "REESES PUFFS TREAT BAR",
-                      "target_dcsl": 0.93,
-                      "xout_retail": 127797,
-                      "xout_units": 28067
-                    }
-                  ]
+                  }
                 },
                 "examples": {
                   "success response": {
-                    "value": [
-                      {
-                        "dc_eop_inv": 0,
-                        "dc_service_level": 0,
-                        "dc_w_xo": 19,
-                        "demand_retail": 638015,
-                        "demand_units": 216276,
-                        "eid_desc1": "Quaker",
-                        "in_stock": 0.009114066428476907,
-                        "psku": "00835702",
-                        "pskudesc": "QUAKER CHWY GRAN BAR CHOC",
-                        "target_dcsl": 0.96,
-                        "xout_retail": 638015,
-                        "xout_units": 216276
+                    "value": {
+                      "data": {
+                        "dc_eop_inv": [
+                          1950,
+                          6,
+                          -2,
+                          8814,
+                          2796,
+                          600,
+                          176650,
+                          68316,
+                          59148,
+                          25960
+                        ],
+                        "dc_service_level": [
+                          0.001390977975396193,
+                          0,
+                          0,
+                          0.028864049045478055,
+                          0.0152462505486497,
+                          0.006214964105968094,
+                          1,
+                          0.9953073871826437,
+                          0.8745877562273995,
+                          0.9214225232853513
+                        ],
+                        "dc_w_xo": [
+                          19,
+                          19,
+                          19,
+                          19,
+                          19,
+                          19,
+                          0,
+                          1,
+                          7,
+                          6
+                        ],
+                        "demand_retail": [
+                          636243,
+                          388255,
+                          269411,
+                          264897,
+                          241502,
+                          219953,
+                          204428,
+                          190086,
+                          188602,
+                          177150
+                        ],
+                        "demand_units": [
+                          215676,
+                          111066,
+                          48984,
+                          89796,
+                          81864,
+                          49744,
+                          40400,
+                          37460,
+                          51672,
+                          47240
+                        ],
+                        "eid_desc1": [
+                          "Quaker",
+                          "Cap N Crunch",
+                          "Quaker",
+                          "Quaker",
+                          "Quaker",
+                          "Clover Valley",
+                          "Kelloggs",
+                          "General Mills",
+                          "Post",
+                          "Kelloggs"
+                        ],
+                        "in_stock": [
+                          0.00968691704313038,
+                          0.012721039335979793,
+                          0.00846565620113076,
+                          0.19679175665946724,
+                          0.22609918200409,
+                          0.8524068107223061,
+                          0.9543589266147688,
+                          0.9531056412166179,
+                          0.9476940704669148,
+                          0.9880373643310358
+                        ],
+                        "psku": [
+                          "00835702",
+                          "31187901",
+                          "31345601",
+                          "31345701",
+                          "00842702",
+                          "05899302",
+                          "20652804",
+                          "11437605",
+                          "00836101",
+                          "00911103"
+                        ],
+                        "pskudesc": [
+                          "QUAKER CHWY GRAN BAR CHOC",
+                          "CNC CRNCHBRY TREAT BAR",
+                          "QUAKER CHEWY VARIETY PACK",
+                          "QUAKER CHEWY PB CHOC CHIP",
+                          "QUAKER CHEWY DIPP 6CT",
+                          "CV 18CT VARITY CHEWY BARS",
+                          "KLG FROSTED FLAKES 17.3OZ",
+                          "CINNAMON TOAST CRUNCH LG",
+                          "POST FRUITY PEBBLES",
+                          "RICE KRISPIE TREAT ORG"
+                        ],
+                        "target_dcsl": [
+                          0.96,
+                          0.9,
+                          0.75,
+                          0.93,
+                          0.9,
+                          0.9,
+                          0.98,
+                          0.98,
+                          0.93,
+                          0.93
+                        ],
+                        "xout_retail": [
+                          635358,
+                          388255,
+                          269411,
+                          257251,
+                          237820,
+                          218586,
+                          0,
+                          892,
+                          23653,
+                          13920
+                        ],
+                        "xout_units": [
+                          215376,
+                          111066,
+                          48984,
+                          87204,
+                          80616,
+                          49432,
+                          0,
+                          170,
+                          6480,
+                          3712
+                        ]
                       },
-                      {
-                        "dc_eop_inv": 6,
-                        "dc_service_level": 0,
-                        "dc_w_xo": 19,
-                        "demand_retail": 393669,
-                        "demand_units": 111384,
-                        "eid_desc1": "Cap N Crunch",
-                        "in_stock": 0.011961682770528273,
-                        "psku": "31187901",
-                        "pskudesc": "CNC CRNCHBRY TREAT BAR",
-                        "target_dcsl": 0.9,
-                        "xout_retail": 393669,
-                        "xout_units": 111384
+                      "fields": {
+                        "format": [
+                          "",
+                          "",
+                          "width:20",
+                          "type:num;width:4",
+                          "type:currency",
+                          "type:num;width:11;dec:0",
+                          "type:currency",
+                          "type:num;width:11;dec:0",
+                          "type:pct;dec:2",
+                          "type:pct;dec:2",
+                          "type:num;width:11;dec:0",
+                          "type:pct;dec:2"
+                        ],
+                        "label": [
+                          "Primary Sku",
+                          "Primary Sku Description",
+                          "Brand",
+                          "DCs w/XO",
+                          "Demand Retail $",
+                          "Demand Units",
+                          "Xout Retail $",
+                          "Xout Units",
+                          "DC Service Level",
+                          "SL Target",
+                          "EoP DC Inv Units",
+                          "In Stock %"
+                        ],
+                        "name": [
+                          "psku",
+                          "pskudesc",
+                          "eid_desc1",
+                          "dc_w_xo",
+                          "demand_retail",
+                          "demand_units",
+                          "xout_retail",
+                          "xout_units",
+                          "dc_service_level",
+                          "target_dcsl",
+                          "dc_eop_inv",
+                          "in_stock"
+                        ]
                       },
-                      {
-                        "dc_eop_inv": 7296,
-                        "dc_service_level": 0.0600876877740243,
-                        "dc_w_xo": 19,
-                        "demand_retail": 306086,
-                        "demand_units": 103758,
-                        "eid_desc1": "Quaker",
-                        "in_stock": 0.07866889676415063,
-                        "psku": "31345701",
-                        "pskudesc": "QUAKER CHEWY PB CHOC CHIP",
-                        "target_dcsl": 0.93,
-                        "xout_retail": 287694,
-                        "xout_units": 97524
-                      },
-                      {
-                        "dc_eop_inv": 8064,
-                        "dc_service_level": 0.06993385761158273,
-                        "dc_w_xo": 19,
-                        "demand_retail": 288015,
-                        "demand_units": 97632,
-                        "eid_desc1": "Quaker",
-                        "in_stock": 0.09490487100308796,
-                        "psku": "00842702",
-                        "pskudesc": "QUAKER CHEWY DIPP 6CT",
-                        "target_dcsl": 0.9,
-                        "xout_retail": 267873,
-                        "xout_units": 90804
-                      },
-                      {
-                        "dc_eop_inv": -6,
-                        "dc_service_level": 0,
-                        "dc_w_xo": 19,
-                        "demand_retail": 269510,
-                        "demand_units": 49002,
-                        "eid_desc1": "Quaker",
-                        "in_stock": 0.008350765348474284,
-                        "psku": "31345601",
-                        "pskudesc": "QUAKER CHEWY VARIETY PACK",
-                        "target_dcsl": 0.75,
-                        "xout_retail": 269510,
-                        "xout_units": 49002
-                      },
-                      {
-                        "dc_eop_inv": 37480,
-                        "dc_service_level": 0.44526368750857614,
-                        "dc_w_xo": 14,
-                        "demand_retail": 218630,
-                        "demand_units": 45496,
-                        "eid_desc1": "Nature Valley",
-                        "in_stock": 0.9023841280426808,
-                        "psku": "20854601",
-                        "pskudesc": "NATURE VALLEY PROTEIN SAL",
-                        "target_dcsl": 0.9,
-                        "xout_retail": 121282,
-                        "xout_units": 25184
-                      },
-                      {
-                        "dc_eop_inv": 14001,
-                        "dc_service_level": 0.7857986380260221,
-                        "dc_w_xo": 7,
-                        "demand_retail": 192221,
-                        "demand_units": 50724,
-                        "eid_desc1": "Cap N Crunch",
-                        "in_stock": 0.5905233045154968,
-                        "psku": "37873001",
-                        "pskudesc": "CTNC CINNAMON CEREAL",
-                        "target_dcsl": null,
-                        "xout_retail": 41174,
-                        "xout_units": 10836
-                      },
-                      {
-                        "dc_eop_inv": 26274,
-                        "dc_service_level": 0.1871572385782392,
-                        "dc_w_xo": 14,
-                        "demand_retail": 184166,
-                        "demand_units": 52260,
-                        "eid_desc1": "Pearl Milling",
-                        "in_stock": 0.678982258560889,
-                        "psku": "31343902",
-                        "pskudesc": "PEARL MILLING BTR SYRUP",
-                        "target_dcsl": 0.9,
-                        "xout_retail": 149698,
-                        "xout_units": 42750
-                      },
-                      {
-                        "dc_eop_inv": 29352,
-                        "dc_service_level": 0.6113139301079497,
-                        "dc_w_xo": 12,
-                        "demand_retail": 178046,
-                        "demand_units": 48780,
-                        "eid_desc1": "Post",
-                        "in_stock": 0.9661342004324973,
-                        "psku": "00836101",
-                        "pskudesc": "POST FRUITY PEBBLES",
-                        "target_dcsl": 0.93,
-                        "xout_retail": 69204,
-                        "xout_units": 18960
-                      },
-                      {
-                        "dc_eop_inv": 37350,
-                        "dc_service_level": 0.2731372995108634,
-                        "dc_w_xo": 19,
-                        "demand_retail": 175801,
-                        "demand_units": 45054,
-                        "eid_desc1": "General Mills",
-                        "in_stock": 0.8187937021357562,
-                        "psku": "22149102",
-                        "pskudesc": "REESES PUFFS TREAT BAR",
-                        "target_dcsl": 0.93,
-                        "xout_retail": 127797,
-                        "xout_units": 28067
-                      }
-                    ]
+                      "total_row_count": 10
+                    }
                   }
                 }
               }
@@ -1624,7 +1764,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.thukpa/in_stock_levels:json.keyed": {
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.laphing/in_stock_levels:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -1683,22 +1823,10 @@
                   "example": "Keep-Alive"
                 }
               },
-              "Content-Encoding": {
-                "schema": {
-                  "type": "string",
-                  "example": "gzip"
-                }
-              },
-              "Content-Length": {
-                "schema": {
-                  "type": "string",
-                  "example": "643"
-                }
-              },
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Wed, 24 Apr 2024 01:50:08 GMT"
+                  "example": "Mon, 20 May 2024 02:34:36 GMT"
                 }
               },
               "Keep-Alive": {
@@ -1713,261 +1841,372 @@
                   "example": "Apache"
                 }
               },
-              "Vary": {
+              "Transfer-Encoding": {
                 "schema": {
                   "type": "string",
-                  "example": "Accept-Encoding"
+                  "example": "chunked"
                 }
               }
             },
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "eid_desc1_prod": {
-                        "type": "string",
-                        "example": "New Skin"
-                      },
-                      "instock": {
-                        "type": "number",
-                        "example": 0.9192070212261269
-                      },
-                      "instock_target": {
-                        "type": "number",
-                        "example": 0.97
-                      },
-                      "pct_stores_w_oos": {
-                        "type": "number",
-                        "example": 0.1174991197625874
-                      },
-                      "psku_prod": {
-                        "type": "string",
-                        "example": "00459301"
-                      },
-                      "pskudesc_prod": {
-                        "type": "string",
-                        "example": "NEW SKIN LIQ BNDGE 0.33OZ"
-                      },
-                      "stores_selling": {
-                        "type": "number",
-                        "example": 19881
-                      },
-                      "stores_w_oos": {
-                        "type": "number",
-                        "example": 2336
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "eid_desc1_prod": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "New Skin"
+                          },
+                          "example": [
+                            "New Skin",
+                            "Rexall",
+                            "Band Aid",
+                            "Rexall",
+                            "Rexall",
+                            "Rexall",
+                            "Rexall",
+                            "Rexall",
+                            "Band Aid",
+                            "Rexall"
+                          ]
+                        },
+                        "instock": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.892233538166244
+                          },
+                          "example": [
+                            0.892233538166244,
+                            0.9534040937934197,
+                            0.8210698417818967,
+                            0.9672414659174903,
+                            0.9439860770916592,
+                            0.9457336026241531,
+                            0.9730565940440892,
+                            0.9611175569020096,
+                            0.9734361795081146,
+                            0.9514918424935184
+                          ]
+                        },
+                        "instock_target": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.97
+                          },
+                          "example": [
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97,
+                            0.97
+                          ]
+                        },
+                        "pct_stores_w_oos": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.16038492381716118
+                          },
+                          "example": [
+                            0.16038492381716118,
+                            0.06826383319967923,
+                            0.23821250833718127,
+                            0.0559935720383669,
+                            0.08886327185244587,
+                            0.08640737770649558,
+                            0.0484663191659984,
+                            0.06941659983961508,
+                            0.03839214113873296,
+                            0.0854550922213312
+                          ]
+                        },
+                        "psku_prod": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "00459301"
+                          },
+                          "example": [
+                            "00459301",
+                            "00459704",
+                            "00459902",
+                            "00460604",
+                            "00461204",
+                            "00461305",
+                            "00461405",
+                            "00461901",
+                            "00462201",
+                            "00462402"
+                          ]
+                        },
+                        "pskudesc_prod": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "NEW SKIN LIQ BNDGE 0.33OZ"
+                          },
+                          "example": [
+                            "NEW SKIN LIQ BNDGE 0.33OZ",
+                            "RX N/STICK PADS 3X4-10CT",
+                            "BAND-AID TRUSTAY PAD 10CT",
+                            "RX GAUZE PADS 2X2",
+                            "RX ADV AB SHEER LRG PADS",
+                            "RX BANDAGE ROLL-1CT",
+                            "RX GAUZE PADS 3X3",
+                            "RX ELASTIC BANDAGE 3 INCH",
+                            "BAND-AID PLASTIC 60CT",
+                            "RX ADV AB W/P XL H/DUTY"
+                          ]
+                        },
+                        "stores_selling": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 19952
+                          },
+                          "example": [
+                            19952,
+                            19952,
+                            19491,
+                            19913,
+                            19952,
+                            19952,
+                            19952,
+                            19952,
+                            19952,
+                            19952
+                          ]
+                        },
+                        "stores_w_oos": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 3200
+                          },
+                          "example": [
+                            3200,
+                            1362,
+                            4643,
+                            1115,
+                            1773,
+                            1724,
+                            967,
+                            1385,
+                            766,
+                            1705
+                          ]
+                        }
                       }
+                    },
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": ""
+                          },
+                          "example": [
+                            "",
+                            "",
+                            "width:20",
+                            "type:num;width:8",
+                            "type:num;width:8",
+                            "type:pct;dec:2",
+                            "type:pct;dec:2",
+                            "type:pct;dec:2"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Primary Sku"
+                          },
+                          "example": [
+                            "Primary Sku",
+                            "Primary Sku Description",
+                            "Brand",
+                            "Authorized Stores",
+                            "Stores w/OOS",
+                            "% Stores w/OOS",
+                            "In Stock %",
+                            "Instock Target"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "psku_prod"
+                          },
+                          "example": [
+                            "psku_prod",
+                            "pskudesc_prod",
+                            "eid_desc1_prod",
+                            "stores_selling",
+                            "stores_w_oos",
+                            "pct_stores_w_oos",
+                            "instock",
+                            "instock_target"
+                          ]
+                        }
+                      }
+                    },
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 10
                     }
-                  },
-                  "example": [
-                    {
-                      "eid_desc1_prod": "New Skin",
-                      "instock": 0.9192070212261269,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.1174991197625874,
-                      "psku_prod": "00459301",
-                      "pskudesc_prod": "NEW SKIN LIQ BNDGE 0.33OZ",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 2336
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9652748326995925,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.054675318142950555,
-                      "psku_prod": "00459704",
-                      "pskudesc_prod": "RX N/STICK PADS 3X4-10CT",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1087
-                    },
-                    {
-                      "eid_desc1_prod": "Band Aid",
-                      "instock": 0.913963619238241,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.11291319122644423,
-                      "psku_prod": "00459902",
-                      "pskudesc_prod": "BAND-AID TRUSTAY PAD 10CT",
-                      "stores_selling": 19422,
-                      "stores_w_oos": 2193
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9650553122839364,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.056345126499344825,
-                      "psku_prod": "00460604",
-                      "pskudesc_prod": "RX GAUZE PADS 2X2",
-                      "stores_selling": 19842,
-                      "stores_w_oos": 1118
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9664608506264332,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.06569086062069313,
-                      "psku_prod": "00461204",
-                      "pskudesc_prod": "RX ADV AB SHEER LRG PADS",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1306
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9566779997268565,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.07132438006136513,
-                      "psku_prod": "00461305",
-                      "pskudesc_prod": "RX BANDAGE ROLL-1CT",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1418
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9794926718468095,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.03888134399678085,
-                      "psku_prod": "00461405",
-                      "pskudesc_prod": "RX GAUZE PADS 3X3",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 773
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.9510641815398108,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.0855087772244857,
-                      "psku_prod": "00461901",
-                      "pskudesc_prod": "RX ELASTIC BANDAGE 3 INCH",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1700
-                    },
-                    {
-                      "eid_desc1_prod": "Band Aid",
-                      "instock": 0.9404115841605509,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.07202856999144912,
-                      "psku_prod": "00462201",
-                      "pskudesc_prod": "BAND-AID PLASTIC 60CT",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1432
-                    },
-                    {
-                      "eid_desc1_prod": "Rexall",
-                      "instock": 0.959272863191035,
-                      "instock_target": 0.97,
-                      "pct_stores_w_oos": 0.07891957145012826,
-                      "psku_prod": "00462402",
-                      "pskudesc_prod": "RX ADV AB W/P XL H/DUTY",
-                      "stores_selling": 19881,
-                      "stores_w_oos": 1569
-                    }
-                  ]
+                  }
                 },
                 "examples": {
                   "success response": {
-                    "value": [
-                      {
-                        "eid_desc1_prod": "New Skin",
-                        "instock": 0.9192070212261269,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.1174991197625874,
-                        "psku_prod": "00459301",
-                        "pskudesc_prod": "NEW SKIN LIQ BNDGE 0.33OZ",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 2336
+                    "value": {
+                      "data": {
+                        "eid_desc1_prod": [
+                          "New Skin",
+                          "Rexall",
+                          "Band Aid",
+                          "Rexall",
+                          "Rexall",
+                          "Rexall",
+                          "Rexall",
+                          "Rexall",
+                          "Band Aid",
+                          "Rexall"
+                        ],
+                        "instock": [
+                          0.892233538166244,
+                          0.9534040937934197,
+                          0.8210698417818967,
+                          0.9672414659174903,
+                          0.9439860770916592,
+                          0.9457336026241531,
+                          0.9730565940440892,
+                          0.9611175569020096,
+                          0.9734361795081146,
+                          0.9514918424935184
+                        ],
+                        "instock_target": [
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97,
+                          0.97
+                        ],
+                        "pct_stores_w_oos": [
+                          0.16038492381716118,
+                          0.06826383319967923,
+                          0.23821250833718127,
+                          0.0559935720383669,
+                          0.08886327185244587,
+                          0.08640737770649558,
+                          0.0484663191659984,
+                          0.06941659983961508,
+                          0.03839214113873296,
+                          0.0854550922213312
+                        ],
+                        "psku_prod": [
+                          "00459301",
+                          "00459704",
+                          "00459902",
+                          "00460604",
+                          "00461204",
+                          "00461305",
+                          "00461405",
+                          "00461901",
+                          "00462201",
+                          "00462402"
+                        ],
+                        "pskudesc_prod": [
+                          "NEW SKIN LIQ BNDGE 0.33OZ",
+                          "RX N/STICK PADS 3X4-10CT",
+                          "BAND-AID TRUSTAY PAD 10CT",
+                          "RX GAUZE PADS 2X2",
+                          "RX ADV AB SHEER LRG PADS",
+                          "RX BANDAGE ROLL-1CT",
+                          "RX GAUZE PADS 3X3",
+                          "RX ELASTIC BANDAGE 3 INCH",
+                          "BAND-AID PLASTIC 60CT",
+                          "RX ADV AB W/P XL H/DUTY"
+                        ],
+                        "stores_selling": [
+                          19952,
+                          19952,
+                          19491,
+                          19913,
+                          19952,
+                          19952,
+                          19952,
+                          19952,
+                          19952,
+                          19952
+                        ],
+                        "stores_w_oos": [
+                          3200,
+                          1362,
+                          4643,
+                          1115,
+                          1773,
+                          1724,
+                          967,
+                          1385,
+                          766,
+                          1705
+                        ]
                       },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9652748326995925,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.054675318142950555,
-                        "psku_prod": "00459704",
-                        "pskudesc_prod": "RX N/STICK PADS 3X4-10CT",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1087
+                      "fields": {
+                        "format": [
+                          "",
+                          "",
+                          "width:20",
+                          "type:num;width:8",
+                          "type:num;width:8",
+                          "type:pct;dec:2",
+                          "type:pct;dec:2",
+                          "type:pct;dec:2"
+                        ],
+                        "label": [
+                          "Primary Sku",
+                          "Primary Sku Description",
+                          "Brand",
+                          "Authorized Stores",
+                          "Stores w/OOS",
+                          "% Stores w/OOS",
+                          "In Stock %",
+                          "Instock Target"
+                        ],
+                        "name": [
+                          "psku_prod",
+                          "pskudesc_prod",
+                          "eid_desc1_prod",
+                          "stores_selling",
+                          "stores_w_oos",
+                          "pct_stores_w_oos",
+                          "instock",
+                          "instock_target"
+                        ]
                       },
-                      {
-                        "eid_desc1_prod": "Band Aid",
-                        "instock": 0.913963619238241,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.11291319122644423,
-                        "psku_prod": "00459902",
-                        "pskudesc_prod": "BAND-AID TRUSTAY PAD 10CT",
-                        "stores_selling": 19422,
-                        "stores_w_oos": 2193
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9650553122839364,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.056345126499344825,
-                        "psku_prod": "00460604",
-                        "pskudesc_prod": "RX GAUZE PADS 2X2",
-                        "stores_selling": 19842,
-                        "stores_w_oos": 1118
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9664608506264332,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.06569086062069313,
-                        "psku_prod": "00461204",
-                        "pskudesc_prod": "RX ADV AB SHEER LRG PADS",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1306
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9566779997268565,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.07132438006136513,
-                        "psku_prod": "00461305",
-                        "pskudesc_prod": "RX BANDAGE ROLL-1CT",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1418
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9794926718468095,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.03888134399678085,
-                        "psku_prod": "00461405",
-                        "pskudesc_prod": "RX GAUZE PADS 3X3",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 773
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.9510641815398108,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.0855087772244857,
-                        "psku_prod": "00461901",
-                        "pskudesc_prod": "RX ELASTIC BANDAGE 3 INCH",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1700
-                      },
-                      {
-                        "eid_desc1_prod": "Band Aid",
-                        "instock": 0.9404115841605509,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.07202856999144912,
-                        "psku_prod": "00462201",
-                        "pskudesc_prod": "BAND-AID PLASTIC 60CT",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1432
-                      },
-                      {
-                        "eid_desc1_prod": "Rexall",
-                        "instock": 0.959272863191035,
-                        "instock_target": 0.97,
-                        "pct_stores_w_oos": 0.07891957145012826,
-                        "psku_prod": "00462402",
-                        "pskudesc_prod": "RX ADV AB W/P XL H/DUTY",
-                        "stores_selling": 19881,
-                        "stores_w_oos": 1569
-                      }
-                    ]
+                      "total_row_count": 10
+                    }
                   }
                 }
               }
