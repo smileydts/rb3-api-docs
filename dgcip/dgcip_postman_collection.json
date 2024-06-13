@@ -399,7 +399,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Mon, 27 May 2024 02:58:23 GMT"
+									"value": "Tue, 28 May 2024 18:18:29 GMT"
 								},
 								{
 									"key": "Server",
@@ -423,7 +423,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"pskudesc_product\": [\n            \"CV TOASTER PASTRY CHERRY\",\n            \"KLLGG COCOA KRSPS 12.60Z\",\n            \"CHEWY BLUBRY YOGURT SINGL\",\n            \"CAPN CRUNCH HERO 11.4OZ\",\n            \"OATMEAL EXPRESS APP/CINN\",\n            \"CAPN CRUNCH BERRIES CUP\",\n            \"OATMEAL EXPRESS MBS\",\n            \"PM BLUEBBERRY PANCAKE\",\n            \"FROOT LOOPS CUP 1.5OZ\",\n            \"CAPN CRUNCH CUPS\"\n        ],\n        \"sales_sales_c1\": [\n            374440.7199999998,\n            390237.25000000012,\n            0.64000000000000035,\n            1347.49,\n            252561.22000000117,\n            282232.70000000013,\n            336603.5300000016,\n            118452.86999999992,\n            376000.59999999992,\n            167068.35000000001\n        ],\n        \"sales_sales_c2\": [\n            0.23000000000000004,\n            0.29000000000000004,\n            0.01,\n            22.910000000000007,\n            4485.2600000000011,\n            5165.6199999999981,\n            6244.659999999998,\n            2544.4200000000001,\n            8476.5400000000009,\n            3900.0899999999997\n        ],\n        \"sales_sales_pct\": [\n            1628002.1304347815,\n            1345644.6896551726,\n            63.000000000000036,\n            57.816673941510238,\n            55.30915933524502,\n            53.636752219481927,\n            52.902619197842917,\n            45.553976937769676,\n            43.357792212388532,\n            41.837049914232757\n        ],\n        \"sales_baskets_c1\": [\n            271515,\n            108423,\n            2,\n            360,\n            116028,\n            158031,\n            145661,\n            50093,\n            213219,\n            92506\n        ],\n        \"sales_baskets_c2\": [\n            15,\n            27,\n            1,\n            35,\n            2152,\n            2880,\n            2740,\n            1292,\n            4083,\n            2132\n        ],\n        \"sales_baskets_pct\": [\n            18100,\n            4014.6666666666665,\n            1,\n            9.2857142857142865,\n            52.916356877323423,\n            53.871875000000003,\n            52.160948905109493,\n            37.771671826625386,\n            51.221160911094785,\n            42.389305816135085\n        ],\n        \"sales_sales_psw_c1\": [\n            1.5680294141048665,\n            1.6245399935057911,\n            0.024615384615384629,\n            0.36756410256410255,\n            1.0798013647091065,\n            1.1860260962746627,\n            1.4342535440519224,\n            0.57925996381241096,\n            1.5666300009166434,\n            0.75569866743864156\n        ],\n        \"sales_sales_psw_c2\": [\n            0.0022115384615384618,\n            0.0010139860139860141,\n            0.00076923076923076923,\n            0.070492307692307715,\n            2.6954687500000007,\n            3.1287825560266493,\n            3.7237090041741192,\n            1.5290985576923077,\n            4.9025679583574329,\n            2.4000553846153845\n        ],\n        \"sales_sales_psw_pct\": [\n            708.02199594307001,\n            1601.1325453195043,\n            31.000000000000018,\n            4.2142441437509071,\n            -0.59940126751270772,\n            -0.62093048173317644,\n            -0.6148320015220885,\n            -0.62117552142183607,\n            -0.68044706076006523,\n            -0.68513282139955944\n        ],\n        \"sales_sales_pt_c1\": [\n            1.3790793142183666,\n            3.5992109607740064,\n            0.32000000000000017,\n            3.7430277777777778,\n            2.176726479815227,\n            1.7859325069132015,\n            2.3108692786676022,\n            2.3646591340107386,\n            1.7634479103644605,\n            1.8060271766155709\n        ],\n        \"sales_sales_pt_c2\": [\n            0.015333333333333336,\n            0.010740740740740742,\n            0.01,\n            0.6545714285714288,\n            2.0842286245353163,\n            1.793618055555555,\n            2.2790729927007294,\n            1.9693653250773995,\n            2.0760568209649768,\n            1.829310506566604\n        ],\n        \"sales_sales_pt_pct\": [\n            88.939955275110847,\n            334.09895152033846,\n            31.000000000000014,\n            4.7182877443134954,\n            0.044379898726577244,\n            -0.0042849416120384499,\n            0.01395141185416523,\n            0.20072142222662692,\n            -0.15057820549208853,\n            -0.012727926651847158\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"pskudesc_product\",\n            \"sales_sales_c1\",\n            \"sales_sales_c2\",\n            \"sales_sales_pct\",\n            \"sales_baskets_c1\",\n            \"sales_baskets_c2\",\n            \"sales_baskets_pct\",\n            \"sales_sales_psw_c1\",\n            \"sales_sales_psw_c2\",\n            \"sales_sales_psw_pct\",\n            \"sales_sales_pt_c1\",\n            \"sales_sales_pt_c2\",\n            \"sales_sales_pt_pct\"\n        ],\n        \"label\": [\n            \"Primary Sku Description\",\n            \"Curr. Per.  Sales $\",\n            \"Comp. Per.  Sales $\",\n            \"% Chg  Sales $\",\n            \"Curr. Per.  Baskets\",\n            \"Comp. Per.  Baskets\",\n            \"% Chg  Baskets\",\n            \"Curr. Per.  Sales/ Store/ Week\",\n            \"Comp. Per.  Sales/ Store/ Week\",\n            \"% Chg  Sales/ Store/ Week\",\n            \"Curr. Per.  Sales $ /Basket\",\n            \"Comp. Per.  Sales $ /Basket\",\n            \"% Chg  Sales $ /Basket\"\n        ],\n        \"format\": [\n            \"\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:0\",\n            \"type:num;dec:0\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:2\",\n            \"type:num;dec:2\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 348\n}"
+							"body": "{\n    \"data\": {\n        \"pskudesc_product\": [\n            \"CV TOASTER PASTRY CHERRY\",\n            \"KLLGG COCOA KRSPS 12.60Z\",\n            \"CHEWY BLUBRY YOGURT SINGL\",\n            \"CAPN CRUNCH HERO 11.4OZ\",\n            \"OATMEAL EXPRESS APP/CINN\",\n            \"CAPN CRUNCH BERRIES CUP\",\n            \"OATMEAL EXPRESS MBS\",\n            \"PM BLUEBBERRY PANCAKE\",\n            \"FROOT LOOPS CUP 1.5OZ\",\n            \"CAPN CRUNCH CUPS\"\n        ],\n        \"sales_sales_c1\": [\n            374441.9699999998,\n            390240.25000000017,\n            0.64000000000000035,\n            1347.49,\n            252570.32000000114,\n            282232.70000000013,\n            336613.93000000156,\n            118452.86999999994,\n            376003.09999999992,\n            167069.60000000001\n        ],\n        \"sales_sales_c2\": [\n            0.23000000000000004,\n            0.29000000000000004,\n            0.01,\n            22.910000000000007,\n            4485.2600000000011,\n            5165.6199999999981,\n            6244.659999999998,\n            2544.4200000000001,\n            8476.5400000000009,\n            3900.0899999999997\n        ],\n        \"sales_sales_pct\": [\n            1628007.5652173902,\n            1345655.0344827592,\n            63.000000000000036,\n            57.816673941510238,\n            55.311188203136737,\n            53.636752219481927,\n            52.904284620780267,\n            45.553976937769683,\n            43.358087144046969,\n            41.837370419656985\n        ],\n        \"sales_baskets_c1\": [\n            271516,\n            108424,\n            2,\n            360,\n            116030,\n            158031,\n            145663,\n            50093,\n            213220,\n            92507\n        ],\n        \"sales_baskets_c2\": [\n            15,\n            27,\n            1,\n            35,\n            2152,\n            2880,\n            2740,\n            1292,\n            4083,\n            2132\n        ],\n        \"sales_baskets_pct\": [\n            18100.066666666666,\n            4014.7037037037039,\n            1,\n            9.2857142857142865,\n            52.917286245353161,\n            53.871875000000003,\n            52.161678832116792,\n            37.771671826625386,\n            51.221405829047271,\n            42.389774859287051\n        ],\n        \"sales_sales_psw_c1\": [\n            1.56803464867649,\n            1.6245524823698876,\n            0.024615384615384629,\n            0.36756410256410255,\n            1.0798402708896311,\n            1.1860260962746627,\n            1.4342978580163601,\n            0.57925996381241107,\n            1.5666404173228998,\n            0.75570432155166956\n        ],\n        \"sales_sales_psw_c2\": [\n            0.0022115384615384618,\n            0.0010139860139860141,\n            0.00076923076923076923,\n            0.070492307692307715,\n            2.6954687500000007,\n            3.1287825560266493,\n            3.7237090041741192,\n            1.5290985576923077,\n            4.9025679583574329,\n            2.4000553846153845\n        ],\n        \"sales_sales_psw_pct\": [\n            708.02436287980413,\n            1601.1448619234063,\n            31.000000000000018,\n            4.2142441437509071,\n            -0.59938683359262435,\n            -0.62093048173317644,\n            -0.6148201010313713,\n            -0.62117552142183607,\n            -0.68044493607635981,\n            -0.68513046557349633\n        ],\n        \"sales_sales_pt_c1\": [\n            1.3790788388161279,\n            3.5992054342212074,\n            0.32000000000000017,\n            3.7430277777777778,\n            2.1767673877445586,\n            1.7859325069132015,\n            2.3109089473648186,\n            2.3646591340107386,\n            1.7634513647875429,\n            1.806021165965819\n        ],\n        \"sales_sales_pt_c2\": [\n            0.015333333333333336,\n            0.010740740740740742,\n            0.01,\n            0.6545714285714288,\n            2.0842286245353163,\n            1.793618055555555,\n            2.2790729927007294,\n            1.9693653250773995,\n            2.0760568209649768,\n            1.829310506566604\n        ],\n        \"sales_sales_pt_pct\": [\n            88.939924270617013,\n            334.09843697921582,\n            31.000000000000014,\n            4.7182877443134954,\n            0.044399526097994163,\n            -0.0042849416120384499,\n            0.013968817482393654,\n            0.20072142222662692,\n            -0.1505765415573409,\n            -0.012731212397886632\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"pskudesc_product\",\n            \"sales_sales_c1\",\n            \"sales_sales_c2\",\n            \"sales_sales_pct\",\n            \"sales_baskets_c1\",\n            \"sales_baskets_c2\",\n            \"sales_baskets_pct\",\n            \"sales_sales_psw_c1\",\n            \"sales_sales_psw_c2\",\n            \"sales_sales_psw_pct\",\n            \"sales_sales_pt_c1\",\n            \"sales_sales_pt_c2\",\n            \"sales_sales_pt_pct\"\n        ],\n        \"label\": [\n            \"Primary Sku Description\",\n            \"Curr. Per.  Sales $\",\n            \"Comp. Per.  Sales $\",\n            \"% Chg  Sales $\",\n            \"Curr. Per.  Baskets\",\n            \"Comp. Per.  Baskets\",\n            \"% Chg  Baskets\",\n            \"Curr. Per.  Sales/ Store/ Week\",\n            \"Comp. Per.  Sales/ Store/ Week\",\n            \"% Chg  Sales/ Store/ Week\",\n            \"Curr. Per.  Sales $ /Basket\",\n            \"Comp. Per.  Sales $ /Basket\",\n            \"% Chg  Sales $ /Basket\"\n        ],\n        \"format\": [\n            \"\",\n            \"type:currency;dec:2\",\n            \"type:currency;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:num;dec:0\",\n            \"type:num;dec:0\",\n            \"type:pct;dec:1\",\n            \"type:currency;dec:2\",\n            \"type:currency;dec:2\",\n            \"type:pct;dec:1\",\n            \"type:currency;dec:2\",\n            \"type:currency;dec:2\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 348\n}"
 						}
 					]
 				},
@@ -434,7 +434,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"classdesc\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"'CEREAL'\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"start\": \"1\",\r\n            \"limit\": \"10\"\r\n        }\r\n    }\r\n}",
+							"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"classdesc\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"CEREAL\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"start\": \"1\",\r\n            \"limit\": \"10\",\r\n            \"sort\": {\r\n                \"row\": {\r\n                    \"field\": \"dc_w_xo\",\r\n                    \"dir\": \"desc\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -465,7 +465,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"classdesc\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"'CEREAL'\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"start\": \"1\",\r\n            \"limit\": \"10\"\r\n        }\r\n    }\r\n}",
+									"raw": "{\r\n    \"input\": {\r\n        \"filters\": {\r\n            \"product\": [\r\n                {\r\n                    \"col\": \"classdesc\",\r\n                    \"ops\": \"=\",\r\n                    \"values\": [\r\n                        \"CEREAL\"\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"report\": {\r\n            \"start\": \"1\",\r\n            \"limit\": \"10\",\r\n            \"sort\": {\r\n                \"row\": {\r\n                    \"field\": \"dc_w_xo\",\r\n                    \"dir\": \"desc\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -494,7 +494,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Mon, 20 May 2024 02:26:14 GMT"
+									"value": "Thu, 13 Jun 2024 02:10:16 GMT"
 								},
 								{
 									"key": "Server",
@@ -518,7 +518,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"psku\": [\n            \"00835702\",\n            \"31187901\",\n            \"31345601\",\n            \"31345701\",\n            \"00842702\",\n            \"05899302\",\n            \"20652804\",\n            \"11437605\",\n            \"00836101\",\n            \"00911103\"\n        ],\n        \"pskudesc\": [\n            \"QUAKER CHWY GRAN BAR CHOC\",\n            \"CNC CRNCHBRY TREAT BAR\",\n            \"QUAKER CHEWY VARIETY PACK\",\n            \"QUAKER CHEWY PB CHOC CHIP\",\n            \"QUAKER CHEWY DIPP 6CT\",\n            \"CV 18CT VARITY CHEWY BARS\",\n            \"KLG FROSTED FLAKES 17.3OZ\",\n            \"CINNAMON TOAST CRUNCH LG\",\n            \"POST FRUITY PEBBLES\",\n            \"RICE KRISPIE TREAT ORG\"\n        ],\n        \"eid_desc1\": [\n            \"Quaker\",\n            \"Cap N Crunch\",\n            \"Quaker\",\n            \"Quaker\",\n            \"Quaker\",\n            \"Clover Valley\",\n            \"Kelloggs\",\n            \"General Mills\",\n            \"Post\",\n            \"Kelloggs\"\n        ],\n        \"dc_w_xo\": [\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            0,\n            1,\n            7,\n            6\n        ],\n        \"demand_retail\": [\n            636243,\n            388255,\n            269411,\n            264897,\n            241502,\n            219953,\n            204428,\n            190086,\n            188602,\n            177150\n        ],\n        \"demand_units\": [\n            215676,\n            111066,\n            48984,\n            89796,\n            81864,\n            49744,\n            40400,\n            37460,\n            51672,\n            47240\n        ],\n        \"xout_retail\": [\n            635358,\n            388255,\n            269411,\n            257251,\n            237820,\n            218586,\n            0,\n            892,\n            23653,\n            13920\n        ],\n        \"xout_units\": [\n            215376,\n            111066,\n            48984,\n            87204,\n            80616,\n            49432,\n            0,\n            170,\n            6480,\n            3712\n        ],\n        \"dc_service_level\": [\n            0.0013909779753961929,\n            0,\n            0,\n            0.028864049045478055,\n            0.015246250548649701,\n            0.0062149641059680936,\n            1,\n            0.99530738718264367,\n            0.87458775622739948,\n            0.92142252328535135\n        ],\n        \"target_dcsl\": [\n            0.95999999999999996,\n            0.90000000000000002,\n            0.75,\n            0.93000000000000005,\n            0.90000000000000002,\n            0.90000000000000002,\n            0.97999999999999998,\n            0.97999999999999998,\n            0.93000000000000005,\n            0.93000000000000005\n        ],\n        \"dc_eop_inv\": [\n            1950,\n            6,\n            -2,\n            8814,\n            2796,\n            600,\n            176650,\n            68316,\n            59148,\n            25960\n        ],\n        \"in_stock\": [\n            0.0096869170431303792,\n            0.012721039335979791,\n            0.0084656562011307598,\n            0.19679175665946724,\n            0.22609918200408999,\n            0.85240681072230606,\n            0.95435892661476873,\n            0.95310564121661789,\n            0.9476940704669149,\n            0.98803736433103584\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"psku\",\n            \"pskudesc\",\n            \"eid_desc1\",\n            \"dc_w_xo\",\n            \"demand_retail\",\n            \"demand_units\",\n            \"xout_retail\",\n            \"xout_units\",\n            \"dc_service_level\",\n            \"target_dcsl\",\n            \"dc_eop_inv\",\n            \"in_stock\"\n        ],\n        \"label\": [\n            \"Primary Sku\",\n            \"Primary Sku Description\",\n            \"Brand\",\n            \"DCs w/XO\",\n            \"Demand Retail $\",\n            \"Demand Units\",\n            \"Xout Retail $\",\n            \"Xout Units\",\n            \"DC Service Level\",\n            \"SL Target\",\n            \"EoP DC Inv Units\",\n            \"In Stock %\"\n        ],\n        \"format\": [\n            \"\",\n            \"\",\n            \"width:20\",\n            \"type:num;width:4\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\",\n            \"type:pct;dec:2\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\"\n        ]\n    },\n    \"total_row_count\": 10\n}"
+							"body": "{\n    \"data\": {\n        \"psku\": [\n            \"00835702\",\n            \"31187901\",\n            \"05899302\",\n            \"00842702\",\n            \"31345601\",\n            \"31190101\",\n            \"31345701\",\n            \"00911103\",\n            \"00838902\",\n            \"29183001\"\n        ],\n        \"pskudesc\": [\n            \"QUAKER CHWY GRAN BAR CHOC\",\n            \"CNC CRNCHBRY TREAT BAR\",\n            \"CV 18CT VARITY CHEWY BARS\",\n            \"QUAKER CHEWY DIPP 6CT\",\n            \"QUAKER CHEWY VARIETY PACK\",\n            \"CV CHOCO DIPPED BAR 6CT\",\n            \"QUAKER CHEWY PB CHOC CHIP\",\n            \"RICE KRISPIE TREAT ORG\",\n            \"CV CHOC CHIP CHWY GRN BAR\",\n            \"PEARL MILLING BTRMLK\"\n        ],\n        \"eid_desc1\": [\n            \"Quaker\",\n            \"Cap N Crunch\",\n            \"Clover Valley\",\n            \"Quaker\",\n            \"Quaker\",\n            \"Clover Valley\",\n            \"Quaker\",\n            \"Kelloggs\",\n            \"Clover Valley\",\n            \"Pearl Milling\"\n        ],\n        \"dc_w_xo\": [\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            19,\n            18\n        ],\n        \"demand_retail\": [\n            581959,\n            374691,\n            345235,\n            275219,\n            226144,\n            224916,\n            220207,\n            212490,\n            199391,\n            217969\n        ],\n        \"demand_units\": [\n            197274,\n            111114,\n            78496,\n            93294,\n            41117,\n            79208,\n            74646,\n            70136,\n            70734,\n            66264\n        ],\n        \"xout_retail\": [\n            519691,\n            374691,\n            345235,\n            275148,\n            226144,\n            224916,\n            181621,\n            212322,\n            199391,\n            160337\n        ],\n        \"xout_units\": [\n            176166,\n            111114,\n            78496,\n            93270,\n            41117,\n            79208,\n            61566,\n            70080,\n            70734,\n            48720\n        ],\n        \"dc_service_level\": [\n            0.10699722832708146,\n            0,\n            0,\n            0.00025797637517758587,\n            0,\n            0,\n            0.17522603731943126,\n            0.00079062544119723281,\n            0,\n            0.26440457129224798\n        ],\n        \"target_dcsl\": [\n            0.95999999999999996,\n            0.90000000000000002,\n            0.90000000000000002,\n            0.90000000000000002,\n            0.75,\n            0.84999999999999998,\n            0.93000000000000005,\n            0.93000000000000005,\n            0.80000000000000004,\n            0.80000000000000004\n        ],\n        \"dc_eop_inv\": [\n            3696,\n            6,\n            2272,\n            3336,\n            -2,\n            384,\n            7668,\n            2168,\n            294,\n            3996\n        ],\n        \"in_stock\": [\n            0.14502172596121485,\n            0.012292129435072342,\n            0.67968509840674785,\n            0.20146184787176563,\n            0.0087200576334273885,\n            0.65555813970935772,\n            0.37101772561231211,\n            0.95305920059789873,\n            0.47954385814016831,\n            0.8362079960387423\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"psku\",\n            \"pskudesc\",\n            \"eid_desc1\",\n            \"dc_w_xo\",\n            \"demand_retail\",\n            \"demand_units\",\n            \"xout_retail\",\n            \"xout_units\",\n            \"dc_service_level\",\n            \"target_dcsl\",\n            \"dc_eop_inv\",\n            \"in_stock\"\n        ],\n        \"label\": [\n            \"Primary Sku\",\n            \"Primary Sku Description\",\n            \"Brand\",\n            \"DCs w/XO\",\n            \"Demand Retail $\",\n            \"Demand Units\",\n            \"Xout Retail $\",\n            \"Xout Units\",\n            \"DC Service Level\",\n            \"SL Target\",\n            \"EoP DC Inv Units\",\n            \"In Stock %\"\n        ],\n        \"format\": [\n            \"\",\n            \"\",\n            \"width:20\",\n            \"type:num;width:4\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:currency\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\",\n            \"type:pct;dec:2\",\n            \"type:num;width:11;dec:0\",\n            \"type:pct;dec:2\"\n        ]\n    },\n    \"total_row_count\": 191\n}"
 						}
 					]
 				},
@@ -1056,6 +1056,95 @@
 				},
 				{
 					"name": "Available Dims",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.dimensions/available_dims:json?=",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.dev.v4_15.misc.rb3.api.dimensions",
+								"available_dims:json"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_15.misc.rb3.api.dimensions/available_dims:json?=",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.dev.v4_15.misc.rb3.api.dimensions",
+										"available_dims:json"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 May 2024 18:55:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"available_dims\": [\n        \"product\",\n        \"store\",\n        \"date\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Available Dims Copy",
 					"request": {
 						"method": "POST",
 						"header": [],
