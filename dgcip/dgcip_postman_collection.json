@@ -112,6 +112,99 @@
 							"body": "{\n    \"uid\": \"my_uid\",\n    \"sid\": \"1442703025\",\n    \"epw\": \"_______afcea337e76ca4622d9f031cac2812741b513474abaddd99f6c610b50c9e66406421fbb35601f4f5386d55639c4d37eef1fc9d003d1338356bd305860c9f6acf\"\n}"
 						}
 					]
+				},
+				{
+					"name": "User Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cmd\": [\r\n        \"get_user\",\r\n        {\r\n            \"uid\": \"my_uid\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/dbm:json",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"dbm:json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cmd\": [\r\n        \"get_user\",\r\n        {\r\n            \"uid\": \"my_uid\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/dbm:json",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"dbm:json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 26 Jun 2024 01:50:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"rc\": 0,\n    \"value\": {\n        \"addts\": -587813133,\n        \"adduser\": \"dgcip_template\",\n        \"api\": 1,\n        \"city\": \"\",\n        \"company\": \"x1010data\",\n        \"compid\": \"dgcip\",\n        \"country\": \"\",\n        \"disk_used\": 21233504424,\n        \"dormantmin\": 30,\n        \"email\": \"dustin.steinhauer@1010data.com\",\n        \"emaillist\": [],\n        \"expiredate\": -2147483648,\n        \"first\": \"Dustin\",\n        \"ftptotdisk\": null,\n        \"inactive\": 0,\n        \"ip\": [],\n        \"last\": \"Steinhauer\",\n        \"lastlogts\": -331857144,\n        \"macromach\": [\n            \"nj4163\",\n            \"nj5092\",\n            \"nj5093\"\n        ],\n        \"maiden\": \"\",\n        \"maxdown\": 180000000,\n        \"maxrows\": -2147483648,\n        \"maxsessions\": 1,\n        \"mi\": \"\",\n        \"phone\": \"123-456-7890\",\n        \"profess\": \"\",\n        \"pwdate\": 20240520,\n        \"servers\": [\n            \"nj4154\",\n            \"nj4155\",\n            \"nj4156\",\n            \"nj4157\",\n            \"nj4158\",\n            \"nj4159\",\n            \"nj4160\",\n            \"nj4161\",\n            \"nj4162\",\n            \"nj4163\",\n            \"nj5092\",\n            \"nj5093\",\n            \"nj5094\",\n            \"nj5095\",\n            \"nj5096\",\n            \"nj5097\",\n            \"nj5098\",\n            \"nj5099\",\n            \"nj5100\",\n            \"nj5101\",\n            \"nj3253\",\n            \"nj3254\",\n            \"nj4093\",\n            \"nj4126\"\n        ],\n        \"sex\": \"\",\n        \"state\": \"\",\n        \"street\": \"\",\n        \"totdisk\": 30000000000,\n        \"uid\": \"dgcip_x1010data_43\",\n        \"uploadmach\": [\n            \"nj4162\",\n            \"nj4161\"\n        ],\n        \"uploadpath\": [],\n        \"upts\": -331856827,\n        \"upuser\": \"sandy2\",\n        \"upversion\": \"prime-11.34\",\n        \"version\": \"\",\n        \"wsaccum\": 61440,\n        \"wsslave\": -2147483648,\n        \"yearborn\": -2147483648,\n        \"zip\": \"\",\n        \"pref\": {\n            \"pwResetTokenTS\": -2147483648,\n            \"timezone\": -5,\n            \"bulkedit\": 1,\n            \"wsslaves\": 80530636800,\n            \"filter_admin\": 0,\n            \"focus\": 1,\n            \"combo\": 1,\n            \"shortcut\": 1,\n            \"progressbar\": 1,\n            \"ditto\": \"value\",\n            \"sortcols\": 0,\n            \"l_cols_n\": 3,\n            \"s_res_n\": 10,\n            \"t_breaks_n\": 10,\n            \"t_res_n\": 10,\n            \"x_rbreaks_n\": 3,\n            \"x_cbreaks_n\": 3,\n            \"syntax_h\": 1,\n            \"oe_wrap\": 1,\n            \"auto_hint\": 1,\n            \"down_eor\": \"\\n\",\n            \"down_last\": 0,\n            \"showids\": 0,\n            \"nestmacro\": 2,\n            \"splitattr\": 0,\n            \"splitexpr\": 0,\n            \"region_fmt\": \"US\",\n            \"excel_dl\": \"old\",\n            \"maxrows_slave\": 2000000000,\n            \"allow_empty_tables\": 0,\n            \"grid_labels\": \"both\",\n            \"show_save_macro\": 0,\n            \"encryption_menu\": 0,\n            \"debugging_menu\": 0,\n            \"developer_ui\": 0,\n            \"mma_chart\": 0,\n            \"err_stack_info\": 1,\n            \"powerloader_uq\": 0,\n            \"html_uq\": 0,\n            \"sched\": 1,\n            \"session_default_dirs\": 0,\n            \"pwdatecycle\": 45,\n            \"qa_v2\": 1,\n            \"adminapp\": 0,\n            \"grid_type\": \"native\",\n            \"maxusers\": 1000,\n            \"qapath_open_onlogin\": \"\",\n            \"qapath_startpage\": \"\",\n            \"maxjobs\": 4,\n            \"pwResetToken\": \"\",\n            \"height\": 748,\n            \"width\": 1238,\n            \"inf2naold\": 1,\n            \"sb_type\": \"gif\",\n            \"auto_indent\": 1,\n            \"guiversion\": 5,\n            \"data_grid\": \"old\",\n            \"acc_condense\": 0,\n            \"qapath_open_solely_onlogin\": \"\",\n            \"sso_url\": \"\",\n            \"slo_url\": \"https://dgvendor.1010data.com/\",\n            \"freshdesk\": 0,\n            \"inf_to_na\": 1,\n            \"enable_materialize\": 1,\n            \"qapath_open_as_gui\": \"dgcip.apps.launcher.gui_prefs\",\n            \"inf2na\": 1,\n            \"app_service_role\": {\n                \"service\": {\n                    \"endpoints\": {\n                        \"data_availability\": \"viz.demo.dgcip/data_availability\"\n                    }\n                },\n                \"demo\": {\n                    \"permissions\": [\n                        \"application:access\"\n                    ],\n                    \"endpoints\": {\n                        \"configuration\": \"viz.demo.dgcip/configuration\"\n                    }\n                }\n            },\n            \"app_service_profile\": {\n                \"service\": {},\n                \"demo\": {\n                    \"foo\": {\n                        \"savedViews\": [\n                            {\n                                \"name\": \"bar\"\n                            }\n                        ]\n                    }\n                }\n            },\n            \"launcher_lib\": \"dgcip.apps.launcher.launcher_lib\",\n            \"sql_privileges\": [\n                \"add_self_schema\",\n                \"drop_self_schema\"\n            ]\n        },\n        \"schedrunlimit\": 124,\n        \"schedtemprunlimit\": 31,\n        \"role\": \"\"\n    }\n}"
+						}
+					]
 				}
 			]
 		},

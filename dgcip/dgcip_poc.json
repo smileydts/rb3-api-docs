@@ -113,6 +113,902 @@
         }
       }
     },
+    "/beta-latest/api/dbm:json": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "User Settings",
+        "description": "User Settings",
+        "operationId": "userSettings",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cmd": {
+                    "type": "array",
+                    "items": {
+                      "example": "get_user",
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "example": "get_user"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "uid": {
+                              "type": "string",
+                              "example": "my_uid"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "example": [
+                      "get_user",
+                      {
+                        "uid": "my_uid"
+                      }
+                    ]
+                  }
+                }
+              },
+              "examples": {
+                "User Settings": {
+                  "value": {
+                    "cmd": [
+                      "get_user",
+                      {
+                        "uid": "my_uid"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 26 Jun 2024 01:50:11 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "rc": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "value": {
+                      "type": "object",
+                      "properties": {
+                        "addts": {
+                          "type": "number",
+                          "example": -587813133
+                        },
+                        "adduser": {
+                          "type": "string",
+                          "example": "dgcip_template"
+                        },
+                        "api": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "city": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "company": {
+                          "type": "string",
+                          "example": "x1010data"
+                        },
+                        "compid": {
+                          "type": "string",
+                          "example": "dgcip"
+                        },
+                        "country": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "disk_used": {
+                          "type": "number",
+                          "example": 21233504424
+                        },
+                        "dormantmin": {
+                          "type": "number",
+                          "example": 30
+                        },
+                        "email": {
+                          "type": "string",
+                          "example": "dustin.steinhauer@1010data.com"
+                        },
+                        "emaillist": {
+                          "type": "array",
+                          "items": {},
+                          "example": []
+                        },
+                        "expiredate": {
+                          "type": "number",
+                          "example": -2147483648
+                        },
+                        "first": {
+                          "type": "string",
+                          "example": "Dustin"
+                        },
+                        "ftptotdisk": {
+                          "nullable": true,
+                          "example": null
+                        },
+                        "inactive": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "ip": {
+                          "type": "array",
+                          "items": {},
+                          "example": []
+                        },
+                        "last": {
+                          "type": "string",
+                          "example": "Steinhauer"
+                        },
+                        "lastlogts": {
+                          "type": "number",
+                          "example": -331857144
+                        },
+                        "macromach": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "nj4163"
+                          },
+                          "example": [
+                            "nj4163",
+                            "nj5092",
+                            "nj5093"
+                          ]
+                        },
+                        "maiden": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "maxdown": {
+                          "type": "number",
+                          "example": 180000000
+                        },
+                        "maxrows": {
+                          "type": "number",
+                          "example": -2147483648
+                        },
+                        "maxsessions": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "mi": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "phone": {
+                          "type": "string",
+                          "example": "123-456-7890"
+                        },
+                        "pref": {
+                          "type": "object",
+                          "properties": {
+                            "acc_condense": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "adminapp": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "allow_empty_tables": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "app_service_profile": {
+                              "type": "object",
+                              "properties": {
+                                "demo": {
+                                  "type": "object",
+                                  "properties": {
+                                    "foo": {
+                                      "type": "object",
+                                      "properties": {
+                                        "savedViews": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "name": {
+                                                "type": "string",
+                                                "example": "bar"
+                                              }
+                                            }
+                                          },
+                                          "example": [
+                                            {
+                                              "name": "bar"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "service": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            },
+                            "app_service_role": {
+                              "type": "object",
+                              "properties": {
+                                "demo": {
+                                  "type": "object",
+                                  "properties": {
+                                    "endpoints": {
+                                      "type": "object",
+                                      "properties": {
+                                        "configuration": {
+                                          "type": "string",
+                                          "example": "viz.demo.dgcip/configuration"
+                                        }
+                                      }
+                                    },
+                                    "permissions": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "string",
+                                        "example": "application:access"
+                                      },
+                                      "example": [
+                                        "application:access"
+                                      ]
+                                    }
+                                  }
+                                },
+                                "service": {
+                                  "type": "object",
+                                  "properties": {
+                                    "endpoints": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data_availability": {
+                                          "type": "string",
+                                          "example": "viz.demo.dgcip/data_availability"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "auto_hint": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "auto_indent": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "bulkedit": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "combo": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "data_grid": {
+                              "type": "string",
+                              "example": "old"
+                            },
+                            "debugging_menu": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "developer_ui": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "ditto": {
+                              "type": "string",
+                              "example": "value"
+                            },
+                            "down_eor": {
+                              "type": "string",
+                              "example": "\n"
+                            },
+                            "down_last": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "enable_materialize": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "encryption_menu": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "err_stack_info": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "excel_dl": {
+                              "type": "string",
+                              "example": "old"
+                            },
+                            "filter_admin": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "focus": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "freshdesk": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "grid_labels": {
+                              "type": "string",
+                              "example": "both"
+                            },
+                            "grid_type": {
+                              "type": "string",
+                              "example": "native"
+                            },
+                            "guiversion": {
+                              "type": "number",
+                              "example": 5
+                            },
+                            "height": {
+                              "type": "number",
+                              "example": 748
+                            },
+                            "html_uq": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "inf2na": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "inf2naold": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "inf_to_na": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "l_cols_n": {
+                              "type": "number",
+                              "example": 3
+                            },
+                            "launcher_lib": {
+                              "type": "string",
+                              "example": "dgcip.apps.launcher.launcher_lib"
+                            },
+                            "maxjobs": {
+                              "type": "number",
+                              "example": 4
+                            },
+                            "maxrows_slave": {
+                              "type": "number",
+                              "example": 2000000000
+                            },
+                            "maxusers": {
+                              "type": "number",
+                              "example": 1000
+                            },
+                            "mma_chart": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "nestmacro": {
+                              "type": "number",
+                              "example": 2
+                            },
+                            "oe_wrap": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "powerloader_uq": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "progressbar": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "pwResetToken": {
+                              "type": "string",
+                              "example": ""
+                            },
+                            "pwResetTokenTS": {
+                              "type": "number",
+                              "example": -2147483648
+                            },
+                            "pwdatecycle": {
+                              "type": "number",
+                              "example": 45
+                            },
+                            "qa_v2": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "qapath_open_as_gui": {
+                              "type": "string",
+                              "example": "dgcip.apps.launcher.gui_prefs"
+                            },
+                            "qapath_open_onlogin": {
+                              "type": "string",
+                              "example": ""
+                            },
+                            "qapath_open_solely_onlogin": {
+                              "type": "string",
+                              "example": ""
+                            },
+                            "qapath_startpage": {
+                              "type": "string",
+                              "example": ""
+                            },
+                            "region_fmt": {
+                              "type": "string",
+                              "example": "US"
+                            },
+                            "s_res_n": {
+                              "type": "number",
+                              "example": 10
+                            },
+                            "sb_type": {
+                              "type": "string",
+                              "example": "gif"
+                            },
+                            "sched": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "session_default_dirs": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "shortcut": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "show_save_macro": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "showids": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "slo_url": {
+                              "type": "string",
+                              "example": "https://dgvendor.1010data.com/"
+                            },
+                            "sortcols": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "splitattr": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "splitexpr": {
+                              "type": "number",
+                              "example": 0
+                            },
+                            "sql_privileges": {
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "example": "add_self_schema"
+                              },
+                              "example": [
+                                "add_self_schema",
+                                "drop_self_schema"
+                              ]
+                            },
+                            "sso_url": {
+                              "type": "string",
+                              "example": ""
+                            },
+                            "syntax_h": {
+                              "type": "number",
+                              "example": 1
+                            },
+                            "t_breaks_n": {
+                              "type": "number",
+                              "example": 10
+                            },
+                            "t_res_n": {
+                              "type": "number",
+                              "example": 10
+                            },
+                            "timezone": {
+                              "type": "number",
+                              "example": -5
+                            },
+                            "width": {
+                              "type": "number",
+                              "example": 1238
+                            },
+                            "wsslaves": {
+                              "type": "number",
+                              "example": 80530636800
+                            },
+                            "x_cbreaks_n": {
+                              "type": "number",
+                              "example": 3
+                            },
+                            "x_rbreaks_n": {
+                              "type": "number",
+                              "example": 3
+                            }
+                          }
+                        },
+                        "profess": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "pwdate": {
+                          "type": "number",
+                          "example": 20240520
+                        },
+                        "role": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "schedrunlimit": {
+                          "type": "number",
+                          "example": 124
+                        },
+                        "schedtemprunlimit": {
+                          "type": "number",
+                          "example": 31
+                        },
+                        "servers": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "nj4154"
+                          },
+                          "example": [
+                            "nj4154",
+                            "nj4155",
+                            "nj4156",
+                            "nj4157",
+                            "nj4158",
+                            "nj4159",
+                            "nj4160",
+                            "nj4161",
+                            "nj4162",
+                            "nj4163",
+                            "nj5092",
+                            "nj5093",
+                            "nj5094",
+                            "nj5095",
+                            "nj5096",
+                            "nj5097",
+                            "nj5098",
+                            "nj5099",
+                            "nj5100",
+                            "nj5101",
+                            "nj3253",
+                            "nj3254",
+                            "nj4093",
+                            "nj4126"
+                          ]
+                        },
+                        "sex": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "state": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "street": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "totdisk": {
+                          "type": "number",
+                          "example": 30000000000
+                        },
+                        "uid": {
+                          "type": "string",
+                          "example": "dgcip_x1010data_43"
+                        },
+                        "uploadmach": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "nj4162"
+                          },
+                          "example": [
+                            "nj4162",
+                            "nj4161"
+                          ]
+                        },
+                        "uploadpath": {
+                          "type": "array",
+                          "items": {},
+                          "example": []
+                        },
+                        "upts": {
+                          "type": "number",
+                          "example": -331856827
+                        },
+                        "upuser": {
+                          "type": "string",
+                          "example": "sandy2"
+                        },
+                        "upversion": {
+                          "type": "string",
+                          "example": "prime-11.34"
+                        },
+                        "version": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "wsaccum": {
+                          "type": "number",
+                          "example": 61440
+                        },
+                        "wsslave": {
+                          "type": "number",
+                          "example": -2147483648
+                        },
+                        "yearborn": {
+                          "type": "number",
+                          "example": -2147483648
+                        },
+                        "zip": {
+                          "type": "string",
+                          "example": ""
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "rc": 0,
+                      "value": {
+                        "addts": -587813133,
+                        "adduser": "dgcip_template",
+                        "api": 1,
+                        "city": "",
+                        "company": "x1010data",
+                        "compid": "dgcip",
+                        "country": "",
+                        "disk_used": 21233504424,
+                        "dormantmin": 30,
+                        "email": "dustin.steinhauer@1010data.com",
+                        "emaillist": [],
+                        "expiredate": -2147483648,
+                        "first": "Dustin",
+                        "ftptotdisk": null,
+                        "inactive": 0,
+                        "ip": [],
+                        "last": "Steinhauer",
+                        "lastlogts": -331857144,
+                        "macromach": [
+                          "nj4163",
+                          "nj5092",
+                          "nj5093"
+                        ],
+                        "maiden": "",
+                        "maxdown": 180000000,
+                        "maxrows": -2147483648,
+                        "maxsessions": 1,
+                        "mi": "",
+                        "phone": "123-456-7890",
+                        "pref": {
+                          "acc_condense": 0,
+                          "adminapp": 0,
+                          "allow_empty_tables": 0,
+                          "app_service_profile": {
+                            "demo": {
+                              "foo": {
+                                "savedViews": [
+                                  {
+                                    "name": "bar"
+                                  }
+                                ]
+                              }
+                            },
+                            "service": {}
+                          },
+                          "app_service_role": {
+                            "demo": {
+                              "endpoints": {
+                                "configuration": "viz.demo.dgcip/configuration"
+                              },
+                              "permissions": [
+                                "application:access"
+                              ]
+                            },
+                            "service": {
+                              "endpoints": {
+                                "data_availability": "viz.demo.dgcip/data_availability"
+                              }
+                            }
+                          },
+                          "auto_hint": 1,
+                          "auto_indent": 1,
+                          "bulkedit": 1,
+                          "combo": 1,
+                          "data_grid": "old",
+                          "debugging_menu": 0,
+                          "developer_ui": 0,
+                          "ditto": "value",
+                          "down_eor": "\n",
+                          "down_last": 0,
+                          "enable_materialize": 1,
+                          "encryption_menu": 0,
+                          "err_stack_info": 1,
+                          "excel_dl": "old",
+                          "filter_admin": 0,
+                          "focus": 1,
+                          "freshdesk": 0,
+                          "grid_labels": "both",
+                          "grid_type": "native",
+                          "guiversion": 5,
+                          "height": 748,
+                          "html_uq": 0,
+                          "inf2na": 1,
+                          "inf2naold": 1,
+                          "inf_to_na": 1,
+                          "l_cols_n": 3,
+                          "launcher_lib": "dgcip.apps.launcher.launcher_lib",
+                          "maxjobs": 4,
+                          "maxrows_slave": 2000000000,
+                          "maxusers": 1000,
+                          "mma_chart": 0,
+                          "nestmacro": 2,
+                          "oe_wrap": 1,
+                          "powerloader_uq": 0,
+                          "progressbar": 1,
+                          "pwResetToken": "",
+                          "pwResetTokenTS": -2147483648,
+                          "pwdatecycle": 45,
+                          "qa_v2": 1,
+                          "qapath_open_as_gui": "dgcip.apps.launcher.gui_prefs",
+                          "qapath_open_onlogin": "",
+                          "qapath_open_solely_onlogin": "",
+                          "qapath_startpage": "",
+                          "region_fmt": "US",
+                          "s_res_n": 10,
+                          "sb_type": "gif",
+                          "sched": 1,
+                          "session_default_dirs": 0,
+                          "shortcut": 1,
+                          "show_save_macro": 0,
+                          "showids": 0,
+                          "slo_url": "https://dgvendor.1010data.com/",
+                          "sortcols": 0,
+                          "splitattr": 0,
+                          "splitexpr": 0,
+                          "sql_privileges": [
+                            "add_self_schema",
+                            "drop_self_schema"
+                          ],
+                          "sso_url": "",
+                          "syntax_h": 1,
+                          "t_breaks_n": 10,
+                          "t_res_n": 10,
+                          "timezone": -5,
+                          "width": 1238,
+                          "wsslaves": 80530636800,
+                          "x_cbreaks_n": 3,
+                          "x_rbreaks_n": 3
+                        },
+                        "profess": "",
+                        "pwdate": 20240520,
+                        "role": "",
+                        "schedrunlimit": 124,
+                        "schedtemprunlimit": 31,
+                        "servers": [
+                          "nj4154",
+                          "nj4155",
+                          "nj4156",
+                          "nj4157",
+                          "nj4158",
+                          "nj4159",
+                          "nj4160",
+                          "nj4161",
+                          "nj4162",
+                          "nj4163",
+                          "nj5092",
+                          "nj5093",
+                          "nj5094",
+                          "nj5095",
+                          "nj5096",
+                          "nj5097",
+                          "nj5098",
+                          "nj5099",
+                          "nj5100",
+                          "nj5101",
+                          "nj3253",
+                          "nj3254",
+                          "nj4093",
+                          "nj4126"
+                        ],
+                        "sex": "",
+                        "state": "",
+                        "street": "",
+                        "totdisk": 30000000000,
+                        "uid": "dgcip_x1010data_43",
+                        "uploadmach": [
+                          "nj4162",
+                          "nj4161"
+                        ],
+                        "uploadpath": [],
+                        "upts": -331856827,
+                        "upuser": "sandy2",
+                        "upversion": "prime-11.34",
+                        "version": "",
+                        "wsaccum": 61440,
+                        "wsslave": -2147483648,
+                        "yearborn": -2147483648,
+                        "zip": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json": {
       "post": {
         "tags": [
