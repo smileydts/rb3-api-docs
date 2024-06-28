@@ -1009,6 +1009,73 @@
         }
       }
     },
+    "/beta-latest/api/cip.dev.v4_15.misc.rb3.api.tsampa/session:json": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Session",
+        "description": "Session",
+        "operationId": "session",
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Fri, 28 Jun 2024 02:22:33 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "dormant_timeout_time": {
+                      "type": "number",
+                      "example": 1719543155
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "dormant_timeout_time": 1719543155
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json": {
       "post": {
         "tags": [
