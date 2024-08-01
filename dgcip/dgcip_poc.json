@@ -3524,14 +3524,160 @@
                 "properties": {
                   "input": {
                     "type": "object",
-                    "properties": {}
+                    "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "l4"
+                                },
+                                "example": [
+                                  "l4"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "l4"
+                                ],
+                                [
+                                  "ly_l4"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "l4"
+                              ],
+                              [
+                                "ly_l4"
+                              ]
+                            ]
+                          },
+                          {
+                            "value": [
+                              [
+                                "l13"
+                              ],
+                              [
+                                "ly_l13"
+                              ]
+                            ]
+                          },
+                          {
+                            "value": [
+                              [
+                                "wtd"
+                              ],
+                              [
+                                "ly_wtd"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      "filters": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "col": {
+                                  "type": "string",
+                                  "example": "class"
+                                },
+                                "op": {
+                                  "type": "string",
+                                  "example": "="
+                                },
+                                "values": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "example": "1142"
+                                  },
+                                  "example": [
+                                    "1142"
+                                  ]
+                                }
+                              }
+                            },
+                            "example": [
+                              {
+                                "col": "class",
+                                "op": "=",
+                                "values": [
+                                  "1142"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               },
               "examples": {
                 "Performance Overview": {
                   "value": {
-                    "input": {}
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "l4"
+                            ],
+                            [
+                              "ly_l4"
+                            ]
+                          ]
+                        },
+                        {
+                          "value": [
+                            [
+                              "l13"
+                            ],
+                            [
+                              "ly_l13"
+                            ]
+                          ]
+                        },
+                        {
+                          "value": [
+                            [
+                              "wtd"
+                            ],
+                            [
+                              "ly_wtd"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {
+                        "product": [
+                          {
+                            "col": "class",
+                            "op": "=",
+                            "values": [
+                              "1142"
+                            ]
+                          }
+                        ]
+                      }
+                    }
                   }
                 }
               }
@@ -3551,7 +3697,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Tue, 30 Jul 2024 04:42:19 GMT"
+                  "example": "Thu, 01 Aug 2024 05:22:10 GMT"
                 }
               },
               "Keep-Alive": {
@@ -3581,6 +3727,30 @@
                     "data": {
                       "type": "object",
                       "properties": {
+                        "l13": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.039482254769157205
+                          },
+                          "example": [
+                            0.039482254769157205,
+                            0.08549083435272245,
+                            0.03967768764001888
+                          ]
+                        },
+                        "l4": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.04482949453091909
+                          },
+                          "example": [
+                            0.04482949453091909,
+                            0.09834894701252461,
+                            0.04446530409784055
+                          ]
+                        },
                         "metric": {
                           "type": "array",
                           "items": {
@@ -3593,47 +3763,23 @@
                             "Baskets"
                           ]
                         },
-                        "roll13": {
+                        "wtd": {
                           "type": "array",
                           "items": {
                             "type": "number",
-                            "example": 0.039606084944918046
+                            "example": -0.008329230333496439
                           },
                           "example": [
-                            0.039606084944918046,
-                            0.0856256991790274,
-                            0.03979958233832736
-                          ]
-                        },
-                        "roll4": {
-                          "type": "array",
-                          "items": {
-                            "type": "number",
-                            "example": 0.045228761998720474
-                          },
-                          "example": [
-                            0.045228761998720474,
-                            0.09878594101667489,
-                            0.04485999240013603
-                          ]
-                        },
-                        "roll52": {
-                          "type": "array",
-                          "items": {
-                            "type": "number",
-                            "example": 0.06882591932094903
-                          },
-                          "example": [
-                            0.06882591932094903,
-                            0.09943935085328999,
-                            0.04293919223615305
+                            -0.008329230333496439,
+                            0.014210096732744478,
+                            -0.0064338730673487565
                           ]
                         }
                       }
                     },
                     "date_through": {
                       "type": "string",
-                      "example": "20240726"
+                      "example": "20240730"
                     },
                     "fields": {
                       "type": "object",
@@ -3659,9 +3805,9 @@
                           },
                           "example": [
                             "KPI",
-                            "L4W",
-                            "Ll13W",
-                            "L152W"
+                            "Last 4 Weeks",
+                            "Last 13 Weeks",
+                            "Week To Date"
                           ]
                         },
                         "name": {
@@ -3672,9 +3818,9 @@
                           },
                           "example": [
                             "metric",
-                            "roll4",
-                            "roll13",
-                            "roll52"
+                            "l4",
+                            "l13",
+                            "wtd"
                           ]
                         }
                       }
@@ -3689,28 +3835,28 @@
                   "success response": {
                     "value": {
                       "data": {
+                        "l13": [
+                          0.039482254769157205,
+                          0.08549083435272245,
+                          0.03967768764001888
+                        ],
+                        "l4": [
+                          0.04482949453091909,
+                          0.09834894701252461,
+                          0.04446530409784055
+                        ],
                         "metric": [
                           "Sales",
                           "Units",
                           "Baskets"
                         ],
-                        "roll13": [
-                          0.039606084944918046,
-                          0.0856256991790274,
-                          0.03979958233832736
-                        ],
-                        "roll4": [
-                          0.045228761998720474,
-                          0.09878594101667489,
-                          0.04485999240013603
-                        ],
-                        "roll52": [
-                          0.06882591932094903,
-                          0.09943935085328999,
-                          0.04293919223615305
+                        "wtd": [
+                          -0.008329230333496439,
+                          0.014210096732744478,
+                          -0.0064338730673487565
                         ]
                       },
-                      "date_through": "20240726",
+                      "date_through": "20240730",
                       "fields": {
                         "format": [
                           "",
@@ -3720,15 +3866,15 @@
                         ],
                         "label": [
                           "KPI",
-                          "L4W",
-                          "Ll13W",
-                          "L152W"
+                          "Last 4 Weeks",
+                          "Last 13 Weeks",
+                          "Week To Date"
                         ],
                         "name": [
                           "metric",
-                          "roll4",
-                          "roll13",
-                          "roll52"
+                          "l4",
+                          "l13",
+                          "wtd"
                         ]
                       },
                       "total_row_count": 1
@@ -3837,7 +3983,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Tue, 30 Jul 2024 04:45:10 GMT"
+                  "example": "Tue, 30 Jul 2024 13:13:27 GMT"
                 }
               },
               "Keep-Alive": {
@@ -3908,12 +4054,16 @@
                                         "dec": {
                                           "type": "string",
                                           "example": "2"
+                                        },
+                                        "type": {
+                                          "type": "string",
+                                          "example": "num"
                                         }
                                       }
                                     },
                                     "label": {
                                       "type": "string",
-                                      "example": "323588"
+                                      "example": "323669"
                                     },
                                     "left_panel": {
                                       "type": "object",
@@ -3924,12 +4074,16 @@
                                             "dec": {
                                               "type": "string",
                                               "example": "2"
+                                            },
+                                            "type": {
+                                              "type": "string",
+                                              "example": "num"
                                             }
                                           }
                                         },
                                         "label": {
                                           "type": "number",
-                                          "example": 7536875
+                                          "example": 7536956
                                         }
                                       }
                                     },
@@ -3951,7 +4105,7 @@
                                         },
                                         "label": {
                                           "type": "number",
-                                          "example": 0.04485999240013603
+                                          "example": 0.04487122167744054
                                         }
                                       }
                                     },
@@ -3975,21 +4129,23 @@
                                 "node_detail": {
                                   "direction": "Growth",
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": "323588",
+                                  "label": "323669",
                                   "left_panel": {
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": 7536875
+                                    "label": 7536956
                                   },
                                   "right_panel": {
                                     "format": {
                                       "dec": "1",
                                       "type": "pct"
                                     },
-                                    "label": 0.04485999240013603
+                                    "label": 0.04487122167744054
                                   },
                                   "type": "",
                                   "yoy_direction": "Up"
@@ -4005,21 +4161,23 @@
                                     "node_detail": {
                                       "direction": "Growth",
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": "0.0842887359827595",
+                                      "label": "0.0842881901806116",
                                       "left_panel": {
                                         "format": {
-                                          "dec": "2"
+                                          "dec": "2",
+                                          "type": "num"
                                         },
-                                        "label": 1.7174529231279545
+                                        "label": 1.7174523773258064
                                       },
                                       "right_panel": {
                                         "format": {
                                           "dec": "1",
                                           "type": "pct"
                                         },
-                                        "label": 0.05161069330702018
+                                        "label": 0.05161035910783052
                                       },
                                       "type": "",
                                       "yoy_direction": "Up"
@@ -4032,21 +4190,23 @@
                                     "node_detail": {
                                       "direction": "Growth",
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": "3312003.04999962",
+                                      "label": "3312530.74999963",
                                       "left_panel": {
                                         "format": {
-                                          "dec": "2"
+                                          "dec": "2",
+                                          "type": "num"
                                         },
-                                        "label": 47245462.04000418
+                                        "label": 47245989.74000419
                                       },
                                       "right_panel": {
                                         "format": {
                                           "dec": "1",
                                           "type": "pct"
                                         },
-                                        "label": 0.07538680372863746
+                                        "label": 0.07539881507516337
                                       },
                                       "type": "",
                                       "yoy_direction": "Up"
@@ -4057,21 +4217,23 @@
                                 "node_detail": {
                                   "direction": "Growth",
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": "0.00194195052271429",
+                                  "label": "0.0019400823412834",
                                   "left_panel": {
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": 5.504202484451672
+                                    "label": 5.504200616270241
                                   },
                                   "right_panel": {
                                     "format": {
                                       "dec": "1",
                                       "type": "pct"
                                     },
-                                    "label": 0.0003529368539965541
+                                    "label": 0.0003525973241943271
                                   },
                                   "type": "",
                                   "yoy_direction": "Up"
@@ -4096,12 +4258,16 @@
                                   "dec": {
                                     "type": "string",
                                     "example": "2"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "example": "num"
                                   }
                                 }
                               },
                               "label": {
                                 "type": "string",
-                                "example": "1795101.71999888"
+                                "example": "1795533.47999888"
                               },
                               "left_panel": {
                                 "type": "object",
@@ -4112,12 +4278,16 @@
                                       "dec": {
                                         "type": "string",
                                         "example": "2"
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "example": "num"
                                       }
                                     }
                                   },
                                   "label": {
                                     "type": "number",
-                                    "example": 41484486.10000169
+                                    "example": 41484917.86000169
                                   }
                                 }
                               },
@@ -4139,7 +4309,7 @@
                                   },
                                   "label": {
                                     "type": "number",
-                                    "example": 0.045228761998720474
+                                    "example": 0.045239640474331586
                                   }
                                 }
                               },
@@ -4166,21 +4336,23 @@
                               "node_detail": {
                                 "direction": "Growth",
                                 "format": {
-                                  "dec": "2"
+                                  "dec": "2",
+                                  "type": "num"
                                 },
-                                "label": "323588",
+                                "label": "323669",
                                 "left_panel": {
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": 7536875
+                                  "label": 7536956
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.04485999240013603
+                                  "label": 0.04487122167744054
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4196,21 +4368,23 @@
                                   "node_detail": {
                                     "direction": "Growth",
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": "0.0842887359827595",
+                                    "label": "0.0842881901806116",
                                     "left_panel": {
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": 1.7174529231279545
+                                      "label": 1.7174523773258064
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.05161069330702018
+                                      "label": 0.05161035910783052
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4223,21 +4397,23 @@
                                   "node_detail": {
                                     "direction": "Growth",
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": "3312003.04999962",
+                                    "label": "3312530.74999963",
                                     "left_panel": {
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": 47245462.04000418
+                                      "label": 47245989.74000419
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.07538680372863746
+                                      "label": 0.07539881507516337
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4248,21 +4424,23 @@
                               "node_detail": {
                                 "direction": "Growth",
                                 "format": {
-                                  "dec": "2"
+                                  "dec": "2",
+                                  "type": "num"
                                 },
-                                "label": "0.00194195052271429",
+                                "label": "0.0019400823412834",
                                 "left_panel": {
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": 5.504202484451672
+                                  "label": 5.504200616270241
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.0003529368539965541
+                                  "label": 0.0003525973241943271
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4273,21 +4451,23 @@
                           "node_detail": {
                             "direction": "Growth",
                             "format": {
-                              "dec": "2"
+                              "dec": "2",
+                              "type": "num"
                             },
-                            "label": "1795101.71999888",
+                            "label": "1795533.47999888",
                             "left_panel": {
                               "format": {
-                                "dec": "2"
+                                "dec": "2",
+                                "type": "num"
                               },
-                              "label": 41484486.10000169
+                              "label": 41484917.86000169
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.045228761998720474
+                              "label": 0.045239640474331586
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4300,21 +4480,23 @@
                           "node_detail": {
                             "direction": "Growth",
                             "format": {
-                              "dec": "2"
+                              "dec": "2",
+                              "type": "num"
                             },
-                            "label": "1163746",
+                            "label": "1163881",
                             "left_panel": {
                               "format": {
-                                "dec": "2"
+                                "dec": "2",
+                                "type": "num"
                               },
-                              "label": 12944228
+                              "label": 12944363
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.09878594101667489
+                              "label": 0.09879740064965085
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4343,21 +4525,23 @@
                               "node_detail": {
                                 "direction": "Growth",
                                 "format": {
-                                  "dec": "2"
+                                  "dec": "2",
+                                  "type": "num"
                                 },
-                                "label": "323588",
+                                "label": "323669",
                                 "left_panel": {
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": 7536875
+                                  "label": 7536956
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.04485999240013603
+                                  "label": 0.04487122167744054
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4373,21 +4557,23 @@
                                   "node_detail": {
                                     "direction": "Growth",
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": "0.0842887359827595",
+                                    "label": "0.0842881901806116",
                                     "left_panel": {
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": 1.7174529231279545
+                                      "label": 1.7174523773258064
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.05161069330702018
+                                      "label": 0.05161035910783052
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4400,21 +4586,23 @@
                                   "node_detail": {
                                     "direction": "Growth",
                                     "format": {
-                                      "dec": "2"
+                                      "dec": "2",
+                                      "type": "num"
                                     },
-                                    "label": "3312003.04999962",
+                                    "label": "3312530.74999963",
                                     "left_panel": {
                                       "format": {
-                                        "dec": "2"
+                                        "dec": "2",
+                                        "type": "num"
                                       },
-                                      "label": 47245462.04000418
+                                      "label": 47245989.74000419
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.07538680372863746
+                                      "label": 0.07539881507516337
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4425,21 +4613,23 @@
                               "node_detail": {
                                 "direction": "Growth",
                                 "format": {
-                                  "dec": "2"
+                                  "dec": "2",
+                                  "type": "num"
                                 },
-                                "label": "0.00194195052271429",
+                                "label": "0.0019400823412834",
                                 "left_panel": {
                                   "format": {
-                                    "dec": "2"
+                                    "dec": "2",
+                                    "type": "num"
                                   },
-                                  "label": 5.504202484451672
+                                  "label": 5.504200616270241
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.0003529368539965541
+                                  "label": 0.0003525973241943271
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4450,21 +4640,23 @@
                           "node_detail": {
                             "direction": "Growth",
                             "format": {
-                              "dec": "2"
+                              "dec": "2",
+                              "type": "num"
                             },
-                            "label": "1795101.71999888",
+                            "label": "1795533.47999888",
                             "left_panel": {
                               "format": {
-                                "dec": "2"
+                                "dec": "2",
+                                "type": "num"
                               },
-                              "label": 41484486.10000169
+                              "label": 41484917.86000169
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.045228761998720474
+                              "label": 0.045239640474331586
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4477,21 +4669,23 @@
                           "node_detail": {
                             "direction": "Growth",
                             "format": {
-                              "dec": "2"
+                              "dec": "2",
+                              "type": "num"
                             },
-                            "label": "1163746",
+                            "label": "1163881",
                             "left_panel": {
                               "format": {
-                                "dec": "2"
+                                "dec": "2",
+                                "type": "num"
                               },
-                              "label": 12944228
+                              "label": 12944363
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.09878594101667489
+                              "label": 0.09879740064965085
                             },
                             "type": "",
                             "yoy_direction": "Up"
