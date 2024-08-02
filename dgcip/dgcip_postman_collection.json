@@ -913,7 +913,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l4\"\n                    ],\n                    [\n                        \"ly_l4\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"class\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"1142\"\n                    ]\n                }\n            ]\n        }\n    }\n}",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"class\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"1142\"\n                    ]\n                }\n            ]\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                }\n            ]\n        }\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -944,7 +944,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l4\"\n                    ],\n                    [\n                        \"ly_l4\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"class\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"1142\"\n                    ]\n                }\n            ]\n        }\n    }\n}",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"l13\"\n                    ],\n                    [\n                        \"ly_l13\"\n                    ]\n                ]\n            },\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"class\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"1142\"\n                    ]\n                }\n            ]\n        },\n        \"metrics\": {\n            \"sales\": [\n                {\n                    \"value\": \"sales\"\n                },\n                {\n                    \"value\": \"baskets\"\n                }\n            ]\n        }\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -952,7 +952,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://www2.1010data.com/beta-latest/api/cip.dev.v4_16.misc.rb3.api.performance_overview/general:json",
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.performance_overview/general:json",
 									"protocol": "https",
 									"host": [
 										"www2",
@@ -962,7 +962,7 @@
 									"path": [
 										"beta-latest",
 										"api",
-										"cip.dev.v4_16.misc.rb3.api.performance_overview",
+										"cip.arch.v4_15.misc.rb3.api.performance_overview",
 										"general:json"
 									]
 								}
@@ -973,7 +973,7 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Thu, 01 Aug 2024 05:22:10 GMT"
+									"value": "Fri, 02 Aug 2024 06:07:35 GMT"
 								},
 								{
 									"key": "Server",
@@ -997,7 +997,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"metric\": [\n            \"Sales\",\n            \"Units\",\n            \"Baskets\"\n        ],\n        \"l4\": [\n            0.044829494530919091,\n            0.098348947012524612,\n            0.044465304097840552\n        ],\n        \"l13\": [\n            0.039482254769157211,\n            0.08549083435272245,\n            0.039677687640018881\n        ],\n        \"wtd\": [\n            -0.0083292303334964388,\n            0.014210096732744478,\n            -0.0064338730673487565\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"metric\",\n            \"l4\",\n            \"l13\",\n            \"wtd\"\n        ],\n        \"label\": [\n            \"KPI\",\n            \"Last 4 Weeks\",\n            \"Last 13 Weeks\",\n            \"Week To Date\"\n        ],\n        \"format\": [\n            \"\",\n            \"type:pct;dec:1\",\n            \"type:pct;dec:1\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 1,\n    \"date_through\": \"20240730\"\n}"
+							"body": "{\n    \"data\": {\n        \"metric\": [\n            \"Sales $\",\n            \"Baskets\"\n        ],\n        \"l13\": [\n            0.039482254769157211,\n            0.039677687640018881\n        ],\n        \"wtd\": [\n            -0.01721577881494727,\n            -0.010768433271601109\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"metric\",\n            \"l13\",\n            \"wtd\"\n        ],\n        \"label\": [\n            \"KPI\",\n            \"Last 13 Weeks\",\n            \"Week To Date\"\n        ],\n        \"format\": [\n            \"\",\n            \"type:pct;dec:1\",\n            \"type:pct;dec:1\"\n        ]\n    },\n    \"total_row_count\": 1,\n    \"date_through\": \"20240731\"\n}"
 						}
 					]
 				},

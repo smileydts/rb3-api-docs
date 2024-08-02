@@ -3536,34 +3536,24 @@
                                 "type": "array",
                                 "items": {
                                   "type": "string",
-                                  "example": "l4"
+                                  "example": "l13"
                                 },
                                 "example": [
-                                  "l4"
+                                  "l13"
                                 ]
                               },
                               "example": [
                                 [
-                                  "l4"
+                                  "l13"
                                 ],
                                 [
-                                  "ly_l4"
+                                  "ly_l13"
                                 ]
                               ]
                             }
                           }
                         },
                         "example": [
-                          {
-                            "value": [
-                              [
-                                "l4"
-                              ],
-                              [
-                                "ly_l4"
-                              ]
-                            ]
-                          },
                           {
                             "value": [
                               [
@@ -3625,6 +3615,31 @@
                             ]
                           }
                         }
+                      },
+                      "metrics": {
+                        "type": "object",
+                        "properties": {
+                          "sales": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string",
+                                  "example": "sales"
+                                }
+                              }
+                            },
+                            "example": [
+                              {
+                                "value": "sales"
+                              },
+                              {
+                                "value": "baskets"
+                              }
+                            ]
+                          }
+                        }
                       }
                     }
                   }
@@ -3635,16 +3650,6 @@
                   "value": {
                     "input": {
                       "dates": [
-                        {
-                          "value": [
-                            [
-                              "l4"
-                            ],
-                            [
-                              "ly_l4"
-                            ]
-                          ]
-                        },
                         {
                           "value": [
                             [
@@ -3676,6 +3681,16 @@
                             ]
                           }
                         ]
+                      },
+                      "metrics": {
+                        "sales": [
+                          {
+                            "value": "sales"
+                          },
+                          {
+                            "value": "baskets"
+                          }
+                        ]
                       }
                     }
                   }
@@ -3697,7 +3712,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Thu, 01 Aug 2024 05:22:10 GMT"
+                  "example": "Fri, 02 Aug 2024 06:07:35 GMT"
                 }
               },
               "Keep-Alive": {
@@ -3735,31 +3750,17 @@
                           },
                           "example": [
                             0.039482254769157205,
-                            0.08549083435272245,
                             0.03967768764001888
-                          ]
-                        },
-                        "l4": {
-                          "type": "array",
-                          "items": {
-                            "type": "number",
-                            "example": 0.04482949453091909
-                          },
-                          "example": [
-                            0.04482949453091909,
-                            0.09834894701252461,
-                            0.04446530409784055
                           ]
                         },
                         "metric": {
                           "type": "array",
                           "items": {
                             "type": "string",
-                            "example": "Sales"
+                            "example": "Sales $"
                           },
                           "example": [
-                            "Sales",
-                            "Units",
+                            "Sales $",
                             "Baskets"
                           ]
                         },
@@ -3767,19 +3768,18 @@
                           "type": "array",
                           "items": {
                             "type": "number",
-                            "example": -0.008329230333496439
+                            "example": -0.01721577881494727
                           },
                           "example": [
-                            -0.008329230333496439,
-                            0.014210096732744478,
-                            -0.0064338730673487565
+                            -0.01721577881494727,
+                            -0.010768433271601109
                           ]
                         }
                       }
                     },
                     "date_through": {
                       "type": "string",
-                      "example": "20240730"
+                      "example": "20240731"
                     },
                     "fields": {
                       "type": "object",
@@ -3793,7 +3793,6 @@
                           "example": [
                             "",
                             "type:pct;dec:1",
-                            "type:pct;dec:1",
                             "type:pct;dec:1"
                           ]
                         },
@@ -3805,7 +3804,6 @@
                           },
                           "example": [
                             "KPI",
-                            "Last 4 Weeks",
                             "Last 13 Weeks",
                             "Week To Date"
                           ]
@@ -3818,7 +3816,6 @@
                           },
                           "example": [
                             "metric",
-                            "l4",
                             "l13",
                             "wtd"
                           ]
@@ -3837,42 +3834,31 @@
                       "data": {
                         "l13": [
                           0.039482254769157205,
-                          0.08549083435272245,
                           0.03967768764001888
                         ],
-                        "l4": [
-                          0.04482949453091909,
-                          0.09834894701252461,
-                          0.04446530409784055
-                        ],
                         "metric": [
-                          "Sales",
-                          "Units",
+                          "Sales $",
                           "Baskets"
                         ],
                         "wtd": [
-                          -0.008329230333496439,
-                          0.014210096732744478,
-                          -0.0064338730673487565
+                          -0.01721577881494727,
+                          -0.010768433271601109
                         ]
                       },
-                      "date_through": "20240730",
+                      "date_through": "20240731",
                       "fields": {
                         "format": [
                           "",
-                          "type:pct;dec:1",
                           "type:pct;dec:1",
                           "type:pct;dec:1"
                         ],
                         "label": [
                           "KPI",
-                          "Last 4 Weeks",
                           "Last 13 Weeks",
                           "Week To Date"
                         ],
                         "name": [
                           "metric",
-                          "l4",
                           "l13",
                           "wtd"
                         ]
