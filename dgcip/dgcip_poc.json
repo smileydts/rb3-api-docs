@@ -3890,6 +3890,47 @@
                   "input": {
                     "type": "object",
                     "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "wtd"
+                                },
+                                "example": [
+                                  "wtd"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "wtd"
+                                ],
+                                [
+                                  "ly_wtd"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "wtd"
+                              ],
+                              [
+                                "ly_wtd"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
                       "filters": {
                         "type": "object",
                         "properties": {
@@ -3938,6 +3979,18 @@
                 "Sales Tree": {
                   "value": {
                     "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "wtd"
+                            ],
+                            [
+                              "ly_wtd"
+                            ]
+                          ]
+                        }
+                      ],
                       "filters": {
                         "product": [
                           {
@@ -3969,7 +4022,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Tue, 30 Jul 2024 13:13:27 GMT"
+                  "example": "Mon, 05 Aug 2024 05:02:38 GMT"
                 }
               },
               "Keep-Alive": {
@@ -4020,8 +4073,192 @@
                                 },
                                 "children": {
                                   "type": "array",
-                                  "items": {},
-                                  "example": []
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "branch_label": {
+                                        "type": "string",
+                                        "example": " Stores Selling"
+                                      },
+                                      "children": {
+                                        "type": "array",
+                                        "items": {},
+                                        "example": []
+                                      },
+                                      "expanded": {
+                                        "type": "string",
+                                        "example": "0"
+                                      },
+                                      "node_detail": {
+                                        "type": "object",
+                                        "properties": {
+                                          "direction": {
+                                            "type": "string",
+                                            "example": "Growth"
+                                          },
+                                          "format": {
+                                            "type": "object",
+                                            "properties": {
+                                              "dec": {
+                                                "type": "string",
+                                                "example": "2"
+                                              },
+                                              "type": {
+                                                "type": "string",
+                                                "example": "num"
+                                              }
+                                            }
+                                          },
+                                          "label": {
+                                            "type": "string",
+                                            "example": "590"
+                                          },
+                                          "left_panel": {
+                                            "type": "object",
+                                            "properties": {
+                                              "format": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "dec": {
+                                                    "type": "string",
+                                                    "example": "2"
+                                                  },
+                                                  "type": {
+                                                    "type": "string",
+                                                    "example": "num"
+                                                  }
+                                                }
+                                              },
+                                              "label": {
+                                                "type": "number",
+                                                "example": 19885
+                                              }
+                                            }
+                                          },
+                                          "right_panel": {
+                                            "type": "object",
+                                            "properties": {
+                                              "format": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "dec": {
+                                                    "type": "string",
+                                                    "example": "1"
+                                                  },
+                                                  "type": {
+                                                    "type": "string",
+                                                    "example": "pct"
+                                                  }
+                                                }
+                                              },
+                                              "label": {
+                                                "type": "number",
+                                                "example": 0.03057786991448562
+                                              }
+                                            }
+                                          },
+                                          "type": {
+                                            "type": "string",
+                                            "example": ""
+                                          },
+                                          "yoy_direction": {
+                                            "type": "string",
+                                            "example": "Up"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "example": [
+                                    {
+                                      "branch_label": " Stores Selling",
+                                      "children": [],
+                                      "expanded": "0",
+                                      "node_detail": {
+                                        "direction": "Growth",
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": "590",
+                                        "left_panel": {
+                                          "format": {
+                                            "dec": "2",
+                                            "type": "num"
+                                          },
+                                          "label": 19885
+                                        },
+                                        "right_panel": {
+                                          "format": {
+                                            "dec": "1",
+                                            "type": "pct"
+                                          },
+                                          "label": 0.03057786991448562
+                                        },
+                                        "type": "",
+                                        "yoy_direction": "Up"
+                                      }
+                                    },
+                                    {
+                                      "branch_label": " Sales/ Store/ Week",
+                                      "children": [
+                                        {
+                                          "branch_label": " Units/ Store/ Week",
+                                          "children": [],
+                                          "expanded": "0",
+                                          "node_detail": {
+                                            "direction": "Growth",
+                                            "format": {
+                                              "dec": "2",
+                                              "type": "num"
+                                            },
+                                            "label": "26.6222030627911",
+                                            "left_panel": {
+                                              "format": {
+                                                "dec": "2",
+                                                "type": "num"
+                                              },
+                                              "label": 215.5264269549912
+                                            },
+                                            "right_panel": {
+                                              "format": {
+                                                "dec": "1",
+                                                "type": "pct"
+                                              },
+                                              "label": 0.14092963362208002
+                                            },
+                                            "type": "",
+                                            "yoy_direction": "Up"
+                                          }
+                                        }
+                                      ],
+                                      "expanded": "0",
+                                      "node_detail": {
+                                        "direction": "Growth",
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": "39.517646446458",
+                                        "left_panel": {
+                                          "format": {
+                                            "dec": "2",
+                                            "type": "num"
+                                          },
+                                          "label": 635.8179522251747
+                                        },
+                                        "right_panel": {
+                                          "format": {
+                                            "dec": "1",
+                                            "type": "pct"
+                                          },
+                                          "label": 0.06627138383712779
+                                        },
+                                        "type": "",
+                                        "yoy_direction": "Up"
+                                      }
+                                    }
+                                  ]
                                 },
                                 "expanded": {
                                   "type": "string",
@@ -4049,7 +4286,7 @@
                                     },
                                     "label": {
                                       "type": "string",
-                                      "example": "323669"
+                                      "example": "32268"
                                     },
                                     "left_panel": {
                                       "type": "object",
@@ -4069,7 +4306,7 @@
                                         },
                                         "label": {
                                           "type": "number",
-                                          "example": 7536956
+                                          "example": 333929
                                         }
                                       }
                                     },
@@ -4091,7 +4328,7 @@
                                         },
                                         "label": {
                                           "type": "number",
-                                          "example": 0.04487122167744054
+                                          "example": 0.10696775519540146
                                         }
                                       }
                                     },
@@ -4110,7 +4347,96 @@
                             "example": [
                               {
                                 "branch_label": " Baskets",
-                                "children": [],
+                                "children": [
+                                  {
+                                    "branch_label": " Stores Selling",
+                                    "children": [],
+                                    "expanded": "0",
+                                    "node_detail": {
+                                      "direction": "Growth",
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": "590",
+                                      "left_panel": {
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": 19885
+                                      },
+                                      "right_panel": {
+                                        "format": {
+                                          "dec": "1",
+                                          "type": "pct"
+                                        },
+                                        "label": 0.03057786991448562
+                                      },
+                                      "type": "",
+                                      "yoy_direction": "Up"
+                                    }
+                                  },
+                                  {
+                                    "branch_label": " Sales/ Store/ Week",
+                                    "children": [
+                                      {
+                                        "branch_label": " Units/ Store/ Week",
+                                        "children": [],
+                                        "expanded": "0",
+                                        "node_detail": {
+                                          "direction": "Growth",
+                                          "format": {
+                                            "dec": "2",
+                                            "type": "num"
+                                          },
+                                          "label": "26.6222030627911",
+                                          "left_panel": {
+                                            "format": {
+                                              "dec": "2",
+                                              "type": "num"
+                                            },
+                                            "label": 215.5264269549912
+                                          },
+                                          "right_panel": {
+                                            "format": {
+                                              "dec": "1",
+                                              "type": "pct"
+                                            },
+                                            "label": 0.14092963362208002
+                                          },
+                                          "type": "",
+                                          "yoy_direction": "Up"
+                                        }
+                                      }
+                                    ],
+                                    "expanded": "0",
+                                    "node_detail": {
+                                      "direction": "Growth",
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": "39.517646446458",
+                                      "left_panel": {
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": 635.8179522251747
+                                      },
+                                      "right_panel": {
+                                        "format": {
+                                          "dec": "1",
+                                          "type": "pct"
+                                        },
+                                        "label": 0.06627138383712779
+                                      },
+                                      "type": "",
+                                      "yoy_direction": "Up"
+                                    }
+                                  }
+                                ],
                                 "expanded": "0",
                                 "node_detail": {
                                   "direction": "Growth",
@@ -4118,20 +4444,20 @@
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": "323669",
+                                  "label": "32268",
                                   "left_panel": {
                                     "format": {
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": 7536956
+                                    "label": 333929
                                   },
                                   "right_panel": {
                                     "format": {
                                       "dec": "1",
                                       "type": "pct"
                                     },
-                                    "label": 0.04487122167744054
+                                    "label": 0.10696775519540146
                                   },
                                   "type": "",
                                   "yoy_direction": "Up"
@@ -4150,20 +4476,20 @@
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": "0.0842881901806116",
+                                      "label": "0.107357500851975",
                                       "left_panel": {
                                         "format": {
                                           "dec": "2",
                                           "type": "num"
                                         },
-                                        "label": 1.7174523773258064
+                                        "label": 1.8334705880591384
                                       },
                                       "right_panel": {
                                         "format": {
                                           "dec": "1",
                                           "type": "pct"
                                         },
-                                        "label": 0.05161035910783052
+                                        "label": 0.062196099228746915
                                       },
                                       "type": "",
                                       "yoy_direction": "Up"
@@ -4179,20 +4505,20 @@
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": "3312530.74999963",
+                                      "label": "343439.919999293",
                                       "left_panel": {
                                         "format": {
                                           "dec": "2",
                                           "type": "num"
                                         },
-                                        "label": 47245989.74000419
+                                        "label": 2266484.7999994503
                                       },
                                       "right_panel": {
                                         "format": {
                                           "dec": "1",
                                           "type": "pct"
                                         },
-                                        "label": 0.07539881507516337
+                                        "label": 0.17859173416652915
                                       },
                                       "type": "",
                                       "yoy_direction": "Up"
@@ -4201,28 +4527,28 @@
                                 ],
                                 "expanded": "0",
                                 "node_detail": {
-                                  "direction": "Growth",
+                                  "direction": "Decline",
                                   "format": {
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": "0.0019400823412834",
+                                  "label": "-0.0398306074964001",
                                   "left_panel": {
                                     "format": {
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": 5.504200616270241
+                                    "label": 5.4088657768557304
                                   },
                                   "right_panel": {
                                     "format": {
                                       "dec": "1",
                                       "type": "pct"
                                     },
-                                    "label": 0.0003525973241943271
+                                    "label": -0.007310116895261013
                                   },
                                   "type": "",
-                                  "yoy_direction": "Up"
+                                  "yoy_direction": "Down"
                                 }
                               }
                             ]
@@ -4253,7 +4579,7 @@
                               },
                               "label": {
                                 "type": "string",
-                                "example": "1795533.47999888"
+                                "example": "162517.939999609"
                               },
                               "left_panel": {
                                 "type": "object",
@@ -4273,7 +4599,7 @@
                                   },
                                   "label": {
                                     "type": "number",
-                                    "example": 41484917.86000169
+                                    "example": 1806177.1399996572
                                   }
                                 }
                               },
@@ -4295,7 +4621,7 @@
                                   },
                                   "label": {
                                     "type": "number",
-                                    "example": 0.045239640474331586
+                                    "example": 0.09887569150563831
                                   }
                                 }
                               },
@@ -4317,7 +4643,96 @@
                           "children": [
                             {
                               "branch_label": " Baskets",
-                              "children": [],
+                              "children": [
+                                {
+                                  "branch_label": " Stores Selling",
+                                  "children": [],
+                                  "expanded": "0",
+                                  "node_detail": {
+                                    "direction": "Growth",
+                                    "format": {
+                                      "dec": "2",
+                                      "type": "num"
+                                    },
+                                    "label": "590",
+                                    "left_panel": {
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": 19885
+                                    },
+                                    "right_panel": {
+                                      "format": {
+                                        "dec": "1",
+                                        "type": "pct"
+                                      },
+                                      "label": 0.03057786991448562
+                                    },
+                                    "type": "",
+                                    "yoy_direction": "Up"
+                                  }
+                                },
+                                {
+                                  "branch_label": " Sales/ Store/ Week",
+                                  "children": [
+                                    {
+                                      "branch_label": " Units/ Store/ Week",
+                                      "children": [],
+                                      "expanded": "0",
+                                      "node_detail": {
+                                        "direction": "Growth",
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": "26.6222030627911",
+                                        "left_panel": {
+                                          "format": {
+                                            "dec": "2",
+                                            "type": "num"
+                                          },
+                                          "label": 215.5264269549912
+                                        },
+                                        "right_panel": {
+                                          "format": {
+                                            "dec": "1",
+                                            "type": "pct"
+                                          },
+                                          "label": 0.14092963362208002
+                                        },
+                                        "type": "",
+                                        "yoy_direction": "Up"
+                                      }
+                                    }
+                                  ],
+                                  "expanded": "0",
+                                  "node_detail": {
+                                    "direction": "Growth",
+                                    "format": {
+                                      "dec": "2",
+                                      "type": "num"
+                                    },
+                                    "label": "39.517646446458",
+                                    "left_panel": {
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": 635.8179522251747
+                                    },
+                                    "right_panel": {
+                                      "format": {
+                                        "dec": "1",
+                                        "type": "pct"
+                                      },
+                                      "label": 0.06627138383712779
+                                    },
+                                    "type": "",
+                                    "yoy_direction": "Up"
+                                  }
+                                }
+                              ],
                               "expanded": "0",
                               "node_detail": {
                                 "direction": "Growth",
@@ -4325,20 +4740,20 @@
                                   "dec": "2",
                                   "type": "num"
                                 },
-                                "label": "323669",
+                                "label": "32268",
                                 "left_panel": {
                                   "format": {
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": 7536956
+                                  "label": 333929
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.04487122167744054
+                                  "label": 0.10696775519540146
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4357,20 +4772,20 @@
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": "0.0842881901806116",
+                                    "label": "0.107357500851975",
                                     "left_panel": {
                                       "format": {
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": 1.7174523773258064
+                                      "label": 1.8334705880591384
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.05161035910783052
+                                      "label": 0.062196099228746915
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4386,20 +4801,20 @@
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": "3312530.74999963",
+                                    "label": "343439.919999293",
                                     "left_panel": {
                                       "format": {
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": 47245989.74000419
+                                      "label": 2266484.7999994503
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.07539881507516337
+                                      "label": 0.17859173416652915
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4408,28 +4823,28 @@
                               ],
                               "expanded": "0",
                               "node_detail": {
-                                "direction": "Growth",
+                                "direction": "Decline",
                                 "format": {
                                   "dec": "2",
                                   "type": "num"
                                 },
-                                "label": "0.0019400823412834",
+                                "label": "-0.0398306074964001",
                                 "left_panel": {
                                   "format": {
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": 5.504200616270241
+                                  "label": 5.4088657768557304
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.0003525973241943271
+                                  "label": -0.007310116895261013
                                 },
                                 "type": "",
-                                "yoy_direction": "Up"
+                                "yoy_direction": "Down"
                               }
                             }
                           ],
@@ -4440,20 +4855,20 @@
                               "dec": "2",
                               "type": "num"
                             },
-                            "label": "1795533.47999888",
+                            "label": "162517.939999609",
                             "left_panel": {
                               "format": {
                                 "dec": "2",
                                 "type": "num"
                               },
-                              "label": 41484917.86000169
+                              "label": 1806177.1399996572
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.045239640474331586
+                              "label": 0.09887569150563831
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4469,20 +4884,20 @@
                               "dec": "2",
                               "type": "num"
                             },
-                            "label": "1163881",
+                            "label": "91548",
                             "left_panel": {
                               "format": {
                                 "dec": "2",
                                 "type": "num"
                               },
-                              "label": 12944363
+                              "label": 612249
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.09879740064965085
+                              "label": 0.17581683154055783
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4506,7 +4921,96 @@
                           "children": [
                             {
                               "branch_label": " Baskets",
-                              "children": [],
+                              "children": [
+                                {
+                                  "branch_label": " Stores Selling",
+                                  "children": [],
+                                  "expanded": "0",
+                                  "node_detail": {
+                                    "direction": "Growth",
+                                    "format": {
+                                      "dec": "2",
+                                      "type": "num"
+                                    },
+                                    "label": "590",
+                                    "left_panel": {
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": 19885
+                                    },
+                                    "right_panel": {
+                                      "format": {
+                                        "dec": "1",
+                                        "type": "pct"
+                                      },
+                                      "label": 0.03057786991448562
+                                    },
+                                    "type": "",
+                                    "yoy_direction": "Up"
+                                  }
+                                },
+                                {
+                                  "branch_label": " Sales/ Store/ Week",
+                                  "children": [
+                                    {
+                                      "branch_label": " Units/ Store/ Week",
+                                      "children": [],
+                                      "expanded": "0",
+                                      "node_detail": {
+                                        "direction": "Growth",
+                                        "format": {
+                                          "dec": "2",
+                                          "type": "num"
+                                        },
+                                        "label": "26.6222030627911",
+                                        "left_panel": {
+                                          "format": {
+                                            "dec": "2",
+                                            "type": "num"
+                                          },
+                                          "label": 215.5264269549912
+                                        },
+                                        "right_panel": {
+                                          "format": {
+                                            "dec": "1",
+                                            "type": "pct"
+                                          },
+                                          "label": 0.14092963362208002
+                                        },
+                                        "type": "",
+                                        "yoy_direction": "Up"
+                                      }
+                                    }
+                                  ],
+                                  "expanded": "0",
+                                  "node_detail": {
+                                    "direction": "Growth",
+                                    "format": {
+                                      "dec": "2",
+                                      "type": "num"
+                                    },
+                                    "label": "39.517646446458",
+                                    "left_panel": {
+                                      "format": {
+                                        "dec": "2",
+                                        "type": "num"
+                                      },
+                                      "label": 635.8179522251747
+                                    },
+                                    "right_panel": {
+                                      "format": {
+                                        "dec": "1",
+                                        "type": "pct"
+                                      },
+                                      "label": 0.06627138383712779
+                                    },
+                                    "type": "",
+                                    "yoy_direction": "Up"
+                                  }
+                                }
+                              ],
                               "expanded": "0",
                               "node_detail": {
                                 "direction": "Growth",
@@ -4514,20 +5018,20 @@
                                   "dec": "2",
                                   "type": "num"
                                 },
-                                "label": "323669",
+                                "label": "32268",
                                 "left_panel": {
                                   "format": {
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": 7536956
+                                  "label": 333929
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.04487122167744054
+                                  "label": 0.10696775519540146
                                 },
                                 "type": "",
                                 "yoy_direction": "Up"
@@ -4546,20 +5050,20 @@
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": "0.0842881901806116",
+                                    "label": "0.107357500851975",
                                     "left_panel": {
                                       "format": {
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": 1.7174523773258064
+                                      "label": 1.8334705880591384
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.05161035910783052
+                                      "label": 0.062196099228746915
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4575,20 +5079,20 @@
                                       "dec": "2",
                                       "type": "num"
                                     },
-                                    "label": "3312530.74999963",
+                                    "label": "343439.919999293",
                                     "left_panel": {
                                       "format": {
                                         "dec": "2",
                                         "type": "num"
                                       },
-                                      "label": 47245989.74000419
+                                      "label": 2266484.7999994503
                                     },
                                     "right_panel": {
                                       "format": {
                                         "dec": "1",
                                         "type": "pct"
                                       },
-                                      "label": 0.07539881507516337
+                                      "label": 0.17859173416652915
                                     },
                                     "type": "",
                                     "yoy_direction": "Up"
@@ -4597,28 +5101,28 @@
                               ],
                               "expanded": "0",
                               "node_detail": {
-                                "direction": "Growth",
+                                "direction": "Decline",
                                 "format": {
                                   "dec": "2",
                                   "type": "num"
                                 },
-                                "label": "0.0019400823412834",
+                                "label": "-0.0398306074964001",
                                 "left_panel": {
                                   "format": {
                                     "dec": "2",
                                     "type": "num"
                                   },
-                                  "label": 5.504200616270241
+                                  "label": 5.4088657768557304
                                 },
                                 "right_panel": {
                                   "format": {
                                     "dec": "1",
                                     "type": "pct"
                                   },
-                                  "label": 0.0003525973241943271
+                                  "label": -0.007310116895261013
                                 },
                                 "type": "",
-                                "yoy_direction": "Up"
+                                "yoy_direction": "Down"
                               }
                             }
                           ],
@@ -4629,20 +5133,20 @@
                               "dec": "2",
                               "type": "num"
                             },
-                            "label": "1795533.47999888",
+                            "label": "162517.939999609",
                             "left_panel": {
                               "format": {
                                 "dec": "2",
                                 "type": "num"
                               },
-                              "label": 41484917.86000169
+                              "label": 1806177.1399996572
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.045239640474331586
+                              "label": 0.09887569150563831
                             },
                             "type": "",
                             "yoy_direction": "Up"
@@ -4658,20 +5162,20 @@
                               "dec": "2",
                               "type": "num"
                             },
-                            "label": "1163881",
+                            "label": "91548",
                             "left_panel": {
                               "format": {
                                 "dec": "2",
                                 "type": "num"
                               },
-                              "label": 12944363
+                              "label": 612249
                             },
                             "right_panel": {
                               "format": {
                                 "dec": "1",
                                 "type": "pct"
                               },
-                              "label": 0.09879740064965085
+                              "label": 0.17581683154055783
                             },
                             "type": "",
                             "yoy_direction": "Up"
