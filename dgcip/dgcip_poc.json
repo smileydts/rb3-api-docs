@@ -1262,8 +1262,14 @@
                         "type": "object",
                         "properties": {
                           "chg": {
-                            "type": "string",
-                            "example": "pct"
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "pct"
+                            },
+                            "example": [
+                              "pct"
+                            ]
                           }
                         }
                       }
@@ -1312,7 +1318,9 @@
                         ]
                       },
                       "report": {
-                        "chg": "pct",
+                        "chg": [
+                          "pct"
+                        ],
                         "sort": "period"
                       }
                     }
@@ -1358,7 +1366,7 @@
                         ]
                       },
                       "report": {
-                        "chg": "",
+                        "chg": [],
                         "sort": "period"
                       }
                     }
@@ -1423,7 +1431,9 @@
                         ]
                       },
                       "report": {
-                        "chg": "pct",
+                        "chg": [
+                          "pct"
+                        ],
                         "limit": "10",
                         "sort": {
                           "row": {
@@ -1506,7 +1516,9 @@
                         ]
                       },
                       "report": {
-                        "chg": "pct"
+                        "chg": [
+                          "pct"
+                        ]
                       }
                     }
                   }
@@ -2412,7 +2424,7 @@
                                   "type": "string",
                                   "example": "classdesc"
                                 },
-                                "ops": {
+                                "op": {
                                   "type": "string",
                                   "example": "="
                                 },
@@ -2431,7 +2443,7 @@
                             "example": [
                               {
                                 "col": "classdesc",
-                                "ops": "=",
+                                "op": "=",
                                 "values": [
                                   "CEREAL"
                                 ]
@@ -2483,7 +2495,7 @@
                         "product": [
                           {
                             "col": "classdesc",
-                            "ops": "=",
+                            "op": "=",
                             "values": [
                               "CEREAL"
                             ]
