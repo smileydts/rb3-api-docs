@@ -1104,18 +1104,18 @@
                                 "type": "array",
                                 "items": {
                                   "type": "string",
-                                  "example": "l4"
+                                  "example": "l13"
                                 },
                                 "example": [
-                                  "l4"
+                                  "l13"
                                 ]
                               },
                               "example": [
                                 [
-                                  "l4"
+                                  "l13"
                                 ],
                                 [
-                                  "ly_l4"
+                                  "ly_l13"
                                 ]
                               ]
                             }
@@ -1125,30 +1125,10 @@
                           {
                             "value": [
                               [
-                                "l4"
-                              ],
-                              [
-                                "ly_l4"
-                              ]
-                            ]
-                          },
-                          {
-                            "value": [
-                              [
                                 "l13"
                               ],
                               [
                                 "ly_l13"
-                              ]
-                            ]
-                          },
-                          {
-                            "value": [
-                              [
-                                "l52"
-                              ],
-                              [
-                                "ly_l52"
                               ]
                             ]
                           }
@@ -1157,14 +1137,14 @@
                       "filters": {
                         "type": "object",
                         "properties": {
-                          "product": {
+                          "store": {
                             "type": "array",
                             "items": {
                               "type": "object",
                               "properties": {
                                 "col": {
                                   "type": "string",
-                                  "example": "class"
+                                  "example": "quartile_custom"
                                 },
                                 "op": {
                                   "type": "string",
@@ -1174,20 +1154,20 @@
                                   "type": "array",
                                   "items": {
                                     "type": "string",
-                                    "example": "1142"
+                                    "example": "Q4"
                                   },
                                   "example": [
-                                    "1142"
+                                    "Q4"
                                   ]
                                 }
                               }
                             },
                             "example": [
                               {
-                                "col": "class",
+                                "col": "quartile_custom",
                                 "op": "=",
                                 "values": [
-                                  "1142"
+                                  "Q4"
                                 ]
                               }
                             ]
@@ -1221,12 +1201,28 @@
                           },
                           "row": {
                             "type": "array",
-                            "items": {},
-                            "example": []
+                            "items": {
+                              "type": "string",
+                              "example": "decile_custom"
+                            },
+                            "example": [
+                              "decile_custom"
+                            ]
                           },
                           "row_dims": {
                             "type": "object",
-                            "properties": {}
+                            "properties": {
+                              "store": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "decile_custom"
+                                },
+                                "example": [
+                                  "decile_custom"
+                                ]
+                              }
+                            }
                           }
                         }
                       },
@@ -1252,7 +1248,10 @@
                                 "value": "units"
                               },
                               {
-                                "value": "baskets"
+                                "value": "sales_psw"
+                              },
+                              {
+                                "value": "units_psw"
                               }
                             ]
                           }
@@ -1261,15 +1260,19 @@
                       "report": {
                         "type": "object",
                         "properties": {
-                          "chg": {
-                            "type": "array",
-                            "items": {
-                              "type": "string",
-                              "example": "pct"
-                            },
-                            "example": [
-                              "pct"
-                            ]
+                          "custom_tables": {
+                            "type": "object",
+                            "properties": {
+                              "store": {
+                                "type": "object",
+                                "properties": {
+                                  "path": {
+                                    "type": "string",
+                                    "example": "dgcip.shared.x1010data.hiers.store.ib_demo"
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -1446,6 +1449,74 @@
                     }
                   }
                 },
+                "Sales Trends Custom Table": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "l13"
+                            ],
+                            [
+                              "ly_l13"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {
+                        "store": [
+                          {
+                            "col": "quartile_custom",
+                            "op": "=",
+                            "values": [
+                              "Q4"
+                            ]
+                          }
+                        ]
+                      },
+                      "groups": {
+                        "col": [],
+                        "col_dims": {},
+                        "rollup": {
+                          "col": "0",
+                          "row": "0"
+                        },
+                        "row": [
+                          "decile_custom"
+                        ],
+                        "row_dims": {
+                          "store": [
+                            "decile_custom"
+                          ]
+                        }
+                      },
+                      "metrics": {
+                        "sales": [
+                          {
+                            "value": "sales"
+                          },
+                          {
+                            "value": "units"
+                          },
+                          {
+                            "value": "sales_psw"
+                          },
+                          {
+                            "value": "units_psw"
+                          }
+                        ]
+                      },
+                      "report": {
+                        "custom_tables": {
+                          "store": {
+                            "path": "dgcip.shared.x1010data.hiers.store.ib_demo"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
                 "Sales Trends Multi-Period": {
                   "value": {
                     "input": {
@@ -1529,7 +1600,7 @@
         },
         "responses": {
           "200": {
-            "description": "success response / success response / success response / success response",
+            "description": "success response / success response / success response / success response / success response",
             "headers": {
               "Connection": {
                 "schema": {
@@ -1540,7 +1611,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Wed, 17 Jul 2024 01:16:08 GMT"
+                  "example": "Tue, 13 Aug 2024 05:03:17 GMT"
                 }
               },
               "Keep-Alive": {
@@ -1570,6 +1641,18 @@
                     "data": {
                       "type": "object",
                       "properties": {
+                        "decile_custom_store": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 10
+                          },
+                          "example": [
+                            10,
+                            9,
+                            8
+                          ]
+                        },
                         "fyrwk_calendar": {
                           "type": "array",
                           "items": {
@@ -2058,6 +2141,30 @@
                             3023102775
                           ]
                         },
+                        "sales_units_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 538473007
+                          },
+                          "example": [
+                            538473007,
+                            375201065,
+                            161881849
+                          ]
+                        },
+                        "sales_units_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 531500094
+                          },
+                          "example": [
+                            531500094,
+                            371793414,
+                            160443783
+                          ]
+                        },
                         "sales_units_p1_c1": {
                           "type": "array",
                           "items": {
@@ -2148,6 +2255,18 @@
                             0.09205139891900688
                           ]
                         },
+                        "sales_units_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.013119307181157338
+                          },
+                          "example": [
+                            0.013119307181157338,
+                            0.009165442075313363,
+                            0.008963052186322483
+                          ]
+                        },
                         "sales_units_psw": {
                           "type": "array",
                           "items": {
@@ -2156,6 +2275,42 @@
                           },
                           "example": [
                             11518.468834894858
+                          ]
+                        },
+                        "sales_units_psw_c1": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 11131.685175614495
+                          },
+                          "example": [
+                            11131.685175614495,
+                            11703.820107305508,
+                            11882.108705226072
+                          ]
+                        },
+                        "sales_units_psw_c2": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 10885.149791103466
+                          },
+                          "example": [
+                            10885.149791103466,
+                            11536.705681571351,
+                            11731.777054694356
+                          ]
+                        },
+                        "sales_units_psw_pct": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 0.022648781986677396
+                          },
+                          "example": [
+                            0.022648781986677396,
+                            0.01448545454367464,
+                            0.012814056202300778
                           ]
                         }
                       }
@@ -2214,178 +2369,120 @@
                   "success response": {
                     "value": {
                       "data": {
-                        "sales_baskets_p1_c1": [
-                          7139671
+                        "decile_custom_store": [
+                          10,
+                          9,
+                          8
                         ],
-                        "sales_baskets_p1_c2": [
-                          7170335
+                        "sales_sales_c1": [
+                          1776363393.9773538,
+                          1249457531.0602565,
+                          540851522.8862627
                         ],
-                        "sales_baskets_p1_pct": [
-                          -0.004276508698687021
+                        "sales_sales_c2": [
+                          1759993420.824563,
+                          1244654090.6438026,
+                          539079106.2407097
                         ],
-                        "sales_baskets_p2_c1": [
-                          23910761
+                        "sales_sales_pct": [
+                          0.009301155878822203,
+                          0.00385925732503658,
+                          0.003287860028397341
                         ],
-                        "sales_baskets_p2_c2": [
-                          23220493
+                        "sales_sales_psw_c1": [
+                          36722.2085456216,
+                          38974.90582881828,
+                          39698.43826235046
                         ],
-                        "sales_baskets_p2_pct": [
-                          0.029726672900527995
+                        "sales_sales_psw_c2": [
+                          36044.75753306634,
+                          38621.46928487922,
+                          39417.89311499778
                         ],
-                        "sales_baskets_p3_c1": [
-                          94716960
+                        "sales_sales_psw_pct": [
+                          0.018794716872038604,
+                          0.009151297205501063,
+                          0.007117203005604961
                         ],
-                        "sales_baskets_p3_c2": [
-                          91321561
+                        "sales_units_c1": [
+                          538473007,
+                          375201065,
+                          161881849
                         ],
-                        "sales_baskets_p3_pct": [
-                          0.0371806938341757
+                        "sales_units_c2": [
+                          531500094,
+                          371793414,
+                          160443783
                         ],
-                        "sales_sales_p1_c1": [
-                          39120907.53000123
+                        "sales_units_pct": [
+                          0.013119307181157338,
+                          0.009165442075313363,
+                          0.008963052186322483
                         ],
-                        "sales_sales_p1_c2": [
-                          39399970.26000278
+                        "sales_units_psw_c1": [
+                          11131.685175614495,
+                          11703.820107305508,
+                          11882.108705226072
                         ],
-                        "sales_sales_p1_pct": [
-                          -0.007082815752397646
+                        "sales_units_psw_c2": [
+                          10885.149791103466,
+                          11536.705681571351,
+                          11731.777054694356
                         ],
-                        "sales_sales_p2_c1": [
-                          130742401.56000452
-                        ],
-                        "sales_sales_p2_c2": [
-                          127122082.93000396
-                        ],
-                        "sales_sales_p2_pct": [
-                          0.028479069462651888
-                        ],
-                        "sales_sales_p3_c1": [
-                          518549146.02943075
-                        ],
-                        "sales_sales_p3_c2": [
-                          487101167.93890166
-                        ],
-                        "sales_sales_p3_pct": [
-                          0.0645614918633774
-                        ],
-                        "sales_units_p1_c1": [
-                          12022350
-                        ],
-                        "sales_units_p1_c2": [
-                          11669871
-                        ],
-                        "sales_units_p1_pct": [
-                          0.030204189917780584
-                        ],
-                        "sales_units_p2_c1": [
-                          40594390
-                        ],
-                        "sales_units_p2_c2": [
-                          37975926
-                        ],
-                        "sales_units_p2_pct": [
-                          0.0689506294066404
-                        ],
-                        "sales_units_p3_c1": [
-                          160645924
-                        ],
-                        "sales_units_p3_c2": [
-                          147104728
-                        ],
-                        "sales_units_p3_pct": [
-                          0.09205139891900688
+                        "sales_units_psw_pct": [
+                          0.022648781986677396,
+                          0.01448545454367464,
+                          0.012814056202300778
                         ]
                       },
                       "fields": {
                         "format": [
-                          "type:currency;dec:2",
-                          "type:currency;dec:2",
-                          "type:currency;dec:2",
-                          "type:currency;dec:2",
+                          "type:num",
                           "type:currency;dec:2",
                           "type:currency;dec:2",
                           "type:pct;dec:1",
-                          "type:pct;dec:1",
-                          "type:pct;dec:1",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
                           "type:num;dec:0",
                           "type:num;dec:0",
                           "type:pct;dec:1",
+                          "type:currency;dec:2",
+                          "type:currency;dec:2",
                           "type:pct;dec:1",
-                          "type:pct;dec:1",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:num;dec:0",
-                          "type:pct;dec:1",
-                          "type:pct;dec:1",
+                          "type:num;dec:2",
+                          "type:num;dec:2",
                           "type:pct;dec:1"
                         ],
                         "label": [
-                          "L4 Curr. Per.  Sales $",
-                          "LY L4 Comp. Per.  Sales $",
-                          "L13 Curr. Per.  Sales $",
-                          "LY L13 Comp. Per.  Sales $",
-                          "L52 Curr. Per.  Sales $",
-                          "LY L52 Comp. Per.  Sales $",
+                          "Decile",
+                          "Curr. Per.  Sales $",
+                          "Comp. Per.  Sales $",
                           "% Chg  Sales $",
-                          "% Chg  Sales $",
-                          "% Chg  Sales $",
-                          "L4 Curr. Per.  Units",
-                          "LY L4 Comp. Per.  Units",
-                          "L13 Curr. Per.  Units",
-                          "LY L13 Comp. Per.  Units",
-                          "L52 Curr. Per.  Units",
-                          "LY L52 Comp. Per.  Units",
+                          "Curr. Per.  Units",
+                          "Comp. Per.  Units",
                           "% Chg  Units",
-                          "% Chg  Units",
-                          "% Chg  Units",
-                          "L4 Curr. Per.  Baskets",
-                          "LY L4 Comp. Per.  Baskets",
-                          "L13 Curr. Per.  Baskets",
-                          "LY L13 Comp. Per.  Baskets",
-                          "L52 Curr. Per.  Baskets",
-                          "LY L52 Comp. Per.  Baskets",
-                          "% Chg  Baskets",
-                          "% Chg  Baskets",
-                          "% Chg  Baskets"
+                          "Curr. Per.  Sales/ Store/ Week",
+                          "Comp. Per.  Sales/ Store/ Week",
+                          "% Chg  Sales/ Store/ Week",
+                          "Curr. Per.  Units/ Store/ Week",
+                          "Comp. Per.  Units/ Store/ Week",
+                          "% Chg  Units/ Store/ Week"
                         ],
                         "name": [
-                          "sales_sales_p1_c1",
-                          "sales_sales_p1_c2",
-                          "sales_sales_p2_c1",
-                          "sales_sales_p2_c2",
-                          "sales_sales_p3_c1",
-                          "sales_sales_p3_c2",
-                          "sales_sales_p1_pct",
-                          "sales_sales_p2_pct",
-                          "sales_sales_p3_pct",
-                          "sales_units_p1_c1",
-                          "sales_units_p1_c2",
-                          "sales_units_p2_c1",
-                          "sales_units_p2_c2",
-                          "sales_units_p3_c1",
-                          "sales_units_p3_c2",
-                          "sales_units_p1_pct",
-                          "sales_units_p2_pct",
-                          "sales_units_p3_pct",
-                          "sales_baskets_p1_c1",
-                          "sales_baskets_p1_c2",
-                          "sales_baskets_p2_c1",
-                          "sales_baskets_p2_c2",
-                          "sales_baskets_p3_c1",
-                          "sales_baskets_p3_c2",
-                          "sales_baskets_p1_pct",
-                          "sales_baskets_p2_pct",
-                          "sales_baskets_p3_pct"
+                          "decile_custom_store",
+                          "sales_sales_c1",
+                          "sales_sales_c2",
+                          "sales_sales_pct",
+                          "sales_units_c1",
+                          "sales_units_c2",
+                          "sales_units_pct",
+                          "sales_sales_psw_c1",
+                          "sales_sales_psw_c2",
+                          "sales_sales_psw_pct",
+                          "sales_units_psw_c1",
+                          "sales_units_psw_c2",
+                          "sales_units_psw_pct"
                         ]
                       },
-                      "total_row_count": 1
+                      "total_row_count": 3
                     }
                   }
                 }
@@ -5628,16 +5725,6 @@
         "summary": "Date",
         "description": "Date",
         "operationId": "date1",
-        "parameters": [
-          {
-            "name": "dim",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "example": "product"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
