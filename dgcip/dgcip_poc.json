@@ -9,6 +9,9 @@
   "servers": [
     {
       "url": "https://www2.1010data.com"
+    },
+    {
+      "url": "https://varetail.1010data.com"
     }
   ],
   "paths": {
@@ -17576,6 +17579,130 @@
                         "product",
                         "store",
                         "date"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/beta-latest/api/cip.dev.v4_16.misc.rb3.api.dimensions/available_modes:json": {
+      "post": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "Available Modes",
+        "description": "Available Modes",
+        "operationId": "availableModes",
+        "parameters": [
+          {
+            "name": "",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": ""
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dim": {
+                    "type": "string",
+                    "example": "product"
+                  }
+                }
+              },
+              "examples": {
+                "Available Modes": {
+                  "value": {
+                    "dim": "product"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Sun, 01 Sep 2024 02:35:41 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Hierarchy"
+                      },
+                      "example": [
+                        "Hierarchy",
+                        "Custom Table"
+                      ]
+                    },
+                    "mode": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "hierarchy"
+                      },
+                      "example": [
+                        "hierarchy",
+                        "custom"
+                      ]
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "label": [
+                        "Hierarchy",
+                        "Custom Table"
+                      ],
+                      "mode": [
+                        "hierarchy",
+                        "custom"
                       ]
                     }
                   }
