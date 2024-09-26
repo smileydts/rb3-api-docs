@@ -1332,6 +1332,54 @@
                     }
                   }
                 },
+                "KPIs Own Items Only (CPG uid needed)": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "l13"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {},
+                      "groups": {
+                        "col": [],
+                        "col_dims": {},
+                        "rollup": {
+                          "col": "0",
+                          "row": "0"
+                        },
+                        "row": [],
+                        "row_dims": {}
+                      },
+                      "metrics": {
+                        "sales": [
+                          {
+                            "value": "sales"
+                          },
+                          {
+                            "value": "units"
+                          },
+                          {
+                            "value": "sales_psw"
+                          },
+                          {
+                            "value": "units_psw"
+                          }
+                        ]
+                      },
+                      "report": {
+                        "chg": [
+                          "pct"
+                        ],
+                        "sort": "period"
+                      }
+                    }
+                  }
+                },
                 "Line Chart": {
                   "value": {
                     "input": {
@@ -1671,7 +1719,7 @@
         },
         "responses": {
           "200": {
-            "description": "success response / success response / success response / success response / success response / success response",
+            "description": "success response / success response / success response / success response / success response / success response / success response",
             "headers": {
               "Connection": {
                 "schema": {
