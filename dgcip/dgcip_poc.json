@@ -7390,6 +7390,851 @@
         }
       }
     },
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.bubble_chart/general:json": {
+      "post": {
+        "tags": [
+          "Widgets"
+        ],
+        "summary": "Bubble Chart",
+        "description": "Bubble Chart",
+        "operationId": "bubbleChart",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "object",
+                    "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "wtd"
+                                },
+                                "example": [
+                                  "wtd"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "wtd"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "wtd"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      "filters": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "col": {
+                                  "type": "string",
+                                  "example": "pdiv"
+                                },
+                                "op": {
+                                  "type": "string",
+                                  "example": "="
+                                },
+                                "values": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "example": "10"
+                                  },
+                                  "example": [
+                                    "10"
+                                  ]
+                                }
+                              }
+                            },
+                            "example": [
+                              {
+                                "col": "pdiv",
+                                "op": "=",
+                                "values": [
+                                  "10"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "groups": {
+                        "type": "object",
+                        "properties": {
+                          "col": {
+                            "type": "array",
+                            "items": {},
+                            "example": []
+                          },
+                          "col_dims": {
+                            "type": "object",
+                            "properties": {}
+                          },
+                          "rollup": {
+                            "type": "object",
+                            "properties": {
+                              "col": {
+                                "type": "string",
+                                "example": "0"
+                              },
+                              "row": {
+                                "type": "string",
+                                "example": "0"
+                              }
+                            }
+                          },
+                          "row": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "deptdesc"
+                            },
+                            "example": [
+                              "deptdesc"
+                            ]
+                          },
+                          "row_dims": {
+                            "type": "object",
+                            "properties": {
+                              "product": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "deptdesc"
+                                },
+                                "example": [
+                                  "deptdesc"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "Bubble Chart": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "wtd"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {
+                        "product": [
+                          {
+                            "col": "pdiv",
+                            "op": "=",
+                            "values": [
+                              "10"
+                            ]
+                          }
+                        ]
+                      },
+                      "groups": {
+                        "col": [],
+                        "col_dims": {},
+                        "rollup": {
+                          "col": "0",
+                          "row": "0"
+                        },
+                        "row": [
+                          "deptdesc"
+                        ],
+                        "row_dims": {
+                          "product": [
+                            "deptdesc"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 03 Oct 2024 05:48:11 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "deptdesc_product": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "CANDY & SNACKS"
+                          },
+                          "example": [
+                            "CANDY & SNACKS",
+                            "PERISHABLES",
+                            "FOOD",
+                            "HOME CLEANING",
+                            "PAPER PRODUCTS",
+                            "HEALTH CARE",
+                            "BEAUTY CARE",
+                            "PET",
+                            "STATIONERY",
+                            "TOBACCO"
+                          ]
+                        },
+                        "sales_avgretail": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 2.4648111853558943
+                          },
+                          "example": [
+                            2.4648111853558943,
+                            3.546446951605456,
+                            2.4372405343459884,
+                            4.44253179144908,
+                            4.172680436082071,
+                            4.841582315023123,
+                            4.149809642301367,
+                            4.838246293121502,
+                            1.7952925501689634,
+                            5.858886653421695
+                          ]
+                        },
+                        "sales_baskets": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 14663474
+                          },
+                          "example": [
+                            14663474,
+                            8380767,
+                            6659313,
+                            3865363,
+                            3617491,
+                            3871723,
+                            3142501,
+                            2239819,
+                            2074899,
+                            1463106
+                          ]
+                        },
+                        "sales_tot_basket_sales": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 302917766.0589336
+                          },
+                          "example": [
+                            302917766.0589336,
+                            202272328.3199619,
+                            176682076.73278916,
+                            119781652.13388497,
+                            115243423.4673586,
+                            105874788.49628869,
+                            95294136.81668998,
+                            72154206.7525784,
+                            45632687.994095095,
+                            32680556.3006022
+                          ]
+                        }
+                      }
+                    },
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "type:currency;dec:2"
+                          },
+                          "example": [
+                            "type:currency;dec:2",
+                            "type:currency;dec:2",
+                            "type:num;dec:0",
+                            "type:char"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Total Basket Sales $"
+                          },
+                          "example": [
+                            "Total Basket Sales $",
+                            "Avg Retail",
+                            "Baskets",
+                            "Dept Description"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "sales_tot_basket_sales"
+                          },
+                          "example": [
+                            "sales_tot_basket_sales",
+                            "sales_avgretail",
+                            "sales_baskets",
+                            "deptdesc_product"
+                          ]
+                        }
+                      }
+                    },
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 11
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "data": {
+                        "deptdesc_product": [
+                          "CANDY & SNACKS",
+                          "PERISHABLES",
+                          "FOOD",
+                          "HOME CLEANING",
+                          "PAPER PRODUCTS",
+                          "HEALTH CARE",
+                          "BEAUTY CARE",
+                          "PET",
+                          "STATIONERY",
+                          "TOBACCO"
+                        ],
+                        "sales_avgretail": [
+                          2.4648111853558943,
+                          3.546446951605456,
+                          2.4372405343459884,
+                          4.44253179144908,
+                          4.172680436082071,
+                          4.841582315023123,
+                          4.149809642301367,
+                          4.838246293121502,
+                          1.7952925501689634,
+                          5.858886653421695
+                        ],
+                        "sales_baskets": [
+                          14663474,
+                          8380767,
+                          6659313,
+                          3865363,
+                          3617491,
+                          3871723,
+                          3142501,
+                          2239819,
+                          2074899,
+                          1463106
+                        ],
+                        "sales_tot_basket_sales": [
+                          302917766.0589336,
+                          202272328.3199619,
+                          176682076.73278916,
+                          119781652.13388497,
+                          115243423.4673586,
+                          105874788.49628869,
+                          95294136.81668998,
+                          72154206.7525784,
+                          45632687.994095095,
+                          32680556.3006022
+                        ]
+                      },
+                      "fields": {
+                        "format": [
+                          "type:currency;dec:2",
+                          "type:currency;dec:2",
+                          "type:num;dec:0",
+                          "type:char"
+                        ],
+                        "label": [
+                          "Total Basket Sales $",
+                          "Avg Retail",
+                          "Baskets",
+                          "Dept Description"
+                        ],
+                        "name": [
+                          "sales_tot_basket_sales",
+                          "sales_avgretail",
+                          "sales_baskets",
+                          "deptdesc_product"
+                        ]
+                      },
+                      "total_row_count": 11
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.waterfall_chart/general:json": {
+      "post": {
+        "tags": [
+          "Widgets"
+        ],
+        "summary": "Waterfall",
+        "description": "Waterfall",
+        "operationId": "waterfall",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "object",
+                    "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "wtd"
+                                },
+                                "example": [
+                                  "wtd"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "wtd"
+                                ],
+                                [
+                                  "ly_wtd"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "wtd"
+                              ],
+                              [
+                                "ly_wtd"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      "filters": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "col": {
+                                  "type": "string",
+                                  "example": "pdiv"
+                                },
+                                "op": {
+                                  "type": "string",
+                                  "example": "="
+                                },
+                                "values": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "example": "10"
+                                  },
+                                  "example": [
+                                    "10"
+                                  ]
+                                }
+                              }
+                            },
+                            "example": [
+                              {
+                                "col": "pdiv",
+                                "op": "=",
+                                "values": [
+                                  "10"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "groups": {
+                        "type": "object",
+                        "properties": {
+                          "col": {
+                            "type": "array",
+                            "items": {},
+                            "example": []
+                          },
+                          "col_dims": {
+                            "type": "object",
+                            "properties": {}
+                          },
+                          "rollup": {
+                            "type": "object",
+                            "properties": {
+                              "col": {
+                                "type": "string",
+                                "example": "0"
+                              },
+                              "row": {
+                                "type": "string",
+                                "example": "1"
+                              }
+                            }
+                          },
+                          "row": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "deptdesc"
+                            },
+                            "example": [
+                              "deptdesc"
+                            ]
+                          },
+                          "row_dims": {
+                            "type": "object",
+                            "properties": {
+                              "product": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "deptdesc"
+                                },
+                                "example": [
+                                  "deptdesc"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "Waterfall": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "wtd"
+                            ],
+                            [
+                              "ly_wtd"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {
+                        "product": [
+                          {
+                            "col": "pdiv",
+                            "op": "=",
+                            "values": [
+                              "10"
+                            ]
+                          }
+                        ]
+                      },
+                      "groups": {
+                        "col": [],
+                        "col_dims": {},
+                        "rollup": {
+                          "col": "0",
+                          "row": "1"
+                        },
+                        "row": [
+                          "deptdesc"
+                        ],
+                        "row_dims": {
+                          "product": [
+                            "deptdesc"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 03 Oct 2024 05:21:27 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "LY  Sales $"
+                          },
+                          "example": [
+                            "LY  Sales $",
+                            "PAPER PRODUCTS",
+                            "CANDY & SNACKS",
+                            "FOOD",
+                            "PERISHABLES",
+                            "STATIONERY",
+                            "BEAUTY CARE",
+                            "HOME CLEANING",
+                            "TOBACCO",
+                            "SUNDRIES",
+                            "PET",
+                            "All Other Products",
+                            "TY  Sales $"
+                          ]
+                        },
+                        "y_data": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 394755906.4328329
+                          },
+                          "example": [
+                            394755906.4328329,
+                            3678152.97001598,
+                            3632244.1827858984,
+                            2337229.706314251,
+                            1478492.102936849,
+                            -1317017.0398013145,
+                            -813553.4899954759,
+                            -484328.17998828733,
+                            152716.30270366743,
+                            132930.3600004632,
+                            77963.6100371182,
+                            -57369.62998988107,
+                            403573367.3278522
+                          ]
+                        }
+                      }
+                    },
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "dec:2"
+                          },
+                          "example": [
+                            "dec:2",
+                            "type:char"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": " Sales $"
+                          },
+                          "example": [
+                            " Sales $",
+                            "Name"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "y_data"
+                          },
+                          "example": [
+                            "y_data",
+                            "name"
+                          ]
+                        }
+                      }
+                    },
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 13
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "data": {
+                        "name": [
+                          "LY  Sales $",
+                          "PAPER PRODUCTS",
+                          "CANDY & SNACKS",
+                          "FOOD",
+                          "PERISHABLES",
+                          "STATIONERY",
+                          "BEAUTY CARE",
+                          "HOME CLEANING",
+                          "TOBACCO",
+                          "SUNDRIES",
+                          "PET",
+                          "All Other Products",
+                          "TY  Sales $"
+                        ],
+                        "y_data": [
+                          394755906.4328329,
+                          3678152.97001598,
+                          3632244.1827858984,
+                          2337229.706314251,
+                          1478492.102936849,
+                          -1317017.0398013145,
+                          -813553.4899954759,
+                          -484328.17998828733,
+                          152716.30270366743,
+                          132930.3600004632,
+                          77963.6100371182,
+                          -57369.62998988107,
+                          403573367.3278522
+                        ]
+                      },
+                      "fields": {
+                        "format": [
+                          "dec:2",
+                          "type:char"
+                        ],
+                        "label": [
+                          " Sales $",
+                          "Name"
+                        ],
+                        "name": [
+                          "y_data",
+                          "name"
+                        ]
+                      },
+                      "total_row_count": 13
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/available_fields:json": {
       "post": {
         "tags": [

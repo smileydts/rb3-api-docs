@@ -1428,6 +1428,220 @@
 							"body": "{\n    \"branch_label\": \"\",\n    \"expanded\": \"0\",\n    \"children\": [\n        {\n            \"children\": [\n                {\n                    \"children\": [\n                        {\n                            \"branch_label\": \" Stores Selling\",\n                            \"expanded\": \"0\",\n                            \"node_detail\": {\n                                \"label\": \"590\",\n                                \"direction\": \"Growth\",\n                                \"yoy_direction\": \"Up\",\n                                \"type\": \"\",\n                                \"format\": {\n                                    \"type\": \"num\",\n                                    \"dec\": \"2\"\n                                },\n                                \"left_panel\": {\n                                    \"label\": 19885,\n                                    \"format\": {\n                                        \"type\": \"num\",\n                                        \"dec\": \"2\"\n                                    }\n                                },\n                                \"right_panel\": {\n                                    \"label\": 0.03057786991448562,\n                                    \"format\": {\n                                        \"type\": \"pct\",\n                                        \"dec\": \"1\"\n                                    }\n                                }\n                            },\n                            \"children\": []\n                        },\n                        {\n                            \"children\": [\n                                {\n                                    \"branch_label\": \" Units/ Store/ Week\",\n                                    \"expanded\": \"0\",\n                                    \"node_detail\": {\n                                        \"label\": \"26.6222030627911\",\n                                        \"direction\": \"Growth\",\n                                        \"yoy_direction\": \"Up\",\n                                        \"type\": \"\",\n                                        \"format\": {\n                                            \"type\": \"num\",\n                                            \"dec\": \"2\"\n                                        },\n                                        \"left_panel\": {\n                                            \"label\": 215.52642695499119,\n                                            \"format\": {\n                                                \"type\": \"num\",\n                                                \"dec\": \"2\"\n                                            }\n                                        },\n                                        \"right_panel\": {\n                                            \"label\": 0.14092963362208002,\n                                            \"format\": {\n                                                \"type\": \"pct\",\n                                                \"dec\": \"1\"\n                                            }\n                                        }\n                                    },\n                                    \"children\": []\n                                }\n                            ],\n                            \"branch_label\": \" Sales/ Store/ Week\",\n                            \"expanded\": \"0\",\n                            \"node_detail\": {\n                                \"label\": \"39.517646446458\",\n                                \"direction\": \"Growth\",\n                                \"yoy_direction\": \"Up\",\n                                \"type\": \"\",\n                                \"format\": {\n                                    \"type\": \"num\",\n                                    \"dec\": \"2\"\n                                },\n                                \"left_panel\": {\n                                    \"label\": 635.81795222517474,\n                                    \"format\": {\n                                        \"type\": \"num\",\n                                        \"dec\": \"2\"\n                                    }\n                                },\n                                \"right_panel\": {\n                                    \"label\": 0.066271383837127787,\n                                    \"format\": {\n                                        \"type\": \"pct\",\n                                        \"dec\": \"1\"\n                                    }\n                                }\n                            }\n                        }\n                    ],\n                    \"branch_label\": \" Baskets\",\n                    \"expanded\": \"0\",\n                    \"node_detail\": {\n                        \"label\": \"32268\",\n                        \"direction\": \"Growth\",\n                        \"yoy_direction\": \"Up\",\n                        \"type\": \"\",\n                        \"format\": {\n                            \"type\": \"num\",\n                            \"dec\": \"2\"\n                        },\n                        \"left_panel\": {\n                            \"label\": 333929,\n                            \"format\": {\n                                \"type\": \"num\",\n                                \"dec\": \"2\"\n                            }\n                        },\n                        \"right_panel\": {\n                            \"label\": 0.10696775519540146,\n                            \"format\": {\n                                \"type\": \"pct\",\n                                \"dec\": \"1\"\n                            }\n                        }\n                    }\n                },\n                {\n                    \"children\": [\n                        {\n                            \"branch_label\": \" Units /Basket\",\n                            \"expanded\": \"0\",\n                            \"node_detail\": {\n                                \"label\": \"0.107357500851975\",\n                                \"direction\": \"Growth\",\n                                \"yoy_direction\": \"Up\",\n                                \"type\": \"\",\n                                \"format\": {\n                                    \"type\": \"num\",\n                                    \"dec\": \"2\"\n                                },\n                                \"left_panel\": {\n                                    \"label\": 1.8334705880591384,\n                                    \"format\": {\n                                        \"type\": \"num\",\n                                        \"dec\": \"2\"\n                                    }\n                                },\n                                \"right_panel\": {\n                                    \"label\": 0.062196099228746908,\n                                    \"format\": {\n                                        \"type\": \"pct\",\n                                        \"dec\": \"1\"\n                                    }\n                                }\n                            },\n                            \"children\": []\n                        },\n                        {\n                            \"branch_label\": \" Extended PLU Price\",\n                            \"expanded\": \"0\",\n                            \"node_detail\": {\n                                \"label\": \"343439.919999293\",\n                                \"direction\": \"Growth\",\n                                \"yoy_direction\": \"Up\",\n                                \"type\": \"\",\n                                \"format\": {\n                                    \"type\": \"num\",\n                                    \"dec\": \"2\"\n                                },\n                                \"left_panel\": {\n                                    \"label\": 2266484.7999994503,\n                                    \"format\": {\n                                        \"type\": \"num\",\n                                        \"dec\": \"2\"\n                                    }\n                                },\n                                \"right_panel\": {\n                                    \"label\": 0.17859173416652915,\n                                    \"format\": {\n                                        \"type\": \"pct\",\n                                        \"dec\": \"1\"\n                                    }\n                                }\n                            },\n                            \"children\": []\n                        }\n                    ],\n                    \"branch_label\": \" Sales $ /Basket\",\n                    \"expanded\": \"0\",\n                    \"node_detail\": {\n                        \"label\": \"-0.0398306074964001\",\n                        \"direction\": \"Decline\",\n                        \"yoy_direction\": \"Down\",\n                        \"type\": \"\",\n                        \"format\": {\n                            \"type\": \"num\",\n                            \"dec\": \"2\"\n                        },\n                        \"left_panel\": {\n                            \"label\": 5.4088657768557304,\n                            \"format\": {\n                                \"type\": \"num\",\n                                \"dec\": \"2\"\n                            }\n                        },\n                        \"right_panel\": {\n                            \"label\": -0.0073101168952610131,\n                            \"format\": {\n                                \"type\": \"pct\",\n                                \"dec\": \"1\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"branch_label\": \" Sales $\",\n            \"expanded\": \"0\",\n            \"node_detail\": {\n                \"label\": \"162517.939999609\",\n                \"direction\": \"Growth\",\n                \"yoy_direction\": \"Up\",\n                \"type\": \"\",\n                \"format\": {\n                    \"type\": \"num\",\n                    \"dec\": \"2\"\n                },\n                \"left_panel\": {\n                    \"label\": 1806177.1399996572,\n                    \"format\": {\n                        \"type\": \"num\",\n                        \"dec\": \"2\"\n                    }\n                },\n                \"right_panel\": {\n                    \"label\": 0.098875691505638311,\n                    \"format\": {\n                        \"type\": \"pct\",\n                        \"dec\": \"1\"\n                    }\n                }\n            }\n        },\n        {\n            \"branch_label\": \" Units\",\n            \"expanded\": \"0\",\n            \"node_detail\": {\n                \"label\": \"91548\",\n                \"direction\": \"Growth\",\n                \"yoy_direction\": \"Up\",\n                \"type\": \"\",\n                \"format\": {\n                    \"type\": \"num\",\n                    \"dec\": \"2\"\n                },\n                \"left_panel\": {\n                    \"label\": 612249,\n                    \"format\": {\n                        \"type\": \"num\",\n                        \"dec\": \"2\"\n                    }\n                },\n                \"right_panel\": {\n                    \"label\": 0.17581683154055783,\n                    \"format\": {\n                        \"type\": \"pct\",\n                        \"dec\": \"1\"\n                    }\n                }\n            },\n            \"children\": []\n        }\n    ]\n}"
 						}
 					]
+				},
+				{
+					"name": "Bubble Chart",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"pdiv\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"10\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"deptdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"deptdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.bubble_chart/general:json",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.arch.v4_15.misc.rb3.api.bubble_chart",
+								"general:json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"pdiv\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"10\"\n                    ]\n                }\n            ]\n        },\n              \"groups\": {\n        \"row\": [\n          \"deptdesc\"\n        ],\n        \"row_dims\": {\n          \"product\":[\n            \"deptdesc\"\n          ]\n        },\n        \"col\": [],\n        \"col_dims\": {},\n        \"rollup\": {\n          \"row\": \"0\",\n          \"col\": \"0\"\n        }\n      }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.bubble_chart/general:json",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.arch.v4_15.misc.rb3.api.bubble_chart",
+										"general:json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 03 Oct 2024 05:48:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"sales_tot_basket_sales\": [\n            302917766.05893362,\n            202272328.31996194,\n            176682076.73278916,\n            119781652.13388497,\n            115243423.46735859,\n            105874788.49628869,\n            95294136.816689983,\n            72154206.752578393,\n            45632687.994095095,\n            32680556.300602198\n        ],\n        \"sales_avgretail\": [\n            2.4648111853558943,\n            3.5464469516054558,\n            2.4372405343459884,\n            4.4425317914490803,\n            4.1726804360820706,\n            4.841582315023123,\n            4.1498096423013671,\n            4.838246293121502,\n            1.7952925501689634,\n            5.8588866534216946\n        ],\n        \"sales_baskets\": [\n            14663474,\n            8380767,\n            6659313,\n            3865363,\n            3617491,\n            3871723,\n            3142501,\n            2239819,\n            2074899,\n            1463106\n        ],\n        \"deptdesc_product\": [\n            \"CANDY & SNACKS\",\n            \"PERISHABLES\",\n            \"FOOD\",\n            \"HOME CLEANING\",\n            \"PAPER PRODUCTS\",\n            \"HEALTH CARE\",\n            \"BEAUTY CARE\",\n            \"PET\",\n            \"STATIONERY\",\n            \"TOBACCO\"\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"sales_tot_basket_sales\",\n            \"sales_avgretail\",\n            \"sales_baskets\",\n            \"deptdesc_product\"\n        ],\n        \"label\": [\n            \"Total Basket Sales $\",\n            \"Avg Retail\",\n            \"Baskets\",\n            \"Dept Description\"\n        ],\n        \"format\": [\n            \"type:currency;dec:2\",\n            \"type:currency;dec:2\",\n            \"type:num;dec:0\",\n            \"type:char\"\n        ]\n    },\n    \"total_row_count\": 11\n}"
+						}
+					]
+				},
+				{
+					"name": "Waterfall",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"pdiv\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"10\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"deptdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"deptdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"1\",\n                \"col\": \"0\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.waterfall_chart/general:json",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.arch.v4_15.misc.rb3.api.waterfall_chart",
+								"general:json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ],\n                    [\n                        \"ly_wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"pdiv\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"10\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"deptdesc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"deptdesc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"1\",\n                \"col\": \"0\"\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.arch.v4_15.misc.rb3.api.waterfall_chart/general:json",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.arch.v4_15.misc.rb3.api.waterfall_chart",
+										"general:json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 03 Oct 2024 05:21:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"y_data\": [\n            394755906.4328329,\n            3678152.9700159803,\n            3632244.1827858984,\n            2337229.7063142508,\n            1478492.102936849,\n            -1317017.0398013145,\n            -813553.48999547586,\n            -484328.17998828739,\n            152716.30270366743,\n            132930.3600004632,\n            77963.610037118196,\n            -57369.629989881068,\n            403573367.32785219\n        ],\n        \"name\": [\n            \"LY  Sales $\",\n            \"PAPER PRODUCTS\",\n            \"CANDY & SNACKS\",\n            \"FOOD\",\n            \"PERISHABLES\",\n            \"STATIONERY\",\n            \"BEAUTY CARE\",\n            \"HOME CLEANING\",\n            \"TOBACCO\",\n            \"SUNDRIES\",\n            \"PET\",\n            \"All Other Products\",\n            \"TY  Sales $\"\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"y_data\",\n            \"name\"\n        ],\n        \"label\": [\n            \" Sales $\",\n            \"Name\"\n        ],\n        \"format\": [\n            \"dec:2\",\n            \"type:char\"\n        ]\n    },\n    \"total_row_count\": 13\n}"
+						}
+					]
 				}
 			]
 		},
