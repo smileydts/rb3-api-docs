@@ -38546,6 +38546,156 @@
           }
         }
       }
+    },
+    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.facts/available_facts:json": {
+      "post": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "Fact Tables",
+        "description": "Fact Tables",
+        "operationId": "factTables",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "examples": {
+                "Fact Tables": {
+                  "value": {
+                    "input": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 28 Oct 2024 02:26:03 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Strict-Transport-Security": {
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "sales": {
+                      "type": "object",
+                      "properties": {
+                        "dims": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "calendar"
+                          },
+                          "example": [
+                            "calendar",
+                            "product",
+                            "store"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "example": "Sales"
+                        }
+                      }
+                    },
+                    "salespog": {
+                      "type": "object",
+                      "properties": {
+                        "dims": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "calendar"
+                          },
+                          "example": [
+                            "calendar",
+                            "product",
+                            "store",
+                            "pog"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "example": "POG Sales"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "sales": {
+                        "dims": [
+                          "calendar",
+                          "product",
+                          "store"
+                        ],
+                        "title": "Sales"
+                      },
+                      "salespog": {
+                        "dims": [
+                          "calendar",
+                          "product",
+                          "store",
+                          "pog"
+                        ],
+                        "title": "POG Sales"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "tags": [
