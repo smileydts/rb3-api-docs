@@ -9,9 +9,6 @@
   "servers": [
     {
       "url": "https://www2.1010data.com"
-    },
-    {
-      "url": "https://varetail.1010data.com"
     }
   ],
   "paths": {
@@ -1079,7 +1076,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.momos/general:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.momos/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -4581,7 +4578,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.thukpa/dc_service_levels:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.thukpa/dc_service_levels:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -5255,7 +5252,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.laphing/in_stock_levels:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.laphing/in_stock_levels:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -5706,7 +5703,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.performance_overview/general:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.performance_overview/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -6071,7 +6068,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.sales_tree/general:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.sales_tree/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -7390,7 +7387,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.bubble_chart/general:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.bubble_chart/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -7839,7 +7836,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.waterfall_chart/general:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.waterfall_chart/general:json": {
       "post": {
         "tags": [
           "Widgets"
@@ -8235,7 +8232,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/available_fields:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_fields:json": {
       "post": {
         "tags": [
           "Metadata",
@@ -8267,6 +8264,11 @@
                 }
               },
               "examples": {
+                "Checkboxes (Non-date only)": {
+                  "value": {
+                    "dim": "product"
+                  }
+                },
                 "Date": {
                   "value": {
                     "dim": "calendar"
@@ -8283,7 +8285,7 @@
         },
         "responses": {
           "200": {
-            "description": "success response / success response",
+            "description": "success response / success response / success response",
             "headers": {
               "Connection": {
                 "schema": {
@@ -8294,7 +8296,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Wed, 11 Sep 2024 02:05:32 GMT"
+                  "example": "Tue, 03 Dec 2024 14:13:50 GMT"
                 }
               },
               "Keep-Alive": {
@@ -8309,6 +8311,12 @@
                   "example": "Apache"
                 }
               },
+              "Strict-Transport-Security": {
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains"
+                }
+              },
               "Transfer-Encoding": {
                 "schema": {
                   "type": "string",
@@ -8321,6 +8329,16 @@
                 "schema": {
                   "type": "object",
                   "properties": {
+                    "default": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "example": 0
+                      },
+                      "example": [
+                        0
+                      ]
+                    },
                     "description": {
                       "type": "array",
                       "items": {
@@ -8384,35 +8402,40 @@
                         "Date",
                         "Fiscal Year-Week"
                       ]
+                    },
+                    "name": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "pl"
+                      },
+                      "example": [
+                        "pl"
+                      ]
+                    },
+                    "title": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Private Label Only"
+                      },
+                      "example": [
+                        "Private Label Only"
+                      ]
                     }
                   }
                 },
                 "examples": {
                   "success response": {
                     "value": {
-                      "description": [
-                        "pdivdesc_product",
-                        "deptdesc_product",
-                        "classdesc_product",
-                        "pskudesc_product"
+                      "default": [
+                        0
                       ],
-                      "description_label": [
-                        "Product Division Description",
-                        "Dept Description",
-                        "Class Description",
-                        "Primary Sku Description"
+                      "name": [
+                        "pl"
                       ],
-                      "key": [
-                        "pdiv_product",
-                        "dept_product",
-                        "class_product",
-                        "psku_product"
-                      ],
-                      "key_label": [
-                        "Product Division",
-                        "Dept",
-                        "Class",
-                        "Primary Sku"
+                      "title": [
+                        "Private Label Only"
                       ]
                     }
                   }
@@ -8423,7 +8446,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/available_custom_fields:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_custom_fields:json": {
       "post": {
         "tags": [
           "Metadata",
@@ -8556,7 +8579,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/field_values:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/field_values:json": {
       "post": {
         "tags": [
           "Metadata",
@@ -37424,7 +37447,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/available_custom_values:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_custom_values:json": {
       "post": {
         "tags": [
           "Metadata",
@@ -37633,7 +37656,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.dimensions/available_dims:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_dims:json": {
       "post": {
         "tags": [
           "Metadata"
@@ -37722,7 +37745,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.dev.v4_16.misc.rb3.api.dimensions/available_modes:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_modes:json": {
       "post": {
         "tags": [
           "Metadata"
@@ -37775,7 +37798,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Sun, 01 Sep 2024 02:35:41 GMT"
+                  "example": "Tue, 03 Dec 2024 20:34:53 GMT"
                 }
               },
               "Keep-Alive": {
@@ -37788,6 +37811,12 @@
                 "schema": {
                   "type": "string",
                   "example": "Apache"
+                }
+              },
+              "Strict-Transport-Security": {
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains"
                 }
               },
               "Transfer-Encoding": {
@@ -37813,7 +37842,7 @@
                         "Custom Table"
                       ]
                     },
-                    "mode": {
+                    "name": {
                       "type": "array",
                       "items": {
                         "type": "string",
@@ -37833,7 +37862,7 @@
                         "Hierarchy",
                         "Custom Table"
                       ],
-                      "mode": [
+                      "name": [
                         "hierarchy",
                         "custom"
                       ]
@@ -37846,7 +37875,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.custom_tables/available_custom_tables:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.custom_tables/available_custom_tables:json": {
       "post": {
         "tags": [
           "Metadata"
@@ -38183,7 +38212,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.metrics/metrics_guide:json.keyed": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.metrics/metrics_guide:json": {
       "post": {
         "tags": [
           "Metadata"
@@ -38238,22 +38267,10 @@
                   "example": "Keep-Alive"
                 }
               },
-              "Content-Encoding": {
-                "schema": {
-                  "type": "string",
-                  "example": "gzip"
-                }
-              },
-              "Content-Length": {
-                "schema": {
-                  "type": "string",
-                  "example": "1136"
-                }
-              },
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Fri, 10 May 2024 03:00:10 GMT"
+                  "example": "Tue, 03 Dec 2024 20:28:52 GMT"
                 }
               },
               "Keep-Alive": {
@@ -38268,10 +38285,16 @@
                   "example": "Apache"
                 }
               },
-              "Vary": {
+              "Strict-Transport-Security": {
                 "schema": {
                   "type": "string",
-                  "example": "Accept-Encoding"
+                  "example": "max-age=31536000; includeSubDomains"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
                 }
               }
             },
@@ -38292,7 +38315,7 @@
                       },
                       "format": {
                         "type": "string",
-                        "example": "type:num;dec:2"
+                        "example": "type:currency;dec:2"
                       },
                       "label": {
                         "type": "string",
@@ -38300,11 +38323,142 @@
                       },
                       "name": {
                         "type": "string",
-                        "example": "sales"
+                        "example": "sales_sales"
                       },
                       "report_guide": {
                         "type": "string",
                         "example": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates."
+                      },
+                      "time_comparisons": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "example": "Sales $ TY"
+                            },
+                            "request_modifier": {
+                              "type": "object",
+                              "properties": {
+                                "dates": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "value": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "string",
+                                            "example": "ly_{ORIGINAL_DATE}"
+                                          },
+                                          "example": [
+                                            "ly_{ORIGINAL_DATE}"
+                                          ]
+                                        },
+                                        "example": [
+                                          [
+                                            "ly_{ORIGINAL_DATE}"
+                                          ]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "example": [
+                                    {
+                                      "value": [
+                                        [
+                                          "ly_{ORIGINAL_DATE}"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "report": {
+                                  "type": "object",
+                                  "properties": {
+                                    "chg": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "string",
+                                        "example": "pct"
+                                      },
+                                      "example": [
+                                        "pct"
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "label": "Sales $ TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Sales $ LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Sales $ YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Sales $ YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       }
                     }
                   },
@@ -38312,114 +38466,1154 @@
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
-                      "format": "type:num;dec:2",
+                      "format": "type:currency;dec:2",
                       "label": "Sales $",
-                      "name": "sales",
-                      "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates."
+                      "name": "sales_sales",
+                      "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates.",
+                      "time_comparisons": [
+                        {
+                          "label": "Sales $ TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Sales $ LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Sales $ YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Sales $ YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
                       "label": "Units",
-                      "name": "units",
-                      "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight."
+                      "name": "sales_units",
+                      "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight.",
+                      "time_comparisons": [
+                        {
+                          "label": "Units TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Units LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Units YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Units YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "fact_table_label": "Sales",
+                      "fact_table_type": "sales",
+                      "format": "type:num;dec:2",
+                      "label": "Cost $",
+                      "name": "sales_cost",
+                      "report_guide": "Total dollar cost of the selected products over the date range and across all selected stores.",
+                      "time_comparisons": [
+                        {
+                          "label": "Cost $ TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Cost $ LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Cost $ YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Cost $ YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
                       "label": "Baskets",
-                      "name": "baskets",
-                      "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores."
+                      "name": "sales_baskets",
+                      "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores.",
+                      "time_comparisons": [
+                        {
+                          "label": "Baskets TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Baskets LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Baskets YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Baskets YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:0",
                       "label": "Stores Selling",
-                      "name": "stores",
-                      "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it."
+                      "name": "sales_stores",
+                      "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it.",
+                      "time_comparisons": [
+                        {
+                          "label": "Stores Selling TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Stores Selling LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Stores Selling YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Stores Selling YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
-                      "format": "type:num;dec:2",
+                      "format": "type:currency;dec:2",
                       "label": "Extended PLU Price",
-                      "name": "xpluprice",
-                      "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts."
+                      "name": "sales_xpluprice",
+                      "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts.",
+                      "time_comparisons": [
+                        {
+                          "label": "Extended PLU Price TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Extended PLU Price LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Extended PLU Price YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Extended PLU Price YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
                       "label": "Weeks",
-                      "name": "weeks",
-                      "report_guide": "Number of weeks included in the selected date range."
+                      "name": "sales_weeks",
+                      "report_guide": "Number of weeks included in the selected date range.",
+                      "time_comparisons": [
+                        {
+                          "label": "Weeks TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Weeks LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Weeks YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Weeks YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
                       "label": "Units/Basket",
-                      "name": "units_pt",
-                      "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product)."
+                      "name": "sales_units_pt",
+                      "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product).",
+                      "time_comparisons": [
+                        {
+                          "label": "Units/Basket TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Units/Basket LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Units/Basket YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Units/Basket YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
-                      "format": "type:num;dec:2",
+                      "format": "type:currency;dec:2",
                       "label": "Sales $/Basket",
-                      "name": "sales_pt",
-                      "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product)."
+                      "name": "sales_sales_pt",
+                      "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product).",
+                      "time_comparisons": [
+                        {
+                          "label": "Sales $/Basket TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Sales $/Basket LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Sales $/Basket YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Sales $/Basket YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
                       "label": "Units/Store/Week",
-                      "name": "units_psw",
-                      "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems."
+                      "name": "sales_units_psw",
+                      "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems.",
+                      "time_comparisons": [
+                        {
+                          "label": "Units/Store/Week TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Units/Store/Week LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Units/Store/Week YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Units/Store/Week YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
-                      "format": "type:num;dec:2",
+                      "format": "type:currency;dec:2",
                       "label": "Sales/Store/Week",
-                      "name": "sales_psw",
-                      "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales."
+                      "name": "sales_sales_psw",
+                      "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales.",
+                      "time_comparisons": [
+                        {
+                          "label": "Sales/Store/Week TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Sales/Store/Week LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Sales/Store/Week YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Sales/Store/Week YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
                       "format": "type:num;dec:2",
+                      "label": "Baskets/Store",
+                      "name": "sales_baskets_ps",
+                      "report_guide": "Baskets on a per store basis. This is calculated by taking the total baskets for the item/the number of stores.",
+                      "time_comparisons": [
+                        {
+                          "label": "Baskets/Store TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Baskets/Store LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Baskets/Store YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Baskets/Store YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "fact_table_label": "Sales",
+                      "fact_table_type": "sales",
+                      "format": "type:currency;dec:2",
                       "label": "Avg Retail",
-                      "name": "avgretail",
-                      "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure."
+                      "name": "sales_avgretail",
+                      "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure.",
+                      "time_comparisons": [
+                        {
+                          "label": "Avg Retail TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Avg Retail LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Avg Retail YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Avg Retail YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
                       "fact_table_label": "Sales",
                       "fact_table_type": "sales",
-                      "format": "type:num;dec:2",
+                      "format": "type:currency;dec:2",
                       "label": "Avg. PLU Price",
-                      "name": "avgplu",
-                      "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)"
+                      "name": "sales_avgplu",
+                      "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)",
+                      "time_comparisons": [
+                        {
+                          "label": "Avg. PLU Price TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Avg. PLU Price LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Avg. PLU Price YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Avg. PLU Price YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
-                      "fact_table_label": "Composite",
-                      "fact_table_type": "cws",
-                      "format": "type:pct;dec:2",
-                      "label": "Sell Through %",
-                      "name": "sell_thru",
-                      "report_guide": "The percentage of store inventory sold for the selected product within the store criteria and date range. Calculated as units sold within the date range / (units sold within the date range + units of store inventory on the last date within the selected date range)."
+                      "fact_table_label": "Sales",
+                      "fact_table_type": "sales",
+                      "format": "type:currency;dec:2",
+                      "label": "Total Basket Sales $",
+                      "name": "sales_tot_basket_sales",
+                      "report_guide": "Total dollar sales of all baskets containing the given product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebate.",
+                      "time_comparisons": [
+                        {
+                          "label": "Total Basket Sales $ TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "Total Basket Sales $ LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "Total Basket Sales $ YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "Total Basket Sales $ YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     },
                     {
-                      "fact_table_label": "Composite",
-                      "fact_table_type": "cws",
-                      "format": "type:num;dec:2",
-                      "label": "Potential Lost`Sales $",
-                      "name": "potential_lost_sales",
-                      "report_guide": ""
+                      "fact_table_label": "Sales",
+                      "fact_table_type": "sales",
+                      "format": "type:pct;dec:1",
+                      "label": "% of Baskets",
+                      "name": "sales_pct_baskets",
+                      "report_guide": "Percent of the total number of baskets seen over the date range and across all selected stores.",
+                      "time_comparisons": [
+                        {
+                          "label": "% of Baskets TY",
+                          "request_modifier": {}
+                        },
+                        {
+                          "label": "% of Baskets LY",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "label": "% of Baskets YoY % Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "pct"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "label": "% of Baskets YoY Chg",
+                          "request_modifier": {
+                            "dates": [
+                              {
+                                "value": [
+                                  [
+                                    "{ORIGINAL_DATE}"
+                                  ],
+                                  [
+                                    "ly_{ORIGINAL_DATE}"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "report": {
+                              "chg": [
+                                "diff"
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
@@ -38429,114 +39623,1154 @@
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
-                        "format": "type:num;dec:2",
+                        "format": "type:currency;dec:2",
                         "label": "Sales $",
-                        "name": "sales",
-                        "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates."
+                        "name": "sales_sales",
+                        "report_guide": "Total dollar sales of the selected product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebates.",
+                        "time_comparisons": [
+                          {
+                            "label": "Sales $ TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Sales $ LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Sales $ YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Sales $ YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
                         "label": "Units",
-                        "name": "units",
-                        "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight."
+                        "name": "sales_units",
+                        "report_guide": "Total unit sales of the selected product over the date range and across all selected stores. For random weight items each purchase is counted as one unit regardless of weight.",
+                        "time_comparisons": [
+                          {
+                            "label": "Units TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Units LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Units YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Units YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "fact_table_label": "Sales",
+                        "fact_table_type": "sales",
+                        "format": "type:num;dec:2",
+                        "label": "Cost $",
+                        "name": "sales_cost",
+                        "report_guide": "Total dollar cost of the selected products over the date range and across all selected stores.",
+                        "time_comparisons": [
+                          {
+                            "label": "Cost $ TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Cost $ LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Cost $ YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Cost $ YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
                         "label": "Baskets",
-                        "name": "baskets",
-                        "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores."
+                        "name": "sales_baskets",
+                        "report_guide": "Number of baskets with at least one unit of the selected product over the date range and across all selected stores.",
+                        "time_comparisons": [
+                          {
+                            "label": "Baskets TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Baskets LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Baskets YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Baskets YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:0",
                         "label": "Stores Selling",
-                        "name": "stores",
-                        "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it."
+                        "name": "sales_stores",
+                        "report_guide": "Number of stores with at least one unit sold of the product and store grouping corresponding to this row for the indicated date range. This is a measure of distribution, however it can be misleading for slow moving items if the date range is short or if the item may be on a special promotions in stores that do not normally stock it.",
+                        "time_comparisons": [
+                          {
+                            "label": "Stores Selling TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Stores Selling LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Stores Selling YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Stores Selling YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
-                        "format": "type:num;dec:2",
+                        "format": "type:currency;dec:2",
                         "label": "Extended PLU Price",
-                        "name": "xpluprice",
-                        "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts."
+                        "name": "sales_xpluprice",
+                        "report_guide": "Total dollar sales if the selected product were sold at PLU price for all transactions within the selected time frame and across all selected stores. PLU price represents the price ahead of discounts.",
+                        "time_comparisons": [
+                          {
+                            "label": "Extended PLU Price TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Extended PLU Price LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Extended PLU Price YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Extended PLU Price YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
                         "label": "Weeks",
-                        "name": "weeks",
-                        "report_guide": "Number of weeks included in the selected date range."
+                        "name": "sales_weeks",
+                        "report_guide": "Number of weeks included in the selected date range.",
+                        "time_comparisons": [
+                          {
+                            "label": "Weeks TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Weeks LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Weeks YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Weeks YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
                         "label": "Units/Basket",
-                        "name": "units_pt",
-                        "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product)."
+                        "name": "sales_units_pt",
+                        "report_guide": "Average number of units of the selected product in a basket (among baskets with at least one unit of the selected product).",
+                        "time_comparisons": [
+                          {
+                            "label": "Units/Basket TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Units/Basket LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Units/Basket YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Units/Basket YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
-                        "format": "type:num;dec:2",
+                        "format": "type:currency;dec:2",
                         "label": "Sales $/Basket",
-                        "name": "sales_pt",
-                        "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product)."
+                        "name": "sales_sales_pt",
+                        "report_guide": "Average dollars of the selected product in a basket (among baskets with at least one unit of the selected product).",
+                        "time_comparisons": [
+                          {
+                            "label": "Sales $/Basket TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Sales $/Basket LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Sales $/Basket YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Sales $/Basket YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
                         "label": "Units/Store/Week",
-                        "name": "units_psw",
-                        "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems."
+                        "name": "sales_units_psw",
+                        "report_guide": "Unit sales on a per store per week basis. This is calculated by taking the total unit sales for the item divided by (the number of stores X number of weeks). It includes promoted and non-promoted sales. This measure is often used as input to replenishment systems.",
+                        "time_comparisons": [
+                          {
+                            "label": "Units/Store/Week TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Units/Store/Week LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Units/Store/Week YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Units/Store/Week YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
-                        "format": "type:num;dec:2",
+                        "format": "type:currency;dec:2",
                         "label": "Sales/Store/Week",
-                        "name": "sales_psw",
-                        "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales."
+                        "name": "sales_sales_psw",
+                        "report_guide": "Sales $ on a per store per week basis. This is calculated by taking the total Sales $ for the item/(the number of stores x the number of weeks). It includes both promoted and non-promoted sales.",
+                        "time_comparisons": [
+                          {
+                            "label": "Sales/Store/Week TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Sales/Store/Week LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Sales/Store/Week YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Sales/Store/Week YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
                         "format": "type:num;dec:2",
+                        "label": "Baskets/Store",
+                        "name": "sales_baskets_ps",
+                        "report_guide": "Baskets on a per store basis. This is calculated by taking the total baskets for the item/the number of stores.",
+                        "time_comparisons": [
+                          {
+                            "label": "Baskets/Store TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Baskets/Store LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Baskets/Store YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Baskets/Store YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "fact_table_label": "Sales",
+                        "fact_table_type": "sales",
+                        "format": "type:currency;dec:2",
                         "label": "Avg Retail",
-                        "name": "avgretail",
-                        "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure."
+                        "name": "sales_avgretail",
+                        "report_guide": "Average price per unit for the selected products in the date range. If product is a random weight item this is on a per purchase basis, not per unit of measure.",
+                        "time_comparisons": [
+                          {
+                            "label": "Avg Retail TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Avg Retail LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Avg Retail YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Avg Retail YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
                         "fact_table_label": "Sales",
                         "fact_table_type": "sales",
-                        "format": "type:num;dec:2",
+                        "format": "type:currency;dec:2",
                         "label": "Avg. PLU Price",
-                        "name": "avgplu",
-                        "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)"
+                        "name": "sales_avgplu",
+                        "report_guide": "Average price look up (includes regional zone pricing adjustments) across a given grouping level and time period. Item PLU detail is only available when grouping on the item level (i.e., sku)",
+                        "time_comparisons": [
+                          {
+                            "label": "Avg. PLU Price TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Avg. PLU Price LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Avg. PLU Price YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Avg. PLU Price YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
-                        "fact_table_label": "Composite",
-                        "fact_table_type": "cws",
-                        "format": "type:pct;dec:2",
-                        "label": "Sell Through %",
-                        "name": "sell_thru",
-                        "report_guide": "The percentage of store inventory sold for the selected product within the store criteria and date range. Calculated as units sold within the date range / (units sold within the date range + units of store inventory on the last date within the selected date range)."
+                        "fact_table_label": "Sales",
+                        "fact_table_type": "sales",
+                        "format": "type:currency;dec:2",
+                        "label": "Total Basket Sales $",
+                        "name": "sales_tot_basket_sales",
+                        "report_guide": "Total dollar sales of all baskets containing the given product over the date range and across all selected stores. This is net of promotional discounts but does not reflect manufacturer coupons or rebate.",
+                        "time_comparisons": [
+                          {
+                            "label": "Total Basket Sales $ TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "Total Basket Sales $ LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "Total Basket Sales $ YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "Total Basket Sales $ YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       },
                       {
-                        "fact_table_label": "Composite",
-                        "fact_table_type": "cws",
-                        "format": "type:num;dec:2",
-                        "label": "Potential Lost`Sales $",
-                        "name": "potential_lost_sales",
-                        "report_guide": ""
+                        "fact_table_label": "Sales",
+                        "fact_table_type": "sales",
+                        "format": "type:pct;dec:1",
+                        "label": "% of Baskets",
+                        "name": "sales_pct_baskets",
+                        "report_guide": "Percent of the total number of baskets seen over the date range and across all selected stores.",
+                        "time_comparisons": [
+                          {
+                            "label": "% of Baskets TY",
+                            "request_modifier": {}
+                          },
+                          {
+                            "label": "% of Baskets LY",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "label": "% of Baskets YoY % Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "pct"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "label": "% of Baskets YoY Chg",
+                            "request_modifier": {
+                              "dates": [
+                                {
+                                  "value": [
+                                    [
+                                      "{ORIGINAL_DATE}"
+                                    ],
+                                    [
+                                      "ly_{ORIGINAL_DATE}"
+                                    ]
+                                  ]
+                                }
+                              ],
+                              "report": {
+                                "chg": [
+                                  "diff"
+                                ]
+                              }
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -38547,7 +40781,7 @@
         }
       }
     },
-    "/beta-latest/api/cip.arch.v4_15.misc.rb3.api.facts/available_facts:json": {
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.facts/available_facts:json": {
       "post": {
         "tags": [
           "Metadata"
