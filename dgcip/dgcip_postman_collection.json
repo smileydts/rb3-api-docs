@@ -1642,6 +1642,117 @@
 							"body": "{\n    \"data\": {\n        \"y_data\": [\n            394755906.4328329,\n            3678152.9700159803,\n            3632244.1827858984,\n            2337229.7063142508,\n            1478492.102936849,\n            -1317017.0398013145,\n            -813553.48999547586,\n            -484328.17998828739,\n            152716.30270366743,\n            132930.3600004632,\n            77963.610037118196,\n            -57369.629989881068,\n            403573367.32785219\n        ],\n        \"name\": [\n            \"LY  Sales $\",\n            \"PAPER PRODUCTS\",\n            \"CANDY & SNACKS\",\n            \"FOOD\",\n            \"PERISHABLES\",\n            \"STATIONERY\",\n            \"BEAUTY CARE\",\n            \"HOME CLEANING\",\n            \"TOBACCO\",\n            \"SUNDRIES\",\n            \"PET\",\n            \"All Other Products\",\n            \"TY  Sales $\"\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"y_data\",\n            \"name\"\n        ],\n        \"label\": [\n            \" Sales $\",\n            \"Name\"\n        ],\n        \"format\": [\n            \"dec:2\",\n            \"type:char\"\n        ]\n    },\n    \"total_row_count\": 13\n}"
 						}
 					]
+				},
+				{
+					"name": "Box-Pie Chart",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"lob\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"101\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"cat_desc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"cat_desc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.beta.v4_16.misc.rb3.api.box_pie_chart/general:json",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.beta.v4_16.misc.rb3.api.box_pie_chart",
+								"general:json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n            \"product\": [\n                {\n                    \"col\": \"lob\",\n                    \"op\": \"=\",\n                    \"values\": [\n                        \"101\"\n                    ]\n                }\n            ]\n        },\n        \"groups\": {\n            \"row\": [\n                \"cat_desc\"\n            ],\n            \"row_dims\": {\n                \"product\": [\n                    \"cat_desc\"\n                ]\n            },\n            \"col\": [],\n            \"col_dims\": {},\n            \"rollup\": {\n                \"row\": \"0\",\n                \"col\": \"0\"\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.beta.v4_16.misc.rb3.api.box_pie_chart/general:json",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.beta.v4_16.misc.rb3.api.box_pie_chart",
+										"general:json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 11 Dec 2024 18:57:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"y_data\": [\n            791051.53000000073,\n            672439.80999999656,\n            497696.88999998686,\n            402063.21999999176,\n            367106.81000000704,\n            363473.14000000275,\n            307451.43000000622,\n            285511.32000000332,\n            241298.77000000628,\n            230323.76000000414,\n            660359.65000000689\n        ],\n        \"name\": [\n            \"MENS APPAREL\",\n            \"ACCESSORIES\",\n            \"MENS BASIC\",\n            \"LADIES BASICS\",\n            \"FOOTWEAR\",\n            \"NEWBORN INF TODDLR\",\n            \"GIRLS APPAREL\",\n            \"SLEEPWEAR\",\n            \"BOYS APPAREL\",\n            \"LADIES TOPS\",\n            \"All Other Products\"\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"y_data\",\n            \"name\"\n        ],\n        \"label\": [\n            \"Net Sales $\",\n            \"Name\"\n        ],\n        \"format\": [\n            \"type:currency;dec:0\",\n            \"\"\n        ]\n    },\n    \"total_row_count\": 11\n}"
+						}
+					]
 				}
 			]
 		},
