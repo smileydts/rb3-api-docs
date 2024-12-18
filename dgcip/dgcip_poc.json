@@ -8617,6 +8617,544 @@
         }
       }
     },
+    "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.heat_map/general:json": {
+      "post": {
+        "tags": [
+          "Widgets"
+        ],
+        "summary": "Heat Map",
+        "description": "Heat Map",
+        "operationId": "heatMap",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "type": "object",
+                    "properties": {
+                      "dates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "array",
+                              "items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string",
+                                  "example": "wtd"
+                                },
+                                "example": [
+                                  "wtd"
+                                ]
+                              },
+                              "example": [
+                                [
+                                  "wtd"
+                                ]
+                              ]
+                            }
+                          }
+                        },
+                        "example": [
+                          {
+                            "value": [
+                              [
+                                "wtd"
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      "filters": {
+                        "type": "object",
+                        "properties": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "Heat Map": {
+                  "value": {
+                    "input": {
+                      "dates": [
+                        {
+                          "value": [
+                            [
+                              "wtd"
+                            ]
+                          ]
+                        }
+                      ],
+                      "filters": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success response",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "Keep-Alive"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 18 Dec 2024 04:03:48 GMT"
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5, max=18000"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Apache"
+                }
+              },
+              "Strict-Transport-Security": {
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains"
+                }
+              },
+              "Transfer-Encoding": {
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "heatvalue": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "example": 497960.1700000078
+                          },
+                          "example": [
+                            497960.1700000078,
+                            293405.49000000313,
+                            191500.1000000012,
+                            171159.7800000013,
+                            170772.58000000176,
+                            162153.87000000116,
+                            159962.01000000158,
+                            117002.59000000064,
+                            114016.80000000072,
+                            112480.52000000046,
+                            107855.22000000135,
+                            102251.24000000033,
+                            94132.5200000009,
+                            88137.95000000048,
+                            83827.35000000056,
+                            78665.71000000041,
+                            77158.5800000003,
+                            73486.0800000004,
+                            71438.71000000028,
+                            71087.79000000042,
+                            67692.62000000017,
+                            62890.39000000046,
+                            62631.280000000246,
+                            57885.00000000019,
+                            53278.88000000026,
+                            49609.490000000136,
+                            49213.92000000024,
+                            48185.480000000185,
+                            37945.67000000004,
+                            34192.789999999906,
+                            32909.83999999996,
+                            32631.939999999937,
+                            29989.269999999895,
+                            26160.91999999994,
+                            21733.269999999975,
+                            21611.399999999976,
+                            21370.319999999963,
+                            20327.129999999997,
+                            19730.559999999987,
+                            18740.159999999996,
+                            14988.299999999992,
+                            14087.740000000002,
+                            13614.670000000016,
+                            9790.839999999995,
+                            9280.57999999999,
+                            4386.38,
+                            1850.1800000000003,
+                            1752.4500000000005,
+                            992.0600000000002
+                          ]
+                        },
+                        "statekey": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "us-tx"
+                          },
+                          "example": [
+                            "us-tx",
+                            "us-fl",
+                            "us-mi",
+                            "us-oh",
+                            "us-ga",
+                            "us-ny",
+                            "us-nc",
+                            "us-pa",
+                            "us-sc",
+                            "us-il",
+                            "us-la",
+                            "us-va",
+                            "us-az",
+                            "us-ca",
+                            "us-in",
+                            "us-ms",
+                            "us-tn",
+                            "us-al",
+                            "us-nj",
+                            "us-ky",
+                            "us-md",
+                            "us-nm",
+                            "us-ma",
+                            "us-mo",
+                            "us-ok",
+                            "us-wv",
+                            "us-co",
+                            "us-wi",
+                            "us-ar",
+                            "us-ut",
+                            "us-ct",
+                            "us-id",
+                            "us-nv",
+                            "us-me",
+                            "us-ia",
+                            "us-mn",
+                            "us-mt",
+                            "us-ri",
+                            "us-ne",
+                            "us-ks",
+                            "us-wy",
+                            "us-de",
+                            "us-sd",
+                            "us-nh",
+                            "us-nd",
+                            "us-vt",
+                            "us-or",
+                            "us-dc",
+                            "us-wa"
+                          ]
+                        },
+                        "statename": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "Texas"
+                          },
+                          "example": [
+                            "Texas",
+                            "Florida",
+                            "Michigan",
+                            "Ohio",
+                            "Georgia",
+                            "New York",
+                            "North Carolina",
+                            "Pennsylvania",
+                            "South Carolina",
+                            "Illinois",
+                            "Louisiana",
+                            "Virginia",
+                            "Arizona",
+                            "California",
+                            "Indiana",
+                            "Mississippi",
+                            "Tennessee",
+                            "Alabama",
+                            "New Jersey",
+                            "Kentucky",
+                            "Maryland",
+                            "New Mexico",
+                            "Massachusetts",
+                            "Missouri",
+                            "Oklahoma",
+                            "West Virginia",
+                            "Colorado",
+                            "Wisconsin",
+                            "Arkansas",
+                            "Utah",
+                            "Connecticut",
+                            "Idaho",
+                            "Nevada",
+                            "Maine",
+                            "Iowa",
+                            "Minnesota",
+                            "Montana",
+                            "Rhode Island",
+                            "Nebraska",
+                            "Kansas",
+                            "Wyoming",
+                            "Delaware",
+                            "South Dakota",
+                            "New Hampshire",
+                            "North Dakota",
+                            "Vermont",
+                            "Oregon",
+                            "District of Columbia",
+                            "Washington"
+                          ]
+                        }
+                      }
+                    },
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "format": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "type:char"
+                          },
+                          "example": [
+                            "type:char",
+                            "type:char",
+                            "type:currency;dec:0"
+                          ]
+                        },
+                        "label": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "State Key"
+                          },
+                          "example": [
+                            "State Key",
+                            "State Name",
+                            "Heat Label"
+                          ]
+                        },
+                        "name": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "example": "statekey"
+                          },
+                          "example": [
+                            "statekey",
+                            "statename",
+                            "heatvalue"
+                          ]
+                        }
+                      }
+                    },
+                    "total_row_count": {
+                      "type": "number",
+                      "example": 49
+                    }
+                  }
+                },
+                "examples": {
+                  "success response": {
+                    "value": {
+                      "data": {
+                        "heatvalue": [
+                          497960.1700000078,
+                          293405.49000000313,
+                          191500.1000000012,
+                          171159.7800000013,
+                          170772.58000000176,
+                          162153.87000000116,
+                          159962.01000000158,
+                          117002.59000000064,
+                          114016.80000000072,
+                          112480.52000000046,
+                          107855.22000000135,
+                          102251.24000000033,
+                          94132.5200000009,
+                          88137.95000000048,
+                          83827.35000000056,
+                          78665.71000000041,
+                          77158.5800000003,
+                          73486.0800000004,
+                          71438.71000000028,
+                          71087.79000000042,
+                          67692.62000000017,
+                          62890.39000000046,
+                          62631.280000000246,
+                          57885.00000000019,
+                          53278.88000000026,
+                          49609.490000000136,
+                          49213.92000000024,
+                          48185.480000000185,
+                          37945.67000000004,
+                          34192.789999999906,
+                          32909.83999999996,
+                          32631.939999999937,
+                          29989.269999999895,
+                          26160.91999999994,
+                          21733.269999999975,
+                          21611.399999999976,
+                          21370.319999999963,
+                          20327.129999999997,
+                          19730.559999999987,
+                          18740.159999999996,
+                          14988.299999999992,
+                          14087.740000000002,
+                          13614.670000000016,
+                          9790.839999999995,
+                          9280.57999999999,
+                          4386.38,
+                          1850.1800000000003,
+                          1752.4500000000005,
+                          992.0600000000002
+                        ],
+                        "statekey": [
+                          "us-tx",
+                          "us-fl",
+                          "us-mi",
+                          "us-oh",
+                          "us-ga",
+                          "us-ny",
+                          "us-nc",
+                          "us-pa",
+                          "us-sc",
+                          "us-il",
+                          "us-la",
+                          "us-va",
+                          "us-az",
+                          "us-ca",
+                          "us-in",
+                          "us-ms",
+                          "us-tn",
+                          "us-al",
+                          "us-nj",
+                          "us-ky",
+                          "us-md",
+                          "us-nm",
+                          "us-ma",
+                          "us-mo",
+                          "us-ok",
+                          "us-wv",
+                          "us-co",
+                          "us-wi",
+                          "us-ar",
+                          "us-ut",
+                          "us-ct",
+                          "us-id",
+                          "us-nv",
+                          "us-me",
+                          "us-ia",
+                          "us-mn",
+                          "us-mt",
+                          "us-ri",
+                          "us-ne",
+                          "us-ks",
+                          "us-wy",
+                          "us-de",
+                          "us-sd",
+                          "us-nh",
+                          "us-nd",
+                          "us-vt",
+                          "us-or",
+                          "us-dc",
+                          "us-wa"
+                        ],
+                        "statename": [
+                          "Texas",
+                          "Florida",
+                          "Michigan",
+                          "Ohio",
+                          "Georgia",
+                          "New York",
+                          "North Carolina",
+                          "Pennsylvania",
+                          "South Carolina",
+                          "Illinois",
+                          "Louisiana",
+                          "Virginia",
+                          "Arizona",
+                          "California",
+                          "Indiana",
+                          "Mississippi",
+                          "Tennessee",
+                          "Alabama",
+                          "New Jersey",
+                          "Kentucky",
+                          "Maryland",
+                          "New Mexico",
+                          "Massachusetts",
+                          "Missouri",
+                          "Oklahoma",
+                          "West Virginia",
+                          "Colorado",
+                          "Wisconsin",
+                          "Arkansas",
+                          "Utah",
+                          "Connecticut",
+                          "Idaho",
+                          "Nevada",
+                          "Maine",
+                          "Iowa",
+                          "Minnesota",
+                          "Montana",
+                          "Rhode Island",
+                          "Nebraska",
+                          "Kansas",
+                          "Wyoming",
+                          "Delaware",
+                          "South Dakota",
+                          "New Hampshire",
+                          "North Dakota",
+                          "Vermont",
+                          "Oregon",
+                          "District of Columbia",
+                          "Washington"
+                        ]
+                      },
+                      "fields": {
+                        "format": [
+                          "type:char",
+                          "type:char",
+                          "type:currency;dec:0"
+                        ],
+                        "label": [
+                          "State Key",
+                          "State Name",
+                          "Heat Label"
+                        ],
+                        "name": [
+                          "statekey",
+                          "statename",
+                          "heatvalue"
+                        ]
+                      },
+                      "total_row_count": 49
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/beta-latest/api/cip.beta.v4_16.misc.rb3.api.dimensions/available_fields:json": {
       "post": {
         "tags": [

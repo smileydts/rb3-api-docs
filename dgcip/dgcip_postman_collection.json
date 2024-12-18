@@ -1753,6 +1753,117 @@
 							"body": "{\n    \"data\": {\n        \"y_data\": [\n            791051.53000000073,\n            672439.80999999656,\n            497696.88999998686,\n            402063.21999999176,\n            367106.81000000704,\n            363473.14000000275,\n            307451.43000000622,\n            285511.32000000332,\n            241298.77000000628,\n            230323.76000000414,\n            660359.65000000689\n        ],\n        \"name\": [\n            \"MENS APPAREL\",\n            \"ACCESSORIES\",\n            \"MENS BASIC\",\n            \"LADIES BASICS\",\n            \"FOOTWEAR\",\n            \"NEWBORN INF TODDLR\",\n            \"GIRLS APPAREL\",\n            \"SLEEPWEAR\",\n            \"BOYS APPAREL\",\n            \"LADIES TOPS\",\n            \"All Other Products\"\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"y_data\",\n            \"name\"\n        ],\n        \"label\": [\n            \"Net Sales $\",\n            \"Name\"\n        ],\n        \"format\": [\n            \"type:currency;dec:0\",\n            \"\"\n        ]\n    },\n    \"total_row_count\": 11\n}"
 						}
 					]
+				},
+				{
+					"name": "Heat Map",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www2.1010data.com/beta-latest/api/cip.beta.v4_16.misc.rb3.api.heat_map/general:json",
+							"protocol": "https",
+							"host": [
+								"www2",
+								"1010data",
+								"com"
+							],
+							"path": [
+								"beta-latest",
+								"api",
+								"cip.beta.v4_16.misc.rb3.api.heat_map",
+								"general:json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"input\": {\n        \"dates\": [\n            {\n                \"value\": [\n                    [\n                        \"wtd\"\n                    ]\n                ]\n            }\n        ],\n        \"filters\": {\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www2.1010data.com/beta-latest/api/cip.beta.v4_16.misc.rb3.api.heat_map/general:json",
+									"protocol": "https",
+									"host": [
+										"www2",
+										"1010data",
+										"com"
+									],
+									"path": [
+										"beta-latest",
+										"api",
+										"cip.beta.v4_16.misc.rb3.api.heat_map",
+										"general:json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Dec 2024 04:03:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=18000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"statekey\": [\n            \"us-tx\",\n            \"us-fl\",\n            \"us-mi\",\n            \"us-oh\",\n            \"us-ga\",\n            \"us-ny\",\n            \"us-nc\",\n            \"us-pa\",\n            \"us-sc\",\n            \"us-il\",\n            \"us-la\",\n            \"us-va\",\n            \"us-az\",\n            \"us-ca\",\n            \"us-in\",\n            \"us-ms\",\n            \"us-tn\",\n            \"us-al\",\n            \"us-nj\",\n            \"us-ky\",\n            \"us-md\",\n            \"us-nm\",\n            \"us-ma\",\n            \"us-mo\",\n            \"us-ok\",\n            \"us-wv\",\n            \"us-co\",\n            \"us-wi\",\n            \"us-ar\",\n            \"us-ut\",\n            \"us-ct\",\n            \"us-id\",\n            \"us-nv\",\n            \"us-me\",\n            \"us-ia\",\n            \"us-mn\",\n            \"us-mt\",\n            \"us-ri\",\n            \"us-ne\",\n            \"us-ks\",\n            \"us-wy\",\n            \"us-de\",\n            \"us-sd\",\n            \"us-nh\",\n            \"us-nd\",\n            \"us-vt\",\n            \"us-or\",\n            \"us-dc\",\n            \"us-wa\"\n        ],\n        \"statename\": [\n            \"Texas\",\n            \"Florida\",\n            \"Michigan\",\n            \"Ohio\",\n            \"Georgia\",\n            \"New York\",\n            \"North Carolina\",\n            \"Pennsylvania\",\n            \"South Carolina\",\n            \"Illinois\",\n            \"Louisiana\",\n            \"Virginia\",\n            \"Arizona\",\n            \"California\",\n            \"Indiana\",\n            \"Mississippi\",\n            \"Tennessee\",\n            \"Alabama\",\n            \"New Jersey\",\n            \"Kentucky\",\n            \"Maryland\",\n            \"New Mexico\",\n            \"Massachusetts\",\n            \"Missouri\",\n            \"Oklahoma\",\n            \"West Virginia\",\n            \"Colorado\",\n            \"Wisconsin\",\n            \"Arkansas\",\n            \"Utah\",\n            \"Connecticut\",\n            \"Idaho\",\n            \"Nevada\",\n            \"Maine\",\n            \"Iowa\",\n            \"Minnesota\",\n            \"Montana\",\n            \"Rhode Island\",\n            \"Nebraska\",\n            \"Kansas\",\n            \"Wyoming\",\n            \"Delaware\",\n            \"South Dakota\",\n            \"New Hampshire\",\n            \"North Dakota\",\n            \"Vermont\",\n            \"Oregon\",\n            \"District of Columbia\",\n            \"Washington\"\n        ],\n        \"heatvalue\": [\n            497960.17000000773,\n            293405.49000000313,\n            191500.1000000012,\n            171159.78000000131,\n            170772.58000000176,\n            162153.87000000116,\n            159962.01000000158,\n            117002.59000000064,\n            114016.80000000072,\n            112480.52000000046,\n            107855.22000000137,\n            102251.24000000031,\n            94132.520000000906,\n            88137.950000000477,\n            83827.350000000559,\n            78665.710000000414,\n            77158.580000000293,\n            73486.080000000395,\n            71438.710000000283,\n            71087.790000000416,\n            67692.62000000017,\n            62890.390000000458,\n            62631.280000000246,\n            57885.000000000189,\n            53278.880000000252,\n            49609.490000000136,\n            49213.920000000238,\n            48185.480000000185,\n            37945.670000000042,\n            34192.789999999906,\n            32909.83999999996,\n            32631.939999999937,\n            29989.269999999895,\n            26160.91999999994,\n            21733.269999999975,\n            21611.399999999976,\n            21370.319999999963,\n            20327.129999999997,\n            19730.559999999987,\n            18740.159999999996,\n            14988.299999999992,\n            14087.740000000002,\n            13614.670000000015,\n            9790.8399999999947,\n            9280.5799999999908,\n            4386.3800000000001,\n            1850.1800000000005,\n            1752.4500000000005,\n            992.06000000000017\n        ]\n    },\n    \"fields\": {\n        \"name\": [\n            \"statekey\",\n            \"statename\",\n            \"heatvalue\"\n        ],\n        \"label\": [\n            \"State Key\",\n            \"State Name\",\n            \"Heat Label\"\n        ],\n        \"format\": [\n            \"type:char\",\n            \"type:char\",\n            \"type:currency;dec:0\"\n        ]\n    },\n    \"total_row_count\": 49\n}"
+						}
+					]
 				}
 			]
 		},
